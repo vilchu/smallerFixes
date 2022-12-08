@@ -40,10 +40,15 @@
     --stupid-stuff: none;
 	--mention-colour: 234, 153, 153;
 
+	--chattyBorderRadius: 10px;
+	--chattyBlur: 5px;
+
+    --watermark: "uwucord"
+
 	/* SettingsModal */
 	--settingsmodalbackground:     transparent;            /* default:    transparent        (lowest bg color of changed windows, change it in case another theme turns them transparent)    */
     --settingsmodalwidth:         1030px;                    /* default:    960px            (width of the settings modal, px/vw)                                                            */
-    --settingsmodalheight:         90vh;                    /* default:    80vh            (height of the settings modal, px/vh)                                                            */
+    --settingsmodalheight:         84vh;                    /* default:    80vh            (height of the settings modal, px/vh)                                                            */
 }
 :root {
 	--radius-primary: 18px;
@@ -66,13 +71,6 @@
 	--guild-spacing: calc(var(--guild-icon) / 5);
 	--guild-badge: calc(var(--guild-icon) / 3.2)*/
 }
-:root {
-	--chattyBorderRadius: 10px;
-	--chattyBlur: 5px;
-
-  --watermark: "uwucord"
-}
-
 .dot-e8DTw_ {
 	margin-left: 50px!important;
 }
@@ -670,8 +668,7 @@ div.markup-eYLPri.editor-H2NA06.slateTextArea-27tjG0.fontSize16Padding-XoMpjI:no
 display: none;
 }
 
-#app-mount .textArea-2CLwUE.textAreaSlate-9-y-k2.slateContainer-3x9zil:not(.chat-1-OBC7 .textArea-2CLwUE,
-.chat-2ZfjoI .textArea-2CLwUE) {
+#app-mount .textArea-2CLwUE.textAreaSlate-9-y-k2.slateContainer-3x9zil:not(.chat-1-OBC7 .textArea-2CLwUE,.chat-2ZfjoI .textArea-2CLwUE) {
 	background-color: rgba(0,0,0, 0.25) !important;
     -webkit-backdrop-filter: blur(4px);
     -o-backdrop-filter: blur(4px);
@@ -684,7 +681,7 @@ display: none;
 	margin-left: 0px!important;
 }
 .characterCount-8yNPfb {
-	margin-right: 10px;
+	margin-right: 03px;
 }
 .placeholder-1rCBhr.slateTextArea-27tjG0.fontSize16Padding-XoMpjI.textAreaWithoutAttachmentButton-1as0NS {
 left: -17px;
