@@ -42,13 +42,16 @@
 
 	--chattyBorderRadius: 10px;
 	--chattyBlur: 5px;
-
-    --watermark: "uwucord"
-
+	
 	/* SettingsModal */
 	--settingsmodalbackground:     transparent;            /* default:    transparent        (lowest bg color of changed windows, change it in case another theme turns them transparent)    */
     --settingsmodalwidth:         1030px;                    /* default:    960px            (width of the settings modal, px/vw)                                                            */
     --settingsmodalheight:         84vh;                    /* default:    80vh            (height of the settings modal, px/vh)                                                            */
+}
+
+
+:root {
+  --watermark: "uwucord"
 }
 :root {
 	--radius-primary: 18px;
@@ -71,6 +74,8 @@
 	--guild-spacing: calc(var(--guild-icon) / 5);
 	--guild-badge: calc(var(--guild-icon) / 3.2)*/
 }
+
+
 .dot-e8DTw_ {
 	margin-left: 50px!important;
 }
