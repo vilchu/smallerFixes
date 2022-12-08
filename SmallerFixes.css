@@ -686,6 +686,12 @@ display: none;
 .characterCount-8yNPfb {
 	margin-right: 10px;
 }
+.placeholder-1rCBhr.slateTextArea-27tjG0.fontSize16Padding-XoMpjI.textAreaWithoutAttachmentButton-1as0NS {
+left: -17px;
+}
+.bioTextArea-dDGOeC::-webkit-scrollbar{
+    display: none;
+}
 
   /* =========================================== */
  /* ========== < BEHIND MESSAGE BOX GONE > ========== */
