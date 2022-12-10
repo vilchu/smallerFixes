@@ -953,6 +953,14 @@ display: none;
 	background-color: transparent;
 }
 
+   /*=====================================*/
+ /*========== < ROLE COLOR THINGY > ==========*/
+/*====================================*/
+.rolePill-2IJ1vo {
+    background-color: var(--profile-role-pill-background-color);
+    border: 0px solid;
+    border-color: var(--profile-role-pill-border-color);
+}
 
   /*========================================================*/
  /*========== < DM PROFILE THINGY > ==========*/
