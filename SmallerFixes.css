@@ -352,7 +352,7 @@ div[id="user-context-call"],
 .menu-1QACrS {
     background: none;
 }
-.menu-1QACrS:not(.menu-1QACrS.styleFlexible-x0_sIC.menu-KSaHL1)::after {
+.menu-1QACrS:not(.menu-1QACrS.flexible-1UoeVa.menu-KSaHL1)::after {
     content: '';
     position: absolute;
     inset: 0;
@@ -429,21 +429,6 @@ div[id="user-context-call"],
     box-sizing: border-box;
     max-width: 100%;
 }
-
-
-  /* =================================== */
- /* ========== < EDITED TEXT > ========== */
-/* ================================= */
-/*.cozyMessage-1DWF9U:not(.systemMessage-1H1Z20) .markup-eYLPri .timestamp-p1Df1m>[aria-label]::after{
-  content:"(" attr(aria-label) ")";
-  text-transform: lowercase;
-  font-size: 0.625rem;
-  font-weight: 400;
-  line-height: 1;
-}
-.cozyMessage-1DWF9U:not(.systemMessage-1H1Z20) .markup-eYLPri .timestamp-p1Df1m .edited-1v5nT8{
-  display: none;
-}*/
 
 
   /* =========================================== */
@@ -694,6 +679,7 @@ left: -17px;
 .bioTextArea-dDGOeC::-webkit-scrollbar{
     display: none;
 }
+
 
   /* =========================================== */
  /* ========== < BEHIND MESSAGE BOX GONE > ========== */
@@ -953,6 +939,7 @@ display: none;
 	background-color: transparent;
 }
 
+
    /*=====================================*/
  /*========== < ROLE COLOR THINGY > ==========*/
 /*====================================*/
@@ -961,6 +948,7 @@ display: none;
     border: 0px solid;
     border-color: var(--profile-role-pill-border-color);
 }
+
 
   /*========================================================*/
  /*========== < DM PROFILE THINGY > ==========*/
