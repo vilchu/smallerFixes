@@ -146,6 +146,17 @@ svg.homeIcon-r0w4ny {
     min-width: 50px;
     min-height: 50px;
 }
+/* snowsgiving icon fix*/
+foreignObject>[data-list-item-id$=home] :where(path,rect){
+    display: none;
+}
+foreignObject>[data-list-item-id$=home] svg{
+    background: url('https://i.imgur.com/RihOp3U.png') center/contain no-repeat;
+    min-width: 50px;
+    min-height: 50px;
+    max-width: 50px;
+    max-height: 50px;
+}
 
 
   /* =================================== */
@@ -463,7 +474,7 @@ div[id="user-context-call"],
 	margin-right: calc((var(--layout-margin) / 2) + (var(--layout-margin) / 2))
 }
 
-.chat-2ZfjoI .buttons-uaqb-5 {
+.chat-2ZfjoI .buttons-uaqb-5:not(.attachButton-1ijpt9.wrapper-3SFU66) {
 	background-color: rgba(0,0,0, 0.25) !important;
     -webkit-backdrop-filter: blur(4px);
     -o-backdrop-filter: blur(4px);
@@ -488,6 +499,7 @@ div[id="user-context-call"],
 	background: var(--background-secondary);
 	border-radius: 90px;
 	margin-right: calc(var(--layout) + var(--layout))
+	
 }
 #app-mount > div.appDevToolsWrapper-1QxdQf > div > div.app-3xd6d0 > div > div.layers-OrUESM.layers-1YQhyW > div > div.container-1eFtFS > div > div > div:nth-child(6) > div.chat-25x62K > section > form > div.channelTextArea-1FufC0.channelTextArea-1VQBuV > div > div > div.buttons-uaqb-5 > div > button {
 	background-color: rgba(0,0,0, 0.25) !important;
@@ -498,7 +510,8 @@ div[id="user-context-call"],
     filter: drop-shadow(0rem 0rem 0.5rem rgba(0, 0, 20, 0.2));
 	background: var(--background-secondary);
 	border-radius: 90px;
-	margin-right: calc(var(--layout) + var(--layout))
+	margin-right: calc(var(--layout) + var(--layout));
+
 }
 
 .chat-2ZfjoI .scrollableContainer-15eg7h,
@@ -509,10 +522,10 @@ div[id="user-context-call"],
 .wrapper-2SplAX {
 	background: var(--background-secondary);
 	border-radius: var(--radius-primary);
-	/*margin: calc(var(--layout) + var(--layout)) 0px 0px 0px;*/
-	order: -1 !important
-}
+	margin: calc(var(--layout) + var(--layout)) 0px 0px 0px;
+	order: -1 !important;
 
+}
 .chat-2ZfjoI .typing-2J1mQU {
 	order: 1
 }
@@ -523,15 +536,22 @@ div[id="user-context-call"],
 	right: 0px;
 	padding-left: 73px;
 	padding-right: 92px;
-	margin-top: calc( var(--layout) + var(--layout))
-}
+	margin-top: calc( var(--layout) + var(--layout));
 
+}
 .attachButton-1ijpt9 {
 	margin-left: 0px;
 	padding: 0px;
 	height: 44px;
 	width: 44px
 }
+.attachButton-1ijpt9.wrapper-3SFU66 {
+	margin-right: -45px;
+}
+.textArea-2CLwUE.textAreaSlate-9-y-k2.slateContainer-3x9zil:not(.attachButton-1ijpt9.wrapper-3SFU66) {
+   margin-right: 20px;
+}
+
 /* message bar position when no attachment button */
 .textArea-2CLwUE:not(.attachWrapper-3slhXI + .textArea-2CLwUE, .inner-NQg18Y.innerDisabled-2dbG11.inner-NQg18Y.sansAttachButton-1ERHue, .channelTextArea-220_Gz.channelTextArea-1VQBuV > div > div > div.textArea-2CLwUE.textAreaSlate-9-y-k2.slateContainer-3x9zil) {
     margin-left: 64px!important;
@@ -566,16 +586,16 @@ div[id="user-context-call"],
 .bar-2MWHzg {
 	background: var(--background-secondary-alt);
 	border-radius: 10px;
-	width: 1183px;
-	margin-left: 45px;
+	width: 1115px;
+	margin-left: 67px;
 }
 .autocomplete-3NRXG8.outerWrapper-3UdjNj{
-	width: 1155px;
+	width: 1149px;
 	margin-left: 65px;
 }
 .autocomplete-3NRXG8.autocomplete-3jLKbj.autocompleteAttached-bt_md- {
-	width: 1217px;
-	margin-left: 45px;
+	width: 1148px;
+	margin-left: 65px;
 }
 .threadSuggestionBar-3ExSyc {
 	width: 1500px;
@@ -1068,3 +1088,18 @@ display: none;
   margin-left: auto;
 }
 
+
+  /*=================================================*/
+ /*========== < SOME TELEGRAM IMAGE GALLERY CRAP > ==========*/
+/*================================================*/
+.container-2sjPya {
+    width: 400px;
+    grid-template-columns: repeat(3,1fr);
+    grid-column-gap: .25rem;
+}.container-2sjPya :first-of-type {
+    grid-column-start: 1;
+    grid-column-end: -1;
+}
+.removeAttachmentButton-1iO1qS {
+    position:absolute
+}
