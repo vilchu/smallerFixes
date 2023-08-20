@@ -5,6 +5,7 @@
  * @description my theme
 */
 
+
 /* =====================================*/
 /* ========== < OTHER IMPORT > ======= */
 /* ================================== */
@@ -12,10 +13,14 @@
 @import url("https://maendisease.github.io/BetterDiscordStuff/css/bearableInbox.css");
 @import url("https://crearts-community.github.io/Mention-Links/src/source.css");
 @import url("https://discord-theme.pages.dev/assets/snippets/watermark.css");
-@import url("https://snare-hawk.github.io/snare-CSS/settings-plugin-sorter.css");
-/*@import url("https://dablulite.github.io/accountdetailscolumns/import.css");*/
-@import url("https://neodymium7.github.io/BetterDiscordStuff/CSS/AddServerDarkMode.css");
+@import url("//dablulite.github.io/css-snippets/AccountDetailsGrid/import.css");
+@import url("https://dablulite.github.io/css-snippets/NoLightInDark/import.css");
 @import url("//dablulite.github.io/BetterFloatingEditor/import.css");
+@import url("//dablulite.github.io/css-snippets/BetterAuthApps/import.css");
+/*@import url(//dablulite.github.io/css-snippets/MacosTitlebar/import.css);*/
+@import url("//dablulite.github.io/css-snippets/BetterModals/import.css");
+/*@import url("https://seele1306.github.io/ChatBubbles.css");*/
+@import url("//raw.githubusercontent.com/lumap/css-snippets/main/make-bios-long.css");
 
 /* icons */
 @import url("https://lavender-discord.github.io/IconsaxDiscord/theme.css");
@@ -27,11 +32,14 @@
 @import url("https://jatin-jindal.github.io/discordfont/DiscordFont.css");
 
 *:not(code) {
-  font-family: "Didact Gothic Regular", sans-serif;
+  font-family: 'Didact Gothic Regular', sans-serif;
 }
 
+
+
+
 /* ================================ */
-/* ===== < OTHER THINGYS > =======* /
+/* ===== < OTHER THINGYS > ======= */
 /* ============================== */
 :root {
   --focus-primary: transparent;
@@ -61,7 +69,7 @@
   --seperator: none;
   /* change to 'block' for seperator between home and catagories */
 
-  --watermark: "uwucord";
+  --watermark: 'uwucord';
 
   /* send message bar */
   --radius-primary: 18px;
@@ -99,10 +107,19 @@
 .markup-eYLPri a {
   color: hsl(240, 14%, 65%);
 }
+:root {
+  --chat-bubble-default: #00000025;
+  --chat-bubble-default-hover: #00000050;
+  --chat-bubble-replying: #00000025;
+  --chat-bubble-replying-hover: #00000050;
+  --chat-bubble-mentioned: #00000025;
+  --chat-bubble-mentioned-hover: #00000050;
+  --chat-bubble-border-radius: 10px;
+}
 
-/* ====================================== */
+/* ========================================= */
 /* ========== < WHOLE ASS LOOK > ========== */
-/* ==================================== */
+/* ======================================= */
 .guilds-2JjMmN {
   margin: 10px;
   border-radius: 15px;
@@ -119,9 +136,12 @@
   background-color: var(--background-floating);
 }
 
-/* ================================= */
+
+
+
+/* ==================================== */
 /* ========== < HOME ICON > ========== */
-/* ================================ */
+/* ================================== */
 .childWrapper-1j_1ub,
 .wrapper-3kah-n.selected-1Drb7Z.childWrapper-1j_1ub,
 .wrapper-28eC3z:hover .childWrapper-1j_1ub {
@@ -152,9 +172,9 @@ foreignObject>[data-list-item-id$=home] svg{
 }*/
 
 
-/* =================================== */
+/* ======================================= */
 /* ====== < TEXT SELECTION COLOR > ====== */
-/* ================================== */
+/* ===================================== */
 ::selection {
   background: hsla(240, 14%, 57%, 0.75) !important;
 }
@@ -162,72 +182,71 @@ foreignObject>[data-list-item-id$=home] svg{
 .highlight {
   background: hsla(240, 14%, 57%, 0.75) !important;
 }
-
 /* thread color */
 .spine-29OFwR {
   color: hsla(147, 50%, 52%, 0.993);
 }
 
 
-/* ========================================= */
+/* ============================================= */
 /* ========== < HI-COLOUR MENTIONS > ========== */
-/* ======================================== */
+/* =========================================== */
+:root {
+  --brand-experiment-05a: rgba(var(--mention-colour), 0.08);
+}
 .mentioned-Tre-dv {
   background-color: rgba(var(--mention-colour), 0.08) !important;
 }
-
 .mentioned-Tre-dv:hover {
   background-color: rgba(var(--mention-colour), 0.1) !important;
 }
 
-div[class*="mentioned"]::before {
+div[class*='mentioned']::before {
   width: 4px;
   background-color: rgb(var(--mention-colour));
 }
-
-div[class*="replying"]::before {
+div[class*='replying']::before {
   width: 4px;
+  background-color: rgb(var(--mention-colour));
 }
-
-:root {
-  --brand-experiment-05a: rgba(var(--mention-colour), 0.08);
+.message-2CShn3.cozyMessage-1DWF9U.ephemeral-2nDdnn.groupStart-3Mlgv1.wrapper-30-Nkg.cozy-VmLDNB.zalgo-26OfGz:hover {
+  background-color: rgba(var(--mention-colour), 0.1)!important;
 }
-
-.message-2CShn3.cozyMessage-1DWF9U.ephemeral-2nDdnn.groupStart-3Mlgv1.wrapper-30-Nkg.cozy-VmLDNB.zalgo-26OfGz {
+.message-2CShn3.cozyMessage-1DWF9U.replying-eZ7p5z.wrapper-30-Nkg.cozy-VmLDNB.zalgo-26OfGz {
   background-color: rgba(var(--mention-colour), 0.08);
 }
-
 .message-2CShn3.cozyMessage-1DWF9U.ephemeral-2nDdnn.groupStart-3Mlgv1.wrapper-30-Nkg.cozy-VmLDNB.zalgo-26OfGz::before {
   background-color: rgb(var(--mention-colour));
 }
+.message-2CShn3.cozyMessage-1DWF9U.ephemeral-2nDdnn.groupStart-3Mlgv1.selected-2LX7Jy.wrapper-30-Nkg.cozy-VmLDNB.zalgo-26OfGz {
+  background-color: rgba(var(--mention-colour), 0.08);
+}
 
 
-/* ==================================== */
+/* ======================================= */
 /* ========== < REMOVE STUFF > ========== */
-/* =================================== */
-div.iconWrapper-2awDjA.clickable-ZD7xvu[aria-label="Help"],
-div[id="user-context-invite-to-server"],
-div[id="user-context-call"],
+/* ===================================== */
+div.iconWrapper-2awDjA.clickable-ZD7xvu[aria-label='Help'],
+div[id='user-context-invite-to-server'],
+div[id='user-context-call'],
 .guildIconContainer-2FW_iA,
 .children-3xh0VB::after,
 .tabBarItemContainer-2HdIlr svg {
   display: var(--stupid-stuff) !important;
 }
-
 /* Slash command button in attachment popout */
 #channel-attach-SLASH_COMMAND {
   display: none !important;
 }
-
 /* Explore */
 .tutorialContainer-2jwoiB+div {
   display: none;
 }
 
 
-/* ===================== */
+/* ======================== */
 /* ===== < ICONS > ======= */
-/* ==================== */
+/* ===================== */
 /* voice  joined icon */
 .iconBadge-32fMme {
   background-color: hsl(240, 22%, 60%) !important;
@@ -250,17 +269,17 @@ div[id="user-context-call"],
 }
 
 
-/* ===================================== */
+/* ======================================== */
 /* ========== < REORDER STUFF > ========== */
-/* =================================== */
+/* ====================================== */
 .iconWrapper-2awDjA {
   order: -1;
 }
 
 
-/* ========================= */
+/* ============================ */
 /*===== < SEARCH BAR > ======= */
-/* ======================== */
+/* ========================== */
 .search-2Mwzzq:not(.open-1F8u2c) .searchBar-jGtisZ {
   width: 27px;
   transition: 0.25s;
@@ -302,26 +321,26 @@ div[id="user-context-call"],
 }
 
 
-/* ========================================== */
-/* ========== < SERVER HOVER MUTED TEXT > ==========* /
-/* ========================================= */
+/* ================================================== */
+/* ========== < SERVER HOVER MUTED TEXT > ========== */
+/* ================================================ */
 .tooltip-33Jwqe {
   --text-muted: #d84b4b;
 }
 
 
-/* ==============================* /
- /* ===== < SMALLER STICKERS > ======= */
-/* ============================ */
+/* =================================== */
+/* ===== < SMALLER STICKERS > ======= */
+/* ================================= */
 .cozy-VmLDNB .assetWrapper-2hzITV {
   max-width: 10vh;
   max-height: 10vh;
 }
 
 
-/* ============================== */
+/* ================================== */
 /* ===== < WINDOWS BUTTONS > ======= */
-/* ============================= */
+/* ================================ */
 :root .winButton-3UMjdg {
   background-color: hsl(206 9% 20%);
 }
@@ -331,9 +350,9 @@ div[id="user-context-call"],
 }
 
 
-/* ============================================= */
+/* ================================================== */
 /* ========== < COOLER EMBEDS AND MEDIA > ========== */
-/* ============================================ */
+/* ================================================ */
 #app-mount .embedFull-1HGV2S {
   background: rgba(0, 0, 0, 0.2);
   border-left: 0px;
@@ -370,9 +389,9 @@ div[id="user-context-call"],
 }
 
 
-/*========================================================*/
-/*========== < FULL COLORED EMBEDS> ==========*/
-/*=======================================================*/
+/* =============================================== */
+/* ========== < FULL COLOURED EMBEDS > ========== */
+/* ============================================= */
 .embedFull-1HGV2S {
   overflow: hidden;
   background: var(--background-primary);
@@ -380,7 +399,6 @@ div[id="user-context-call"],
   /*border-top: 4px solid var(--background-tertiary);*/
   z-index: 0;
 }
-
 .embedFull-1HGV2S::before {
   display: block;
   content: "";
@@ -394,10 +412,10 @@ div[id="user-context-call"],
 }
 
 
-/* ====================================== */
-/* ========== < BUBBLE MESSAGES> ========== */
-/* ===================================== */
-.cozyMessage-1DWF9U:not(.systemMessage-1H1Z20) .contents-2MsGLg>.markup-eYLPri:not(:empty, .searchResultsWrap-5RVOkx *) {
+/* ========================================== */
+/* ========== < BUBBLE MESSAGES > ========== */
+/* ======================================= */
+/*.cozyMessage-1DWF9U:not(.systemMessage-1H1Z20) .contents-2MsGLg>.markup-eYLPri:not(:empty, .searchResultsWrap-5RVOkx *) {
   background-color: rgba(0, 0, 0, 0.2);
   display: inline-block;
   margin: 0;
@@ -409,12 +427,105 @@ div[id="user-context-call"],
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   max-width: 100%;
+}*/
+
+.channelTextArea-1FufC0 {
+	background-color: transparent 
+}
+/*.messageListItem-ZZ7v6g {
+	margin-left: 10px 
+}*/
+/*.zalgo-26OfGz:has(.contents-2MsGLg) {
+	max-width: fit-content 
+}*/
+.contents-2MsGLg .avatar-2e8lTP {
+	margin-top: calc(5px - 0.125em);
+	scale: 1.15 
+}
+.contents-2MsGLg [class*=avatarDecoration-] {
+	margin-top: calc(2px - 0.125em);
+	scale: 1.15 
+}
+.highlighted-1TaRLI:hover, .replying-eZ7p5z:hover {
+	position: relative;
+}
+.groupStart-3Mlgv1.cozyMessage-1DWF9U:not(.systemMessage-1H1Z20) .contents-2MsGLg>.markup-eYLPri, 
+.cozyMessage-1DWF9U:not(.groupStart-3Mlgv1)>.contents-2MsGLg>.markup-eYLPri:not(:empty, .searchResultsWrap-5RVOkx *) {
+	margin: 0.125em 0;
+	padding: 0.5em;
+	border-radius: var(--chat-bubble-border-radius);
+	background: var(--chat-bubble-default);
+	max-width: max-content;
+}
+.groupStart-3Mlgv1.cozyMessage-1DWF9U:not(.systemMessage-1H1Z20) .contents-2MsGLg>.markup-eYLPri:hover, 
+.cozyMessage-1DWF9U:not(.groupStart-3Mlgv1)>.contents-2MsGLg:hover>.markup-eYLPri:not(:empty, .searchResultsWrap-5RVOkx *) {
+	background: var(--chat-bubble-default-hover) 
+}
+.groupStart-3Mlgv1.cozyMessage-1DWF9U.replying-eZ7p5z>.contents-2MsGLg, 
+.cozyMessage-1DWF9U.replying-eZ7p5z:not(.groupStart-3Mlgv1)>.contents-2MsGLg>.markup-eYLPri:not(:empty, .searchResultsWrap-5RVOkx *), 
+.replying-eZ7p5z .container-2sjPya>:not(.reactions-3ryImn, .searchResultsWrap-5RVOkx *) {
+	background: var(--chat-bubble-replying);
+	border-radius: var(--chat-bubble-border-radius);
+	max-width: max-content
+}
+.scrollableContainer-15eg7h {
+	background: transparent 
+}
+.groupStart-3Mlgv1.cozyMessage-1DWF9U.replying-eZ7p5z>.contents-2MsGLg:hover, 
+.cozyMessage-1DWF9U.replying-eZ7p5z:not(.groupStart-3Mlgv1)>.contents-2MsGLg>.markup-eYLPri:not(:empty, .searchResultsWrap-5RVOkx *):hover, 
+.replying-eZ7p5z .container-2sjPya>:not(.reactions-3ryImn, .searchResultsWrap-5RVOkx *):hover {
+	background: var(--chat-bubble-replying-hover)
+}
+/*.groupStart-3Mlgv1.cozyMessage-1DWF9U.mentioned-Tre-dv>.contents-2MsGLg,*/ 
+.cozyMessage-1DWF9U.mentioned-Tre-dv:not(.groupStart-3Mlgv1)>.contents-2MsGLg>.markup-eYLPri:not(:empty, .searchResultsWrap-5RVOkx *)/*, 
+.mentioned-Tre-dv .container-2sjPya>:not(.reactions-3ryImn, .searchResultsWrap-5RVOkx *)*/ {
+	background: var(--chat-bubble-mentioned);
+	border-radius: var(--chat-bubble-border-radius)
+}
+/*.groupStart-3Mlgv1.cozyMessage-1DWF9U.mentioned-Tre-dv>.contents-2MsGLg:hover,*/ 
+.cozyMessage-1DWF9U.mentioned-Tre-dv:not(.groupStart-3Mlgv1)>.contents-2MsGLg>.markup-eYLPri:not(:empty, .searchResultsWrap-5RVOkx *):hover/*, 
+.mentioned-Tre-dv .container-2sjPya>:not(.reactions-3ryImn, .searchResultsWrap-5RVOkx *):hover*/ {
+	background: var(--chat-bubble-mentioned-hover)
+}
+/* Embeds */
+.embedFull-1HGV2S {
+	overflow: hidden;
+	border-left: none;
+	z-index: 0;
+	border-radius: var(--chat-bubble-border-radius);
+	width: fit-content;
+	background-color: inherit;
+	margin: 0.25em 0.125em 0 !important
+}
+.embedFull-1HGV2S:hover {
+	filter: brightness(1.2) 
+}
+.embedFull-1HGV2S::before {
+	content: '';
+	position: absolute;
+	display: block;
+	height: 100%;
+	border-right: 100vw solid transparent;
+	border-color: inherit;
+	opacity: 0.4;
+	z-index: -1
+}
+.embedFull-1HGV2S::after {
+	content: '';
+	position: absolute;
+	display: block;
+	height: 100%;
+	width: 100%;
+	background: #00000099;
+	opacity: 0.5;
+	z-index: -1;
+	background-color: inherit
 }
 
 
-/* ================================= */
-/* ========== < ROLE COLORS > ========== */
-/* ================================ */
+/* ======================================= */
+/* ========== < ROLE COLOURS > ========== */
+/* ==================================== */
 .role-2TIOKu {
   transform: translate(0);
   overflow: hidden;
@@ -432,7 +543,7 @@ div[id="user-context-call"],
   position: static;
 }
 .role-2TIOKu .roleCircle-3TFUOr:after {
-  content: "";
+  content: '';
   top: 0;
   left: 0;
   z-index: -1;
@@ -444,16 +555,16 @@ div[id="user-context-call"],
 }
 
 
-/* ========================================= */
-/*========== < ROUNDED CONTEXT MENU > ========== */
-/* ======================================== */
+/* =============================================== */
+/* ========== < ROUNDED CONTEXT MENU > ========== */
+/* ============================================ */
 .menu-2TXYjN {
   position: relative;
   background: none;
   border-radius: 10px;
 }
 .menu-2TXYjN:not(.menu-2TXYjN.flexible-3B4jwn.menu-2-eHMB)::before {
-  content: "";
+  content: '';
   position: absolute;
   width: 100%;
   height: 100%;
@@ -471,9 +582,36 @@ div[id="user-context-call"],
 }
 
 
-/*=======================================*/
-/*========== < SEND MESSAGE BAR > ==========*/
-/*====================================*/
+/* search bar */
+.container-2McqkF {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.667);
+  backdrop-filter: blur(5px);
+}
+ul.resultsGroup-cfY57t
+{
+  background-color: hsl(var(--primary-700-hsl)/0.25) !important;
+  backdrop-filter: blur(5px);
+}
+
+#SEARCH_OPTIONS-header, #HISTORY-header {
+  text-transform: lowercase;
+  font-size: 16px;
+  font-weight: 1000;
+  text-decoration: solid 2px underline var(--text-danger);
+  text-underline-position: under;
+  padding-top: 10px;
+}
+.option-ayUoaq {
+  --search-popout-option-fade: linear-gradient(90deg, transparent, var(--popout-bg) 80%);
+  --search-popout-option-fade-hover: linear-gradient(90deg, transparent, var(--item-hover-bg) 50%);
+}
+
+/* =========================================== */
+/* ========== < SEND MESSAGE BAR > ========== */
+/* ========================================= */
 .chat-1-OBC7 .textArea-2CLwUE,
 .chat-2ZfjoI .textArea-2CLwUE {
   background-color: rgba(0, 0, 0, 0.25) !important;
@@ -589,23 +727,23 @@ div[id="user-context-call"],
 .chat-1-OBC7 .replyBar-1oi75v {
   background: var(--background-secondary-alt);
   border-radius: var(--radius-primary);
-  width: 1150px;
-  margin-left: 64px;
+  width: 1112px;
+  margin-left: 66px;
   border-radius: 10px;
 }
 .bar-2MWHzg {
   background: var(--background-secondary-alt);
   border-radius: 10px;
-  width: 1155px;
+  width: 1160px;
   margin-left: 67px;
 }
 .autocomplete-3NRXG8.outerWrapper-3UdjNj {
-  width: 1150px;
+  width: 1110px;
   margin-left: 65px;
 }
 .autocomplete-3NRXG8.autocomplete-3jLKbj.autocompleteAttached-bt_md-:not(.scroller-18M1mG.thin-RnSY0a.scrollerBase-1Pkza4,
   .autocompleteInner-y1mjDl.autocompleteInner-2tOQrf) {
-  width: 1150px;
+  width: 1200px;
   margin-left: 65px;
 }
 .threadSuggestionBar-3ExSyc {
@@ -715,10 +853,6 @@ div.markup-eYLPri.editor-H2NA06.slateTextArea-27tjG0.fontSize16Padding-XoMpjI:no
   display: none;
 }
 
-
-/* ============================================= */
-/* ========== < BEHIND MESSAGE BOX GONE > ========== */
-/* ========================================== */
 .scroller-kQBbkU {
   margin-bottom: -50px;
   padding-bottom: 50px;
@@ -735,15 +869,15 @@ div.markup-eYLPri.editor-H2NA06.slateTextArea-27tjG0.fontSize16Padding-XoMpjI:no
 }
 
 
-/* ================================== */
-/* ========== < FOLDER ICONS> ========== */
-/* ================================ */
+/* ==============================?======== */
+/* ========== < FOLDER ICONS > ========== */
+/* ==================================== */
 .closedFolderIconWrapper-3tRb2d {
   display: none;
 }
-.folderIconWrapper-1oRIZr:not([style=""])::before {
+.folderIconWrapper-1oRIZr:not([style=''])::before {
   position: absolute;
-  content: "";
+  content: '';
   width: 18px;
   height: 18px;
   top: 0;
@@ -752,33 +886,33 @@ div.markup-eYLPri.editor-H2NA06.slateTextArea-27tjG0.fontSize16Padding-XoMpjI:no
   bottom: 0;
   margin: auto;
   background-color: inherit;
-  -webkit-mask: url(https://capnkitten.github.io/BetterDiscord/Themes/Material-Discord/files/icons/solid/folder.svg) no-repeat;
-  mask: url(https://capnkitten.github.io/BetterDiscord/Themes/Material-Discord/files/icons/solid/folder.svg) no-repeat;
+  -webkit-mask: url("https://capnkitten.github.io/BetterDiscord/Themes/Material-Discord/files/icons/solid/folder.svg") no-repeat;
+  mask: url("https://capnkitten.github.io/BetterDiscord/Themes/Material-Discord/files/icons/solid/folder.svg") no-repeat;
   transform: scale(1.3335);
   filter: brightness(1.5) saturate(1.5);
 }
 
 
-/* ============================================= */
-/* ========== < FANCY CHANNEL CATEGORIES> ========== */
-/* =========================================== */
+/* =================================================== */
+/* ========== < FANCY CHANNEL CATEGORIES > ========== */
+/* ================================================ */
 /*Made by Hearty */
 .sectionDivider-189lqb {
   display: var(--seperator);
   margin-bottom: var(--catagory-spacing);
 }
 /* display/remove seperator */
-[aria-label="Channels"] .containerDefault-3TQ5YN~.containerDefault-YUSmu3,
-[aria-label="Channels"] .containerDefault-3TQ5YN {
+[aria-label='Channels'] .containerDefault-3TQ5YN~.containerDefault-YUSmu3,
+[aria-label='Channels'] .containerDefault-3TQ5YN {
   background-color: var(--catagory-background) !important;
   /* set color */
   margin-left: 8px;
   padding-right: 8px;
   /* clean up formatting */
 }
-[aria-label="Channels"] .containerDefault-YUSmu3:has(+ .containerDefault-3TQ5YN),
-[aria-label="Channels"] .containerDefault-3TQ5YN:has(+ .containerDefault-3TQ5YN),
-[aria-label="Channels"] li:last-child {
+[aria-label='Channels'] .containerDefault-YUSmu3:has(+ .containerDefault-3TQ5YN),
+[aria-label='Channels'] .containerDefault-3TQ5YN:has(+ .containerDefault-3TQ5YN),
+[aria-label='Channels'] li:last-child {
   margin-bottom: var(--catagory-spacing);
   /* space between catagories */
   border-radius: 0 0 var(--catagory-radius) var(--catagory-radius);
@@ -792,7 +926,7 @@ div.markup-eYLPri.editor-H2NA06.slateTextArea-27tjG0.fontSize16Padding-XoMpjI:no
   padding: 6px;
   /* clean up formatting */
 }
-[aria-label="Channels"] .containerDefault-3TQ5YN:not(:has(+ .containerDefault-YUSmu3)) {
+[aria-label='Channels'] .containerDefault-3TQ5YN:not(:has(+ .containerDefault-YUSmu3)) {
   border-radius: var(--catagory-radius);
   /* add border to closed catagories */
 }
@@ -802,20 +936,23 @@ div.markup-eYLPri.editor-H2NA06.slateTextArea-27tjG0.fontSize16Padding-XoMpjI:no
   text-align: center;
   /* center title */
 }
+.link-1_kTxV {
+  border-radius: 10px
+}
 
 
-/* ====================================== */
+/* ============================================= */
 /*========== < SERVER CHANNEL LIST > ========== */
-/* ===================================== */
+/* =========================================== */
 .content-1gYQeQ {
   background-color: transparent;
   border-radius: 25px;
 }
 
 
-/* ============================================= */
-/* ========== < CHANNEL ON HOVER THINGYS> ========== */
-/* =========================================== */
+/* =================================================== */
+/* ========== < CHANNEL ON HOVER THINGYS > ========== */
+/* ================================================ */
 .containerDefault-3TQ5YN:hover .arrow-2HswgU {
   display: block;
 }
@@ -830,16 +967,16 @@ div.markup-eYLPri.editor-H2NA06.slateTextArea-27tjG0.fontSize16Padding-XoMpjI:no
 }
 
 
-/* ======================================= */
+/* ============================================== */
 /* ========== < JUMP TO PRESENT BAR > ========== */
-/* ====================================== */
-[class*="jumpToPresentBar"] {
+/* ============================================ */
+[class*='jumpToPresentBar'] {
   display: contents;
 }
-[class*="jumpToPresentBar"]>button:first-child {
+[class*='jumpToPresentBar']>button:first-child {
   display: none;
 }
-[class*="jumpToPresentBar"]>button:last-child {
+[class*='jumpToPresentBar']>button:last-child {
   position: absolute;
   bottom: 24px;
   /* fixed the position relative to right part */
@@ -856,7 +993,7 @@ div.markup-eYLPri.editor-H2NA06.slateTextArea-27tjG0.fontSize16Padding-XoMpjI:no
   color: transparent;
   transition: font-size 150ms 0s, color 150ms 0s, padding 150ms 0s;
 }
-[class*="jumpToPresentBar"]>button svg {
+[class*='jumpToPresentBar']>button svg {
   order: -1;
   margin: 0;
   height: 24px;
@@ -868,23 +1005,23 @@ div.markup-eYLPri.editor-H2NA06.slateTextArea-27tjG0.fontSize16Padding-XoMpjI:no
   color: var(--text-normal);
   transition: margin 150ms 0s;
 }
-[class*="jumpToPresentBar"]:hover>button {
+[class*='jumpToPresentBar']:hover>button {
   padding: 8px 18px !important;
   font-size: 14px;
   color: var(--text-normal);
   transition: font-size 150ms 0.1s, color 150ms 0.1s, padding 150ms 0.1s;
   background-color: var(--background-tertiary);
 }
-[class*="jumpToPresentBar"]:hover>button svg {
+[class*='jumpToPresentBar']:hover>button svg {
   margin-right: 2px;
   margin-left: -6px;
   transition: margin 150ms 0.1s;
 }
 
 
-/* ==================================== */
+/* ========================================= */
 /* ========== < TIMESTAMP ICON > ========== */
-/* ================================== */
+/* ======================================= */
 .timestamp-6-ptG3 {
   border-radius: 7px;
   padding: 2.5px;
@@ -900,17 +1037,17 @@ div.markup-eYLPri.editor-H2NA06.slateTextArea-27tjG0.fontSize16Padding-XoMpjI:no
 }
 
 
-/*=====================================*/
-/*========== < JOINED VOICE ICON > ==========*/
-/*====================================*/
+/* ============================================ */
+/* ========== < JOINED VOICE ICON > ========== */
+/* ========================================== */
 .wrapper-NhbLHG.modeConnected-NrO4cP .icon-2W8DHg {
   color: var(--status-positive);
 }
 
 
-/*===================================*/
-/*========== < RED SWITCHES > ==========*/
-/*=================================*/
+/* ======================================= */
+/* ========== < RED SWITCHES > ========== */
+/* ===================================== */
 .bd-switch-body {
   background-color: #f04747;
   /* Controls Off Switch */
@@ -940,9 +1077,9 @@ div.markup-eYLPri.editor-H2NA06.slateTextArea-27tjG0.fontSize16Padding-XoMpjI:no
 }
 
 
-/*=================================*/
-/*===== < PROFILE PANEL THINGY > ========*/
-/*================================*/
+/* ======================================== */
+/* ===== < PROFILE PANEL THINGY > ======== */
+/* ====================================== */
 :root .panels-3wFtMD {
   margin: 0 5px 8px 5px;
   border-radius: calc(20px - 5px);
@@ -1039,34 +1176,63 @@ div.avatar-1EWyVD.wrapper-1VLyxH {
 }
 
 
-/* ========================================= */
+/* ================================================ */
 /* ========== < SMALLER STATUS PICKER > ========== */
-/* ======================================== */
-.accountProfilePopoutWrapper-3GskID .bannerSVGWrapper-2CLfzN,
-.accountProfilePopoutWrapper-3GskID .avatarWrapper-eenWra,
-.accountProfilePopoutWrapper-3GskID .profileBadges-2pItdR,
-.accountProfilePopoutWrapper-3GskID .userPopoutInner-nv9Y92:before,
-.accountProfilePopoutWrapper-3GskID .userPopoutOverlayBackground-3A0Pcz div:not(.menu-2TXYjN, .menu-2-eHMB *),
-.accountProfilePopoutWrapper-3GskID .separator-12G2Op {
+/* ============================================== */
+.accountProfilePopoutWrapper-3GskID {
+    left: unset;
+    width: 220px;
+}
+.accountProfilePopoutWrapper-3GskID .profileColors-2AgAV4 {
+    width: 212px;
+    border-radius: 4px;
+}
+.accountProfilePopoutWrapper-3GskID .overlayBackground-2aa7wt {
+    margin: 0;
+    width: 212px;
+    border-radius: 4px!important;
+}
+.accountProfilePopoutWrapper-3GskID :where(.profileBadges-2pItdR, .avatarWrapperNormal-ahVUaC, .bannerSVGWrapper-2CLfzN, .userPopoutOverlayBackground-3A0Pcz > :not(.menu-2TXYjN)) {
+    display:none;
+}
+
+#account.menu-2-eHMB .menuItemFocused-1a4_bh,
+#account.menu-2-eHMB .menuItemFocused-1a4_bh .subMenuIcon-25xQRT {
+    color: var(--interactive-active);
+}
+#account.menu-2-eHMB .menuItemFocused-1a4_bh {
+    background-color: var(--brand-experiment-560);
+}
+#account.menu-2-eHMB .menuItemFocused-1a4_bh:active,
+#account.menu-2-eHMB .menuItemFocused-1a4_bh:active .subMenuIcon-25xQRT {
+    color: var(--white-500);
+}
+#account.menu-2-eHMB .menuItemFocused-1a4_bh:active {
+    background-color: var(--brand-experiment-600);
+}
+
+
+/* ================================================ */
+/* ========== < PROFILE MODIFICATIONS > ========== */
+/* ============================================== */
+.userPopoutOverlayBackground-3A0Pcz {
+  background-color: rgba(0, 0, 0, 0.352);
+  border-radius: 1rem!important;
+}
+.messageInputContainer-24qqTx {
+  border-radius: 1rem!important;
+}
+.messageInput-1enlaJ {
+  border-radius: 1rem!important;
+}
+.divider-2dDziJ.divider-1QVlfF {
   display: none;
 }
-.accountProfilePopoutWrapper-3GskID {
-  left: 0;
-}
-.accountProfilePopoutWrapper-3GskID .userPopoutOverlayBackground-3A0Pcz {
-  margin: 0;
-  border-radius: 4px;
-}
-.accountProfilePopoutWrapper-3GskID>div,
-.accountProfilePopoutWrapper-3GskID .menu-2TXYjN .submenu-3ycVEH {
-  border-radius: 4px;
-  width: 220px;
-}
 
 
-/*================================================*/
-/*========== < SHADOWS UNDER BAGDE THINGY> ==========*/
-/*==============================================*/
+/* =========================================?=========== */
+/* ========== < SHADOWS UNDER BADGE THINGY > ========== */
+/* ================================================== */
 .profileColors-3Y0XaR .profileBadges-31rDHI,
 .profileColors-3Y0XaR .badgeList-2pMvZX {
   box-shadow: var(--elevation-medium);
@@ -1085,29 +1251,29 @@ div.avatar-1EWyVD.wrapper-1VLyxH {
 }
 
 
-/*=======================================*/
-/*========== < DM PROFILE THINGY > ==========*/
-/*====================================*/
+/* ============================================ */
+/* ========== < DM PROFILE THINGY > ========== */
+/* ========================================== */
 .profilePanel-2VBkh8 {
-  width: 240px;
+  width: 275px;
 }
 
 
-/* ====================================== */
-/* ========== < SERVER NAME FONT> ========== */
-/* ==================================== */
+/* =========================================== */
+/* ========== < SERVER NAME FONT > ========== */
+/* ======================================== */
 .name-3Uvkvr {
   font-family: Discord;
 }
 
 
-/*==================================================*/
-/*==================== < CRAP > ======================*/
-/*================================================*/
+/* ===================================================== */
+/* ==================== < CRAP > ====================== */
+/* =================================================== */
 
-/* ============================ */
+/* =============================== */
 /* ========== < IDFK > ==========* /
-/* ========================== */
+/* ============================= */
 .avatarContainerMasked-13fYnN div {
   margin: 0.5px !important;
 }
@@ -1138,9 +1304,9 @@ div.avatar-1EWyVD.wrapper-1VLyxH {
 }
 
 
-/*====================================================*/
-/*========== < SVG DOT AND DISCORT NITRO THING > ==========*/
-/*===================================================*/
+/* ========================================================== */
+/* ========== < SVG DOT AND DISCORT NITRO THING > ========== */
+/* ======================================================== */
 .dot-e8DTw_ {
   left: 50px !important;
   position: relative;
@@ -1154,9 +1320,38 @@ div.avatar-1EWyVD.wrapper-1VLyxH {
   position: relative;
 }
 
-/*========================================================*/
-/*========== < CENTER THE CUSTOM STATUS EMOJI IF NO TEXT > ==========*/
-/*=======================================================*/
+
+/* ==================================================================== */
+/* ========== < CENTER THE CUSTOM STATUS EMOJI IF NO TEXT > ========== */
+/* ================================================================== */
 .customStatus-19KW6v .customStatusEmoji-1GD8RK.customStatusSoloEmoji-a_jSVz {
   margin: auto;
+}
+
+
+/* ======================================================= */
+/* ========== < MAKE PRONOUNS STAND OUT MORE > ========== */
+/* ===================================================== */
+/* Make pronouns stand out more */
+[class*=pronouns] {
+  color: var(--text-normal);
+  font-size: 12px; font-weight: 800;
+  background: #ffffff20;
+  padding: 0.10rem 0.5rem; margin: 0.25rem 0 0 0;
+  border-radius: 1rem;
+}
+
+
+/* =========================================================== */
+/* ========== < IMAGE ABOVE PROFILE PANEL THINGY > ========== */
+/* ========================================================= */
+/* MEOWW */
+[class^="panels-3wFtMD"]::before {
+  content: "";
+  width: 90px;
+  height: 96px;
+  left: -20px;
+  margin-top: -88px;
+  position: absolute;
+  background-image: url('https://cdn.discordapp.com/emojis/699689521008345189.gif?size=96&quality=lossless');
 }
