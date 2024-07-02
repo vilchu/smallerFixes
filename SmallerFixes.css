@@ -143,12 +143,12 @@
 
   /* bubble thingys */
   --chat-bubble-default: hsla(0, 0%, 0%,0.25);
-    --chat-bubble-default-hover: hsla(0, 0%, 0%,0.50);
-    --chat-bubble-replying: hsla(0, 0%, 0%, 0.25);
-    --chat-bubble-replying-hover: hsla(0, 0%, 0%, 0.50);
-    --chat-bubble-mentioned: hsla(0, 0%, 0%, 0.25);
-    --chat-bubble-mentioned-hover: hsla(0, 0%, 0%, 0.50);
-    --chat-bubble-border-radius: 10px;
+  --chat-bubble-default-hover: hsla(0, 0%, 0%,0.50);
+  --chat-bubble-replying: hsla(0, 0%, 0%, 0.25);
+  --chat-bubble-replying-hover: hsla(0, 0%, 0%, 0.50);
+  --chat-bubble-mentioned: hsla(0, 0%, 0%, 0.25);
+  --chat-bubble-mentioned-hover: hsla(0, 0%, 0%, 0.50);
+  --chat-bubble-border-radius: 10px;
 
   /* switch colours */
   --BDswitch-color: hsl(0, 85%, 61%);
