@@ -148,7 +148,7 @@
     --chat-bubble-replying-hover: hsla(0, 0%, 0%, 0.50);
     --chat-bubble-mentioned: hsla(0, 0%, 0%, 0.25);
     --chat-bubble-mentioned-hover: hsla(0, 0%, 0%, 0.50);
-  --chat-bubble-border-radius: 10px;
+    --chat-bubble-border-radius: 10px;
 
   /* switch colours */
   --BDswitch-color: hsl(0, 85%, 61%);
