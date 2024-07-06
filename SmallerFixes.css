@@ -19,10 +19,8 @@
 @import url("https://minidiscordthemes.github.io/Snippets/MinimalSearchbar/main.css");
 @import url("https://minidiscordthemes.github.io/Snippets/ForumImprovements/main.css");
 
-
 /* icons */
 @import url(//dablulite.github.io/css-snippets/PrettyFolderIcons/import.css);
-
 
 /* ================================= */
 /* ======= < FONT IMPORT > =======  */
@@ -102,7 +100,7 @@
   /* hides stuffs*/
   --stupid-stuff: none;
 
-  --mention-colour: 234, 153, 153;
+  --mention-colour: 0, 66%, 76%;
 
   /* nicer embed */
   --chattyBorderRadius: 10px;
@@ -132,10 +130,10 @@
   --panel-colour: hsl(225, 6%, 13%); /* dark gray discord hsl(225, 6%, 13%);*/
 
   /* windows buttons close minimize etc */
-  --window-colour: hsl(0, 32%, 40%); /* normal grey: hsl(223, 7%, 21%);*/
+  --window-colour: hsl(223, 7%, 21%); /* normal grey: hsl(223, 7%, 21%);*/
 
   /* link color when sending caht */
-  --text-link: hsl(240, 14%, 65%); 
+  --text-link: hsl(240, 14%, 65%)!important; 
 
   /* channel scrollbar color */
   --scrollbar-thin-thumb: transparent;
@@ -200,8 +198,9 @@
 }
 
 /* link color */
-.markup_d6076c a {
-  color: hsl(240, 38%, 75%);
+.userPopoutInner_c69a7b .anchor_af404b,
+.userPopoutInner_c69a7b .anchorUnderlineOnHover_af404b {
+  color: hsl(240, 38%, 75%)!important;
 }
 
 
@@ -266,83 +265,81 @@
   color: hsla(147, 50%, 52%, 0.993);
 }
 
-
 /* ======================================== */
 /* ======= < HI-COLOUR MENTIONS > ======= */
 /* ====================================== */
-/* -------------------------------------------------------------------------------------------------------------------------------- */
 .mentioned_d5deea {
   background: none;
-}
-
-div[class*='replying']::before {
-  width: 2px;
-  background-color: rgb(var(--mention-colour));
-}
-.message_d5deea.cozyMessage_d5deea.groupStart_d5deea.replying_d5deea.wrapper_ec86aa.cozy_ec86aa.zalgo_ec86aa:hover {
-  background-color: rgba(var(--mention-colour), 0.06)!important;
-}
-.message_d5deea.cozyMessage_d5deea.replying_d5deea.wrapper_ec86aa.cozy_ec86aa.zalgo_ec86aa {
-  background-color: rgba(var(--mention-colour), 0.08);
+  z-index: 0;
 }
 
 .message_d5deea:hover,
 .message_d5deea.selected_d5deea {
   background-color: var(--bg-overlay-1, var(--background-message-hover)) !important;
 }
+div[class*='replying']::before {
+  width: 2px;
+  background-color: hsl(var(--mention-colour));
+}
+.replying_d5deea:hover,
+.replying_d5deea {
+  background-color: hsla(var(--mention-colour), 0.08)!important;
+}
 
-.messageContent_ec86aa,
-.compact_ec86aa .contents_ec86aa {
-  position: unset!important;
+.messageContent_f9f2ca,
+.compact_f9f2ca .contents_f9f2ca {
+  position: unset !important;
 }
 
 .mention,
-.roleMention_d6076c {
+.roleMention_f8f345 {
   position: unset;
   filter: none;
 }
 
-.hasReply_ec86aa.mentioned_d5deea:not(:has([class*="mention"])):before,
+.hasReply_f9f2ca .mentioned_d5deea:not(:has([class*="ention"])):before,
 .mentioned_d5deea .mention:before,
-.mentioned_d5deea .roleMention_d6076c:before {
+.mentioned_d5deea .roleMention_f8f345:before {
   content: "";
   position: absolute;
   top: 0;
   left: 0;
   bottom: 0;
   width: 2px;
-  background-color: rgb(var(--mention-colour));
+  background-color: hsla(var(--mention-colour));
   filter: saturate(var(--saturation-factor, 1));
+  pointer-events: none;
 }
 
-.hasReply_ec86aa.mentioned_d5deea:not(:has([class*="ention"])):after,
+.hasReply_f9f2ca .mentioned_d5deea:not(:has([class*="ention"])):after,
 .mentioned_d5deea .mention:after,
-.mentioned_d5deea .roleMention_d6076c:after {
+.mentioned_d5deea .roleMention_f8f345:after {
   content: "";
   position: absolute;
   inset: 0;
-  background-color: rgba(var(--mention-colour), 0.1);
+  background-color: hsla(var(--mention-colour), 0.08);
   z-index: -1;
   filter: saturate(var(--saturation-factor, 1));
+  pointer-events: none;
 }
 
-.roleMention_d6076c[style]:before {
+.roleMention_f8f345[style]:before {
   background-color: currentColor;
 }
 
-.roleMention_d6076c[style]:after {
+.roleMention_f8f345[style]:after {
   background: currentColor;
   opacity: 0.1;
 }
 
 .mentioned_d5deea:before,
 .mentioned_d5deea:after,
-.repliedMessage_ec86aa [class*="mention"]:before,
-.repliedMessage_ec86aa [class*="mention"]:after,
-.mention~[class*="mention"]:before,
-.mention~[class*="mention"]:after,
-.roleMention_d6076c~[class*="mention"]:before,
-.roleMention_d6076c~[class*="mention"]:after,
+.repliedMessage_f9f2ca [class*="ention"]:before,
+.repliedMessage_f9f2ca [class*="ention"]:after,
+.mention~[class*="ention"]:before,
+.mention~[class*="ention"]:after,
+.roleMention_f8f345~[class*="ention"]:before,
+.roleMention_f8f345~[class*="ention"]:after,
 .mentioned_d5deea:before,
 .mentioned_d5deea:after {
   content: unset;
@@ -732,21 +729,22 @@ ul.resultsGroup_b0286e {
   margin-left: -14px !important;
 }
 
-[class*=chat] [class*=textArea]:not(.markup_d6076c.editor_a552a6.slateTextArea_e52116.fontSize16Padding_d0696b.textAreaWithoutAttachmentButton_d0696b,div.bodyContainer_c1668f>div>div>div>div>div>div>div, .inputDefault_f8bc55.input_f8bc55.textArea_a2b402.scrollbarDefault_c858ce.scrollbar_c858ce.title_c1668f) {
-  background-color: hsla(0, 0%, 0%, 0.25)!important;
+[class*=chat] [class*=textArea]:not(div.textArea_d0696b.textAreaSlate_d0696b.slateContainer_e52116 div.markup_f8f345.editor_a552a6.slateTextArea_e52116.fontSize16Padding_d0696b.textAreaWithoutAttachmentButton_d0696b.textAreaForPostCreation_d0696b,.markup_d6076c.editor_a552a6.slateTextArea_e52116.fontSize16Padding_d0696b.textAreaWithoutAttachmentButton_d0696b, div.bodyContainer_c1668f>div>div>div>div>div>div>div, .inputDefault_f8bc55.input_f8bc55.textArea_a2b402.scrollbarDefault_c858ce.scrollbar_c858ce.title_c1668f) {
+  background-color: hsla(0, 0%, 0%, 0.25) !important;
   -webkit-backdrop-filter: blur(4px);
   -o-backdrop-filter: blur(4px);
   -moz-backdrop-filter: blur(4px);
   backdrop-filter: blur(4px);
-  /*  filter: drop-shadow(0rem 0rem 0.5rem rgba(0, 0, 20, 0.2));*/
+   filter: drop-shadow(0rem 0rem 0.5rem hsla(240, 100%, 4%, 0.2));
   order: 0;
   background: var(--background-secondary);
   border-radius: var(--radius-primary);
   margin-right: calc((var(--layout-margin) / 2) + (var(--layout-margin) / 2));
 }
+
 [class*=chat] [class*=buttons]:not([class*=attachButton]),
 [class*=jumpToPresentBar] {
-  background-color: hsla(0, 0%, 0%, 0.25)!important;
+  background-color: hsla(0, 0%, 0%, 0.25) !important;
   -webkit-backdrop-filter: blur(4px);
   -o-backdrop-filter: blur(4px);
   -moz-backdrop-filter: blur(4px);
@@ -762,7 +760,7 @@ ul.resultsGroup_b0286e {
 
 button[class*=attachButton],
 [class*=attachWrapper] [class*=lookBlank] {
-  background-color: hsla(0, 0%, 0%, 0.25)!important;
+  background-color: hsla(0, 0%, 0%, 0.25) !important;
   -webkit-backdrop-filter: blur(4px);
   -o-backdrop-filter: blur(4px);
   -moz-backdrop-filter: blur(4px);
@@ -774,7 +772,7 @@ button[class*=attachButton],
 }
 
 #app-mount>div[appDevToolsWrapper]:nth-child([class*=chat__]) {
-  background-color: hsla(0, 0%, 0%, 0.86)!important;
+  background-color: hsla(0, 0%, 0%, 0.86) !important;
   -webkit-backdrop-filter: blur(4px);
   -o-backdrop-filter: blur(4px);
   -moz-backdrop-filter: blur(4px);
@@ -796,6 +794,7 @@ button[class*=attachButton] {
   height: 44px;
   width: 44px;
 }
+
 .button_d0696b {
   padding: 0px;
   margin: 0px;
@@ -806,66 +805,44 @@ button[class*=attachButton] {
   margin-right: 20px;
 }
 
+.textArea_d0696b:has(>div>div>[class^="applicationCommand_"]) {
+  margin-left: 24px;
+}
+
+.textArea_d0696b:not(:has(+[class^="buttons_"])):has(>div>div>[class^="applicationCommand_"]) {
+  margin-right: 60px !important;
+}
+
+[class^="attachButton_"]:has([mask*='#svg-mask-avatar-default']) {
+  left: 10px;
+  position: relative;
+}
 /* message bar position when no attachment button */
 .form_a7d72e:has(.channelTextAreaDisabled_d0696b) {
-  width: 1260px;
+  width: 1390px;
 }
+
+.scrollableContainer_d0696b:not(.fileInput_a15d29, .bioTextArea_ccf27d.scrollableContainer_d0696b.themedBackground_d0696b, :has(.attachWrapper_f298d4)) .textArea_d0696b:not(:has(>div>div>[class^="applicationCommand_"])) {
+  margin-left: 64px;
+  width: 1275px !important;
+}
+
+/* profile customization text placement */
+div>div.contents_f9f2ca>div>div.channelTextArea_d5deea.channelTextArea_d0696b>div>div>div.textArea_d0696b.textAreaSlate_d0696b.slateContainer_e52116 {
+  margin-left: 0px !important;
+}
+
+/* editing message box */
+div>div.contents_f9f2ca>div>div.channelTextArea_d5deea.channelTextArea_d0696b>div>div>div.textArea_d0696b.textAreaSlate_d0696b.slateContainer_e52116>div>div {
+  margin-left: 0px !important;
+}
+
 /* forum send message bar or somth*/
-div.form_c1668f>div.bodyContainer_c1668f>div>div>div>div>div>div {
-  margin-left: 0px !important;
+#app-mount>div.appAsidePanelWrapper_bd26cc>div.notAppAsidePanel_bd26cc>div.app_bd26cc>div>div.layers_d4b6c5.layers_a01fb1>div>div>div>div>div.chat_a7d72e>div.content_a7d72e>div.container_a6d69a>div.list_a6d69a.auto_eed6a8.scrollerBase_eed6a8>div>div.card_a6d69a.headerRow_a6d69a.columnsSpan_a6d69a>div.mainCard_a6d69a.header_a6d69a>div>form>div.formContainer_c1668f>div.form_c1668f>div.bodyContainer_c1668f>div>div>div>div>div>div {
+  margin-left: 0px;
 }
-div.bodyContainer_c1668f>div>div>div>div>div>div>div>div>div>span>span>span {
-  margin-left: 10px !important;
-}
-
-div>div.contents_ec86aa>div>div.channelTextAreaContainer_d0696b>div>div>div>div.textArea_d0696b.textAreaSlate_d0696b.slateContainer_e52116 {
-    margin-left: 0px!important;
-}
-.scrollableContainer_d0696b:not(.fileInput_a15d29,.bioTextArea_ccf27d.scrollableContainer_d0696b.themedBackground_d0696b, :has(.attachWrapper_f298d4)) .textArea_d0696b:not(:has(>div>div>[class^="applicationCommand_"])) {
-  margin-left: 64px;
-  width: 1155px;
-}
-
-.textArea_d0696b:has(>div>div>[class^="applicationCommand_"]) {
-  margin-left: 24px;
-}
-
-.textArea_d0696b:not(:has(+[class^="buttons_"])):has(>div>div>[class^="applicationCommand_"]) {
-  margin-right: 60px !important;
-}
-
-[class^="attachButton_"]:has([mask*='#svg-mask-avatar-default']) {
-  left: 10px;
-  position: relative;
-}
-
-
-/* message bar position when no attachment button */
-.form_a7d72e:has(.channelTextAreaDisabled_d0696b) {
-  width: 1260px;
-}
-
-div>div.contents_ec86aa>div>div.channelTextAreaContainer_d0696b>div>div>div>div.textArea_d0696b.textAreaSlate_d0696b.slateContainer_e52116 {
-  margin-left: 0px !important;
-}
-
-.scrollableContainer_d0696b:not(.bioTextArea_ccf27d.scrollableContainer_d0696b.themedBackground_d0696b, :has(.attachWrapper_f298d4)) .textArea_d0696b:not(:has(>div>div>[class^="applicationCommand_"])) {
-  margin-left: 64px;
-  width: 1155px;
-}
-
-
-.textArea_d0696b:has(>div>div>[class^="applicationCommand_"]) {
-  margin-left: 24px;
-}
-
-.textArea_d0696b:not(:has(+[class^="buttons_"])):has(>div>div>[class^="applicationCommand_"]) {
-  margin-right: 60px !important;
-}
-
-[class^="attachButton_"]:has([mask*='#svg-mask-avatar-default']) {
-  left: 10px;
-  position: relative;
+div.formContainer_c1668f>div.form_c1668f>div.bodyContainer_c1668f>div>div>div>div>div>div>div>div {
+  margin-top: 9px;
 }
 
 /* send message in small new profile shit */
@@ -946,7 +923,7 @@ div>div.contents_ec86aa>div>div.channelTextArea_d5deea.channelTextArea_d0696b>di
 }
 
 #app-mount [class*=textArea] [class*=slateContainer] {
-  background-color: hsla(0, 0%, 0%, 0.25)!important;
+  background-color: hsla(0, 0%, 0%, 0.25) !important;
   -webkit-backdrop-filter: blur(4px);
   -o-backdrop-filter: blur(4px);
   -moz-backdrop-filter: blur(4px);
@@ -1111,7 +1088,7 @@ aside.profilePanel_b433b4 {
   /* Change image here */
   --size: 60px;
   /* Change Image size here */
-  --align: 1105px;
+  --align: 1233px;
   /* Change alignment here */
 }
 
@@ -1492,20 +1469,35 @@ div.avatar_b2ca13.wrapper-1VLyxH {
 /* ========================================== */
 /* ======= < PROFILE MODIFICATIONS > ======= */
 /* ======================================== */
-/* Unclamp User Bios. */
-.descriptionClamp_fc5c48:not(.headerText_d331f1 .descriptionClamp_fc5c48) {
-  -webkit-line-clamp: unset;
-  line-clamp: unset;
-  max-height: 112px;
-  overflow-x: hidden;
-  overflow-y: auto;
-}
-.descriptionClamp_fc5c48::-webkit-scrollbar {
-  display: none
+/* View Full Bio in Popout Profiles alongside scrolling in Bios */
+[class^=viewFullBio_] {
+  display: none;
 }
 
-.viewFullBio_fc5c48 {
-  display: none;
+[class^=userPopoutInner_]>[class^=body_] [class^="descriptionClamp_"] {
+  -webkit-line-clamp: unset;
+  line-clamp: unset;
+  transition: max-height 1s ease;
+}
+
+[class^=userPopoutInner_]>[class^=body_] [class^="descriptionClamp_"]:hover {
+  max-height: 112px;
+  overflow-y: auto;
+
+  &&::-webkit-scrollbar {
+    width: 15px;
+    height: 15px;
+  }
+
+  &&::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.04);
+  }
+
+  &&::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.14);
+    border-radius: 10px;
+  }
 }
 
 /* Unclamp status bubble size in user popout */
@@ -1519,6 +1511,18 @@ div.avatar_b2ca13.wrapper-1VLyxH {
   display: none;
 }
 
+/* Match Status Bubble color with Profile Primary Color */
+.custom-profile-theme [class^=statusBubble_] {
+  background-color: var(--profile-gradient-primary-color);
+}
+
+.custom-profile-theme [class^=statusBubbleOuter_]:before {
+  background-color: var(--profile-gradient-primary-color);
+}
+
+.custom-profile-theme [class^=statusBubbleOuter_]:after {
+  background-color: var(--profile-gradient-primary-color);
+}
 
 /* ================================================================ */
 /* =================== < MAKE PRONOUNS STAND OUT MORE > ========== */
@@ -1634,9 +1638,6 @@ div.avatar_b2ca13.wrapper-1VLyxH {
   right: 198px;
 }*/
 
-
-
-/* ----------------------------------------------------------------------------- */
 
 /* =========================================== */
 /* ======= < PRETTY SERVER CHANNELS > ======= */
