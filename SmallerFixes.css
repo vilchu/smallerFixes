@@ -211,7 +211,7 @@
   --textarea-radius: 22px;
   --textarea-block-color: rgba(0, 0, 0, 0.4);
   --textarea-block-text-color: #ccc;
-  --input-height: 16px;
+  --input-height: 36px;
   --input-radius: calc(var(--input-height) / 2);
   --card-color: rgba(0, 0, 0, 0.4);
   --card-color-hover: rgba(0, 0, 0, 0.5);
@@ -6060,9 +6060,16 @@ button[class*=attachButton] {
   width: 1390px;
 }
 
-.scrollableContainer_d0696b:not(.fileInput_a15d29, .bioTextArea_ccf27d.scrollableContainer_d0696b.themedBackground_d0696b, :has(.attachWrapper_f298d4)) .textArea_d0696b:not(:has(>div>div>[class^="applicationCommand_"])) {
+.scrollableContainer_d0696b:not(.forumGuidelines_bc05bb.scrollableContainer_d0696b,.fileInput_a15d29, .bioTextArea_ccf27d.scrollableContainer_d0696b.themedBackground_d0696b, :has(.attachWrapper_f298d4)) .textArea_d0696b:not(:has(>div>div>[class^="applicationCommand_"])) {
   margin-left: 64px;
   width: 1275px !important;
+}
+/* about me message bar */
+.markup_f8f345.editor_a552a6.slateTextArea_e52116.fontSize16Padding_d0696b.textAreaWithoutAttachmentButton_d0696b {
+  left: -15px!important;
+}
+.bioTextArea_ccf27d.scrollableContainer_d0696b.themedBackground_d0696b {
+  width: fit-content!important;
 }
 
 /* profile customization text placement */
@@ -6845,18 +6852,15 @@ div.avatar_b2ca13.wrapper-1VLyxH {
   margin-bottom: 4px;
 }
 
-.headerText_f9f2ca .username_f9f2ca,
 /* chat */
+.headerText_f9f2ca .username_f9f2ca,
 /* .name_e9f61e,  memberlist */
-.repliedMessage_f9f2ca>.username_f9f2ca
-
-/* replies */
-  {
+.repliedMessage_f9f2ca>.username_f9f2ca /* replies */ {
   background: color-mix(in srgb, currentColor 25%, rgba(0, 0, 0, 0.25));
   text-shadow: 0 0 5px color-mix(in srgb, currentColor 25%, #000);
   margin-right: 4px;
   padding: 0 4px;
-  border-radius: 3px;
+  border-radius: 4px;
 }
 
 /* ============================================================================= */
