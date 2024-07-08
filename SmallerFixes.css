@@ -163,6 +163,7 @@
   --home-icon: block;
 }
 
+
 :root {
   --app-blur: 6px;
   --app-margin: 24px;
@@ -210,7 +211,7 @@
   --textarea-radius: 22px;
   --textarea-block-color: rgba(0, 0, 0, 0.4);
   --textarea-block-text-color: #ccc;
-  --input-height: 36px;
+  --input-height: 16px;
   --input-radius: calc(var(--input-height) / 2);
   --card-color: rgba(0, 0, 0, 0.4);
   --card-color-hover: rgba(0, 0, 0, 0.5);
@@ -269,7 +270,6 @@
   --text-brand: hsl(var(--accent-hsl));
   --text-link: hsl(var(--accent-hsl));
 }
-
 /*
  *
  *  CHAT AREA
@@ -886,7 +886,7 @@
 .searchBar_a46bef .DraftEditor-editorContainer .searchFilter_b0fa94 {
   margin-right: 2px;
   padding: 0 4px 0 8px;
-  border-radius: 10px 0 0 10px;
+  border-radius: 7px 0 0 7px;
 }
 
 .searchBar_a46bef .DraftEditor-editorContainer .searchFilter_b0fa94:only-child {
@@ -904,7 +904,7 @@
   height: 20px;
   margin: 0 2px 0 -2px;
   padding: 0px 8px 0px 0;
-  border-radius: 0 11px 11px 0;
+  border-radius: 0 7px 7px 0;
 }
 
 .searchFilter_b0fa94 {
@@ -1936,7 +1936,20 @@
  *  MESSAGES
  *
  */
+.isUnread_c2654d {
+  border-color: hsla(var(--accent-hsl), var(--accent-opacity));
+}
 
+.isUnread_c2654d .unreadPill_c2654d {
+  background-color: hsla(var(--accent-hsl), var(--accent-opacity));
+  color: var(--accent-text-color);
+  text-shadow: none;
+}
+
+.isUnread_c2654d .unreadPillCapStroke_c2654d {
+  color: hsla(var(--accent-hsl), var(--accent-opacity));
+  fill: hsla(var(--accent-hsl), var(--accent-opacity));
+}
 
 
 /*
@@ -6929,225 +6942,4 @@ div.avatar_b2ca13.wrapper-1VLyxH {
 #app-mount .containerDefault_f6f816.selected_f6f816 .wrapper_d8bfb3 .icon_d8bfb3,
 #app-mount .containerDefault_f6f816:hover .wrapper_d8bfb3 .icon_d8bfb3 {
   color: var(--highlight-icon) !important;
-}
-
-
-/*
- *
- *  FORUM NEW POST
- *
- */
-.container_c1668f.collapsed_c1668f {
-  height: auto;
-}
-
-.container_c1668f.collapsed_c1668f .prefixElement_c1668f {
-  position: relative;
-  right: 0;
-}
-
-.container_c1668f.collapsed_c1668f .prefixElement_c1668f svg {
-  padding: 0;
-}
-
-.container_c1668f .titleContainer_c1668f {
-  min-height: 0;
-  gap: 8px;
-}
-
-.container_c1668f .prefixElement_c1668f {
-  position: absolute;
-  width: auto;
-  height: var(--button-height);
-  right: 10px;
-  margin: 0;
-  z-index: 2;
-}
-
-.container_c1668f .prefixElement_c1668f div[role=button],
-.container_c1668f .prefixElement_c1668f svg {
-  height: inherit;
-}
-
-.container_c1668f .prefixElement_c1668f svg {
-  padding: 0 20px;
-}
-
-.container_c1668f .input_f8bc55 {
-  margin: 0;
-  height: var(--button-height);
-  padding: 0 10px;
-  line-height: var(--button-height);
-  font-weight: 400;
-  text-shadow: none;
-  cursor: text;
-}
-
-.container_c1668f .input_f8bc55::-webkit-input-placeholder {
-  font-weight: inherit;
-}
-
-.container_c1668f .forumPostFormButton_c1668f {
-  margin: 0;
-  height: var(--button-height);
-}
-
-.container_c1668f .lookFilled_dd4f85 {
-  height: var(--button-height);
-}
-
-/*.container_c1668f .contentContainer_c1668f {
-  padding-left: 0;
-  padding-right: 86px;
-}*/
-
-.container_c1668f .formContainer_c1668f {
-  position: relative;
-  display: block;
-}
-
-.container_c1668f .channelTextArea_d0696b {
-  margin: 16px 0 0;
-  background-color: transparent;
-}
-
-.container_c1668f .inner_d0696b {
-  --textarea-alpha: 0.1;
-  padding: 8px 16px;
-  background-color: rgba(var(--textarea-color), var(--textarea-alpha)) !important;
-  border-radius: var(--textarea-radius);
-  color: var(--textarea-text-color);
-}
-
-.container_c1668f .inner_d0696b::-webkit-input-placeholder {
-  color: var(--textarea-placeholder-color);
-}
-
-/*.container_a15d29 {
-  position: absolute;
-  top: calc(var(--button-height) + 16px);
-  right: 16px;
-}*/
-
-.container_a15d29 .uploadInput_a15d29 {
-  background-color: var(--card-color);
-  border-radius: var(--card-radius);
-  border: none;
-}
-
-.container_a15d29 .imageSmall_f847a3 {
-  border-radius: var(--card-radius);
-}
-
-.container_a15d29 .badge_a15d29 {
-  background-color: hsl(var(--accent-hsl));
-  border-width: 4px;
-  color: var(--accent-text-color);
-}
-
-:root {
-  --app-blur: 6px;
-  --app-margin: 24px;
-  --app-radius: 10px;
-  --main-rgb: 0, 0, 0;
-  --main-content-opacity: 0.2;
-  --sidebar-opacity: 0.2;
-  --main-content-color: rgba(var(--main-rgb), var(--main-content-opacity));
-  --sidebar-color: rgba(var(--main-rgb), var(--sidebar-opacity));
-  --accent-hue: 240;
-  --accent-saturation: 22%;
-  --accent-lightness: 60%;
-  --accent-hsl: var(--accent-hue), calc(var(--accent-saturation) * var(--saturation-factor)), var(--accent-lightness);
-  --accent-opacity: 1;
-  --accent-text-color: white;
-  --alert-hue: 359;
-  --alert-saturation: 66.7%;
-  --alert-lightness: 54.1%;
-  --alert-hsl: var(--alert-hue), calc(var(--alert-saturation) * var(--saturation-factor)), var(--alert-lightness);
-  --alert-opacity: 1;
-  --alert-action-color: #fff;
-  --alert-text-color: #fff;
-  --message-color: rgba(0, 0, 0, 0.2);
-  --message-color-hover: rgba(0, 0, 0, 0.6);
-  --message-radius: var(--app-radius);
-  --message-padding-top: 8px;
-  --message-padding-side: 8px;
-  --mention-hue: var(--accent-hue);
-  --mention-saturation: var(--accent-saturation);
-  --mention-lightness: var(--accent-lightness);
-  --mention-hsl: var(--mention-hue), calc(var(--mention-saturation) * var(--saturation-factor)), var(--mention-lightness);
-  --mention-opacity: 1;
-  --reply-hue: 226;
-  --reply-saturation: 77.4%;
-  --reply-lightness: 61.8%;
-  --reply-hsl: var(--reply-hue), calc(var(--reply-saturation) * var(--saturation-factor)), var(--reply-lightness);
-  --reply-opacity: 1;
-  --notification-color: #fff;
-  --list-item-radius: var(--app-radius);
-  --textarea-color: 255, 255, 255;
-  --textarea-alpha: 0.1;
-  --textarea-alpha-focus: 0.15;
-  --textarea-text-color: #fff;
-  --textarea-placeholder-color: #aaa;
-  --textarea-radius: 22px;
-  --textarea-block-color: rgba(0, 0, 0, 0.4);
-  --textarea-block-text-color: #ccc;
-  --input-height: 36px;
-  --input-radius: calc(var(--input-height) / 2);
-  --card-color: rgba(0, 0, 0, 0.4);
-  --card-color-hover: rgba(0, 0, 0, 0.5);
-  --card-color-select: rgba(0, 0, 0, 0.625);
-  --card-radius: var(--app-radius);
-  --card-header-shadow: 0px 3px 9px 0px rgba(0, 0, 0, 0.25);
-  --button-height: 32px;
-  --button-padding: 0 16px;
-  --button-color: hsla(var(--accent-hsl), var(--accent-opacity));
-  --button-action-color: #000;
-  --button-text-color: white;
-  --button-radius: 16px;
-  --switch-slider-color: hsla(218, 4.6%, 46.9%, 0.85);
-  --switch-knob-color: hsl(0, 0%, 13%);
-  --popout-color: rgba(0, 0, 0, 0.55);
-  --popout-blur: 2px;
-  --popout-header-opacity: 0.3;
-  --popout-header-shadow: 0px 3px 9px 0px rgba(0, 0, 0, 0.25);
-  --popout-radius: var(--app-radius);
-  --popout-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.2);
-  --nowplaying-color: 88, 101, 242;
-  --streaming-color: 89, 54, 149;
-  --spotify-color: 29, 185, 84;
-  --server-folder-color: rgba(255, 255, 255, 0.1);
-  --supporter-color: hsla(var(--accent-hsl), var(--accent-opacity));
-  --tooltip-color: hsla(var(--accent-hsl), var(--accent-opacity));
-  --tooltip-text-color: white;
-  --tooltip-font-size: 14px;
-  --tooltip-padding: 8px 12px;
-  --tooltip-radius: var(--app-radius);
-  --tooltip-shadow: var(--elevation-high);
-  --interactive-normal: #aaa;
-  --interactive-hover: #ddd;
-  --interactive-active: #fff;
-  --interactive-muted: #777;
-  --channels-default: #aaa;
-  --header-secondary: #dfdfdf;
-  /*--background-primary: transparent;*/
-  --channels-default: var(--interactive-normal);
-  --text-muted: var(--interactive-normal);
-  --transition-time: 250ms;
-  --transition-type: cubic-bezier(0.4, 0, 0.2, 1);
-  --scrollbar-color: 255, 255, 255;
-  --scrollbar-color-alt: 0, 0, 0;
-  --scrollbar-opacity: 0.0;
-  --scrollbar-opacity-hover: 0.3;
-  --scrollbar-width: 10px;
-}
-
-.theme-dark,
-.theme-light {
-  --background-modifier-hover: rgba(255, 255, 255, 0.075);
-  --background-modifier-active: rgba(255, 255, 255, 0.1);
-  --background-modifier-selected: rgba(255, 255, 255, 0.125);
-  --background-modifier-accent: rgba(255, 255, 255, 0.175);
-  --text-brand: hsl(var(--accent-hsl));
-  --text-link: hsl(var(--accent-hsl));
 }
