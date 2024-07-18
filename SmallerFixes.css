@@ -1402,7 +1402,12 @@
 */
 .searchBar_a46bef {
   padding: 0 4px;
-  background-color: rgba(var(--textarea-color), var(--textarea-alpha))!important;
+  background-color: rgba(var(--textarea-color), var(--textarea-alpha));
+  border-radius: 12px;
+}
+.search_a46bef.open_a46bef {
+  padding: 0 4px;
+  background-color: rgba(var(--textarea-color), var(--textarea-alpha));
   border-radius: 12px;
 }
 
@@ -6752,7 +6757,6 @@ max-width: fit-content
 /* ======= < ROLE COLOURS > ======= */
 /* =============================== */
 /* Role pill background by alije */
-[class*="role_"] [class*="roleCircle_"]:before,
 [class*="actionButton_"][class*="role_"][class*="justifyCenter_"] {
   border-radius: 5px;
 }
@@ -6789,6 +6793,7 @@ max-width: fit-content
 [class*="roles_"] {
   color: var(--text-normal);
 }
+
 
 
 /* ========================================= */
