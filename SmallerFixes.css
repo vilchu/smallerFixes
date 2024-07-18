@@ -1402,7 +1402,7 @@
 */
 .searchBar_a46bef {
   padding: 0 4px;
-  background-color: rgba(var(--textarea-color), var(--textarea-alpha));
+  background-color: rgba(var(--textarea-color), var(--textarea-alpha))!important;
   border-radius: 12px;
 }
 
@@ -7883,4 +7883,3 @@ div.avatar_b2ca13.wrapper-1VLyxH {
 }
 
 /* -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
-
