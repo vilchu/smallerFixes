@@ -217,7 +217,7 @@
   --textarea-block-color: rgba(0, 0, 0, 0.4);
   --textarea-block-text-color: #ccc;
   --input-height: 36px;
-  --input-radius: calc(var(--input-height) / 2);
+  --input-radius: calc(var(--input-height) / 4);
   --card-color: rgba(0, 0, 0, 0.4);
   --card-color-hover: rgba(0, 0, 0, 0.5);
   --card-color-select: rgba(0, 0, 0, 0.625);
@@ -678,9 +678,9 @@
 }
 
 /* DIRECT MESSAGES -> SIDEBAR PROFILE */
-.userProfileOuterUnthemed_c69a7b {
+/*.userProfileOuterUnthemed_c69a7b {
   background-color: transparent;
-}
+}*/
 
 .userPanelInner_c69a7b {
   border-radius: 0 !important;
