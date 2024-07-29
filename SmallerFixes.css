@@ -16,10 +16,12 @@
 @import url("//dablulite.github.io/BetterFloatingEditor/import.css");
 /*@import url("//dablulite.github.io/css-snippets/BetterModals/import.css");*/
 @import url("https://anubisnekhet.github.io/discordCSS/notification-icons.css");
-@import url("https://ukrioo.github.io/cssCord/Other/PrettyCA.css");
 @import url("https://minidiscordthemes.github.io/Snippets/MinimalSearchbar/main.css");
 @import url("https://minidiscordthemes.github.io/Snippets/ForumImprovements/main.css");
 @import url("https://raw.githubusercontent.com/KrstlSkll69/vc-snippets/main/StageRecolor.css");
+@import url("https://github.com/lazuee/css-snippets/raw/main/discord/sidebar-notice/import.css");
+
+/*@import url("https://ukrioo.github.io/cssCord/Other/PrettyCA.css");*/
 
 /* icons */
 @import url(//dablulite.github.io/css-snippets/PrettyFolderIcons/import.css);
@@ -143,7 +145,7 @@
   /* normal grey: hsl(223, 7%, 21%);*/
 
   /* link color when sending caht */
-  --text-link: hsl(240, 14%, 65%) !important;
+  --text-link: hsl(0, 60%, 76%)!important;
 
   /* channel scrollbar color */
   --scrollbar-thin-thumb: transparent;
@@ -178,9 +180,9 @@
   --sidebar-opacity: 0.35;
   --main-content-color: rgba(var(--main-rgb), var(--main-content-opacity));
   --sidebar-color: rgba(var(--main-rgb), var(--sidebar-opacity));
-  --accent-hue: 240;
-  --accent-saturation: 20%;
-  --accent-lightness: 60%;
+  --accent-hue: 0;
+  --accent-saturation: 66%;
+  --accent-lightness: 76%;
   --accent-hsl: var(--accent-hue), calc(var(--accent-saturation) * var(--saturation-factor)), var(--accent-lightness);
   --accent-opacity: 1;
   --accent-text-color: #fff;
@@ -1492,6 +1494,7 @@
   border: var(--button-outline) !important;
 }
 
+
 .lookFilled_dd4f85:after,
 .lookOutlined_dd4f85:after,
 .lookLink_dd4f85:after,
@@ -1619,7 +1622,7 @@
 }
 
 .colorable_ef18ee.primaryDark_ef18ee {
-  --button-background: hsla(var(--accent-hsl), var(--accent-opacity));
+  --button-background: hsl(220, 5%, 24%); /* hsla(var(--accent-hsl), var(--accent-opacity)) */
   --button-text-color: var(--accent-text-color);
 }
 
@@ -1646,11 +1649,16 @@
   color: var(--button-text-color) !important;
 }
 
+
 .lookLink_dd4f85,
 .bd-button-link {
   --button-background: transparent;
   --button-text-color: hsla(var(--accent-hsl), var(--accent-opacity));
   --button-action-color: transparent;
+}
+
+button.fieldButton_b69b77.removeButton_b69b77.button_dd4f85.lookLink_dd4f85.lowSaturationUnderline_c7819f.colorPrimary_dd4f85.sizeSmall_dd4f85.grow_dd4f85 > div {
+  color: hsl(0, 64%, 57%);
 }
 
 .colorRed_dd4f85,
@@ -3387,13 +3395,13 @@
 }
 
 .connectedAccountContainer_f3eb60 {
-  background-color: var(--card-color);
+  background-color: var(--profile-gradient-button-color);
   border-radius: var(--card-radius);
   border: none;
 }
 
 .connectedAccountContainer_f3eb60:hover {
-  background-color: var(--card-color-hover);
+  background-color: var(--profile-gradient-button-color);
   border: none;
 }
 
@@ -4767,10 +4775,9 @@
   --textarea-placeholder-color: #666;
   --background-modifier-selected: rgba(0, 0, 0, 0.125);
 }
-
-.userProfileOuterThemed_c69a7b {
+/*.userProfileOuterThemed_c69a7b {
   --card-color: rgb(var(--bg-overlay-color)/var(--bg-overlay-opacity-6));
-}
+}*/
 
 .userProfileOuterThemed_c69a7b .lookFilled_dd4f85 {
   --button-background: var(--profile-gradient-button-color);
@@ -6312,7 +6319,7 @@
 /* link color */
 .userPopoutInner_c69a7b .anchor_af404b,
 .userPopoutInner_c69a7b .anchorUnderlineOnHover_af404b {
-  color: hsl(240, 38%, 75%) !important;
+  color: hsl(0, 70%, 76%) !important;
 }
 
 
@@ -6459,15 +6466,10 @@ div[class*='replying']::before {
   background-color: hsl(var(--mention-colour)) !important;
 }
 
-.message_d5deea.cozyMessage_d5deea.mentioned_d5deea.groupStart_d5deea.wrapper_f9f2ca.cozy_f9f2ca.zalgo_f9f2ca.hasReply_f9f2ca {
-  background-color: hsla(var(--mention-colour), 0.08) !important;
-}
-
-.message_d5deea.cozyMessage_d5deea.ephemeral_d5deea.groupStart_d5deea.wrapper_f9f2ca.cozy_f9f2ca.zalgo_f9f2ca.hasReply_f9f2ca {
-  background-color: hsla(var(--mention-colour), 0.08) !important;
-}
-/* clyde */
-.message_d5deea.cozyMessage_d5deea.ephemeral_d5deea.groupStart_d5deea.wrapper_f9f2ca.cozy_f9f2ca.zalgo_f9f2ca {
+.message_d5deea.cozyMessage_d5deea.mentioned_d5deea.groupStart_d5deea.wrapper_f9f2ca.cozy_f9f2ca.zalgo_f9f2ca.hasReply_f9f2ca,
+.message_d5deea.cozyMessage_d5deea.ephemeral_d5deea.groupStart_d5deea.wrapper_f9f2ca.cozy_f9f2ca.zalgo_f9f2ca.hasReply_f9f2ca,
+.message_d5deea.cozyMessage_d5deea.ephemeral_d5deea.groupStart_d5deea.wrapper_f9f2ca.cozy_f9f2ca.zalgo_f9f2ca, /* clyde */
+.message_d5deea.cozyMessage_d5deea.mentioned_d5deea.systemMessage_d5deea.groupStart_d5deea.wrapper_f9f2ca.cozy_f9f2ca.zalgo_f9f2ca.isSystemMessage_f9f2ca {
   background-color: hsla(var(--mention-colour), 0.08) !important;
 }
 
@@ -6509,30 +6511,15 @@ div[id='user-context-call'],
 /* ========================== */
 /* ======= < ICONS > ======= */
 /* ======================== */
-/* voice  joined icon */
-.iconBadge_c96c45 {
-  background-color: hsl(240, 22%, 60%) !important;
-}
-
-/* notification color */
-.numberBadge_df8943.base_df8943.eyebrow_df8943.baseShapeRound_df8943 {
-  background-color: hsl(240, 22%, 60%) !important;
-}
-
-/*ping design*/
-.numberBadge__40d6f {
-  background-color: hsl(240, 22%, 60%) !important;
-}
-
-.bar_c10249.unreadMentionsBar_fea3ef.mention_c10249.active_c10249 {
-  background-color: hsl(240, 22%, 60%) !important;
+.bar_c10249.unreadMentionsBar_fea3ef.mention_c10249.active_c10249,
+.numberBadge__40d6f,/*ping design*/
+.numberBadge_df8943.base_df8943.eyebrow_df8943.baseShapeRound_df8943,/* notification color */
+.iconBadge_c96c45 /* voice  joined icon */ {
+  background-color: hsl(0, 60%, 76%)!important; /*hsl(240, 22%, 60%) */
 }
 
 /* muted microphone icon */
-.iconSpacing_cdc675[aria-label="Muted"] .icon_cdc675 {
-  color: hsl(0, 64%, 57%);
-}
-
+.iconSpacing_cdc675[aria-label="Muted"] .icon_cdc675,
 .iconSpacing_cdc675[aria-label="Deafened"] .icon_cdc675 {
   color: hsl(0, 64%, 57%);
 }
@@ -6550,7 +6537,7 @@ div[id='user-context-call'],
 /* ======= < SERVER HOVER MUTED TEXT > ======= */
 /* ========================================== */
 .muteText_a6ae3c {
-  color: hsl(0, 64%, 57%) !important;
+  color: hsl(0, 64%, 57%)!important;
 }
 
 
@@ -6712,18 +6699,18 @@ img[class="emoji otherEmoji_e58351"]:hover {
   position: relative;
 }
 
-.container_b558d0> :not(.container_e426aa, .reactions_ec6b19, .searchResultsWrap_c2b47d *),
+.container_b558d0> :not(.wrapper_a71a1c,.container_e426aa, .reactions_ec6b19, .searchResultsWrap_c2b47d *),
 .groupStart_d5deea.cozyMessage_d5deea:not(.systemMessage_d5deea) .contents_f9f2ca>.markup_f8f345,
 .cozyMessage_d5deea:not(.groupStart_d5deea)>.contents_f9f2ca>.markup_f8f345:not(:empty, .searchResultsWrap_c2b47d *) {
-  margin: 0.125em 0;
-  padding: 0.5em;
+  margin: 0; /*0.125em 0*/
+  padding: 8px;
   border-radius: var(--chat-bubble-border-radius);
   background: var(--chat-bubble-default);
   max-width: max-content;
   box-sizing: border-box;
 }
 
-
+.container_b558d0> :not(.container_e426aa, .reactions_ec6b19, .searchResultsWrap_c2b47d *):hover,
 .groupStart_d5deea.cozyMessage_d5deea:not(.systemMessage_d5deea) .contents_f9f2ca>.markup_f8f345:hover,
 .cozyMessage_d5deea:not(.groupStart_d5deea)>.contents_f9f2ca:hover>.markup_f8f345:not(:empty, .searchResultsWrap_c2b47d *) {
   background: var(--chat-bubble-default-hover)
@@ -6768,17 +6755,14 @@ img[class="emoji otherEmoji_e58351"]:hover {
   border-radius: 5px;
   /*Change Roundness of Roles*/
 }
-
 .role_f9575e .roleRemoveIcon_f9575e {
   margin: 0;
   left: unset;
-  transform: translate(10%, -52%);
+  transform: translate(16%, -48%);
 }
-
 .role_f9575e .roleRemoveButton_f9575e {
   position: static;
 }
-
 .role_f9575e .roleCircle_f9575e:after {
   content: '';
   top: 0;
@@ -6790,7 +6774,6 @@ img[class="emoji otherEmoji_e58351"]:hover {
   background: inherit;
   opacity: var(--transparency);
 }
-
 /* --------------- Separated the code due to position difference */
 .role_e4010c {
   transform: translate(0);
@@ -6800,17 +6783,14 @@ img[class="emoji otherEmoji_e58351"]:hover {
   --transparency: .4;
   border-radius: 5px;
 }
-
 .role_e4010c .roleRemoveIcon_e4010c {
   margin: 0;
   left: unset;
-  transform: translate(50%, -50%);
+  transform: translate(50%,-50%);
 }
-
 .role_e4010c .roleRemoveButton_e4010c {
   position: static;
 }
-
 .role_e4010c .roleCircle_a26d7b:after {
   content: '';
   top: 0;
@@ -7378,6 +7358,7 @@ main[class^="chatContent_"] form[class^="form_"]::before {
   display: block;
 }
 
+
 /* ==================================================== */
 /* ======= < SERVER CHANNEL MEMBERS COLOURS > ======= */
 /* ================================================= */
@@ -7405,6 +7386,7 @@ span[class*="username"]>span[class*="desaturateUserColors"]::after {
 [class*="membersGroup-"]+[class*="container-"] {
   margin-top: 5px;
 }
+
 
 /* ======================================== */
 /* ======= < JUMP TO PRESENT BAR > ======= */
@@ -7678,6 +7660,7 @@ div.avatar_b2ca13.wrapper-1VLyxH {
   stroke: hsl(215, 9%, 73%);
 }
 
+
 /* ========================================== */
 /* ======= < PROFILE MODIFICATIONS > ======= */
 /* ======================================== */
@@ -7739,7 +7722,7 @@ div.avatar_b2ca13.wrapper-1VLyxH {
 }
 
 /* Match Send Friend Request Button color with the Profile Color */
-.custom-profile-theme [aria-label="Send Friend Request"] button {
+/*.custom-profile-theme [aria-label="Send Friend Request"] button {
   background-color: var(--profile-gradient-button-color);
   transition: opacity .2s ease-in-out;
 }
@@ -7747,6 +7730,12 @@ div.avatar_b2ca13.wrapper-1VLyxH {
 .custom-profile-theme [aria-label="Send Friend Request"] button:hover {
   background-color: var(--profile-gradient-button-color);
   opacity: 0.8;
+}*/
+
+/* Match Activity Buttons Color with Profile Button Color for Custom Profiles */
+.custom-profile-theme [class^=activityBiteSizePopout_] button,
+.custom-profile-theme [class^=activitySimplifiedProfile_] button {
+  background-color: var(--profile-gradient-button-color)!important;
 }
 
 
@@ -7893,10 +7882,9 @@ div.avatar_b2ca13.wrapper-1VLyxH {
 /* =========================================== */
 /* ======= < PRETTY SERVER CHANNELS > ======= */
 /* ========================================= */
-
 :root {
-  --highlight-select: linear-gradient(-45deg, hsla(262, 63%, 70%, 0.219) 60%, hsla(320, 71%, 89%, 0.24));
-  --highlight-icon: hsl(240, 30%, 73%);
+  --highlight-select: linear-gradient(-45deg, hsla(0, 61%, 76%, 0.363) 60%, hsla(320, 71%, 89%, 0.24));
+  --highlight-icon: hsl(0, 60%, 76%);
 }
 
 /* channel outlines and highlighted icons */
