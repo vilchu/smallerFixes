@@ -7143,7 +7143,7 @@ div[class^=typing] {
 }
 
 /* no GIF  or Gift buttons */
-.contents_dd4f85.button_f9af59.button_d0696b {
+.expression-picker-chat-input-button:not(:last-child):not([class^=buttons]:has([class^=separator])>.expression-picker-chat-input-button:nth-last-child(2)), [aria-label="Send a gift"] {
   display: none;
 }
 
@@ -7162,7 +7162,7 @@ aside.profilePanel_b433b4 {
 }*/
 
 /* invisible typing button off */
-.invisible-typing-button {
+.invisibleTypingButton {
   display: none
 }
 
@@ -7905,7 +7905,7 @@ div.avatar_b2ca13.wrapper-1VLyxH {
   display: none;
 }
 
-/* ==================================================?=============== */
+/* ================================================================== */
 /* ======= < ANIMATION ON CHANNEL/SETTINGS/DMS/MEMBER LIST > ======= */
 /* ================================================================ */
 .wrapper_d8bfb3 .link_d8bfb3,
@@ -7982,4 +7982,13 @@ div.avatar_b2ca13.wrapper-1VLyxH {
 /* Disable discord mirroring your preview of the camera */
 div[data-selenium-video-tile="246276708242554890"] [class^=voiceChannelEffectsContainer] + [class*=videoWrapper] {
   transform: scaleX(-1);
+}
+
+
+/*Centered Voice Controls*/
+.bottomControls_dd069c > .flex_dc333f:is(:first-child, :last-child) {
+  flex: 1 1 50% !important;
+}
+.bottomControls_dd069c > .flex_dc333f:nth-child(2) {
+  flex: 0 1 auto !important;
 }
