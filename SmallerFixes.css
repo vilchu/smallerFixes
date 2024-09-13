@@ -1,7 +1,7 @@
 /**
  * @name Smaller Fixes
  * @description my theme consisting of various theme snippets and stuff. I take no credit for anything'
- * @version 2.0.5
+ * @version 2.1.8
  * @author vilchu
  * @authorId 246276708242554890
 **/
@@ -7967,3 +7967,29 @@ div[data-selenium-video-tile="246276708242554890"] [class^=voiceChannelEffectsCo
 .bottomControls_dd069c > .flex_dc333f:nth-child(2) {
   flex: 0 1 auto !important;
 }
+
+
+/* hide active voice channels not on list */
+.containerDefault_f6f816:has(.collapsed_a478e5),
+.containerDefault_a08117:has(.wrapperStatic_a08117) {
+  display: none;
+}
+
+
+/* make activity hours shorter */ 
+.badgeContainer_d60c6d:after {
+  content: " Hours"; /* Multiple Hours */
+  /*content: " Hour"; | Singular Hour */
+  color: var(--text-positive);
+  font-weight: bold;
+  font-family: var(--font-code);
+  font-size: 12px;
+  line-height: 1.3333333333333333;
+}
+.timestamp_c5d1c1 {
+  width: 20px; /* 3 Digit Number*/
+  /*width: 15px; | 2 Digit Number*/
+  /*width: 8px; | 1 Digit Number*/
+  text-overflow: clip!important;
+}
+
