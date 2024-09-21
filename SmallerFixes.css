@@ -4151,6 +4151,10 @@ div.header_b56bbc,
   background-color: hsla(var(--accent-hsl), 0.8) !important;
 }
 
+.container_b56bbc {
+  background-color: transparent;
+}
+
 /* better soundboard/emoji picker */
 
 
