@@ -6581,6 +6581,88 @@ div[id='user-context-call'],
   display: none !important;
 }
 
+:root {
+  --gift: none;
+  --gif: none;
+  --sticker: none;
+  --emoji: flex;
+  --upload: flex;
+  --store: flex;
+  --shop: flex;
+  --friends: flex;
+  --guide: block;
+  --channels: block;
+  --browse: block;
+  --members: block;
+  --events: block;
+  --server-shop: none;
+  --boost: flex;
+  --activity: none;
+  --discover: block;
+  --discover-indicator: 72px;
+}
+
+
+#channels [class*=containerDefault_]:has([aria-label="Server Guide"]) {
+  display: var(--guide);
+}
+#channels [class*=containerDefault_]:has([aria-label="Channels & Roles"]) {
+  display: var(--channels);
+}
+#channels [class*=containerDefault_]:has([aria-label="Browse Channels"]) {
+  display: var(--browse);
+}
+#channels [class*=containerDefault_]:has([aria-label=Members]) {
+  display: var(--members);
+}
+#channels [class*=containerDefault_]:has([data-list-item-id*=channels___upcoming-events-]) {
+  display: var(--events);
+}
+#channels [class*=containerDefault_]:has([aria-label="Server Shop"]) {
+  display: var(--server-shop);
+}
+#channels [data-list-item-id*=channels___boosts-] {
+  display: var(--boost);
+}
+
+[class*=tree_] [class*=footer_] {
+  display: var(--discover);
+}
+
+[class*=unreadMentionsFixedFooter_] {
+  bottom: var(--discover-indicator);
+}
+
+[class*=form-] [class*=attachButton_] {
+  display: var(--upload);
+}
+[class*=form-] [class*=button_][aria-label="Send a gift"] {
+  display: var(--gift);
+}
+[class*=form-] [class*=button_][aria-label="Open GIF picker"] {
+  display: var(--gif);
+}
+[class*=form-] [class*=button_][aria-label="Open sticker picker"] {
+  display: var(--sticker);
+}
+[class*=form-] [class*=button_][aria-label="Select emoji"] {
+  display: var(--emoji);
+}
+[class*=form-] [class*=channelAppLauncher_] {
+  display: var(--activity);
+}
+
+[class*=privateChannels_] [href="/channels/@me"] {
+  display: var(--friends);
+}
+[class*=privateChannels_] [href="/store"] {
+  display: var(--store);
+}
+[class*=privateChannels_] [href="/shop"] {
+  display: var(--shop);
+}
+
+
 /* Explore */
 /*.tutorialContainer_c96c45+div {
   display: none;
@@ -7193,10 +7275,6 @@ div[class^=typing] {
   display: none;
 }
 
-/* no GIF  or Gift buttons */
-.expression-picker-chat-input-button:not(:last-child):not([class^=buttons]:has([class^=separator])>.expression-picker-chat-input-button:nth-last-child(2)), [aria-label="Send a gift"] {
-  display: none;
-}
 
 /* DM right side profile shit */
 aside.profilePanel_b433b4 {
@@ -8030,11 +8108,11 @@ div.avatar_b2ca13.wrapper-1VLyxH {
   color: var(--highlight-icon) !important;
 }
 
+
 /* Disable discord mirroring your preview of the camera */
 div[data-selenium-video-tile="246276708242554890"] [class^=voiceChannelEffectsContainer] + [class*=videoWrapper] {
   transform: scaleX(-1);
 }
-
 
 /*Centered Voice Controls*/
 .bottomControls_dd069c > .flex_dc333f:is(:first-child, :last-child) {
@@ -8043,7 +8121,6 @@ div[data-selenium-video-tile="246276708242554890"] [class^=voiceChannelEffectsCo
 .bottomControls_dd069c > .flex_dc333f:nth-child(2) {
   flex: 0 1 auto !important;
 }
-
 
 /* hide active voice channels not on list */
 .containerDefault_f6f816:has(.collapsed_a478e5),
