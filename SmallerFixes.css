@@ -5105,6 +5105,20 @@ div.header_b56bbc,
   background-color: var(--notification-color);
 }
 
+/* move add a server button lower */
+.guilds_a4d4d9 .tree_fea3ef:focus {
+  outline-color: transparent;
+}
+.guilds_a4d4d9 .scroller_fea3ef {
+  margin-bottom: 56px;
+}
+.tree_fea3ef>.footer_aa1bff{background:none}
+.guilds_a4d4d9 .scroller_fea3ef>[aria-label]+.tutorialContainer_c96c45 {
+  position: fixed;
+  transform: translatey(-100%);
+  bottom: 13px;
+}
+
 /*
 *
 *	SERVER SETTING AUDIT LOG
@@ -8132,3 +8146,4 @@ div[data-selenium-video-tile="246276708242554890"] [class^=voiceChannelEffectsCo
 .questTile_ad4620:has(.colorPrimary_dd4f85):not(:has(.circularRewardTileWrapper_c2d7e2)){
     display: none;
 }
+
