@@ -58,36 +58,9 @@
 @font-face {
   font-family: "CreArts";
   font-style: normal;
-  font-weight: 300;
-  font-display: swap;
-  src: url(https://crearts-community.github.io/Assets/fonts/quicksand/quicksand-300.woff2) format("woff2");
-  unicode-range: U+0020-007F, U+00A0-00FF, U+0100-017F, U+0180-024F
-}
-
-@font-face {
-  font-family: "CreArts";
-  font-style: normal;
   font-weight: 400;
   font-display: swap;
   src: url(https://crearts-community.github.io/Assets/fonts/quicksand/quicksand-400.woff2) format("woff2");
-  unicode-range: U+0020-007F, U+00A0-00FF, U+0100-017F, U+0180-024F
-}
-
-@font-face {
-  font-family: "CreArts";
-  font-style: normal;
-  font-weight: 500;
-  font-display: swap;
-  src: url(https://crearts-community.github.io/Assets/fonts/quicksand/quicksand-500.woff2) format("woff2");
-  unicode-range: U+0020-007F, U+00A0-00FF, U+0100-017F, U+0180-024F
-}
-
-@font-face {
-  font-family: "CreArts";
-  font-style: normal;
-  font-weight: 600;
-  font-display: swap;
-  src: url(https://crearts-community.github.io/Assets/fonts/quicksand/quicksand-600.woff2) format("woff2");
   unicode-range: U+0020-007F, U+00A0-00FF, U+0100-017F, U+0180-024F
 }
 
@@ -296,6 +269,8 @@
   --text-brand: hsl(var(--accent-hsl));
   --text-link: hsl(var(--accent-hsl));
 }
+
+/* ------------------------------------------------------------------------- start of long ass area ------------------------------------------------------------------------- */
 
 /*
 *
@@ -6401,7 +6376,7 @@ div.header_b56bbc,
   display: none;
 }
 
-/* */
+/* ------------------------------------------------------------------------- end of long ass area ------------------------------------------------------------------------- */
 
 /* ==================================== */
 /* ======= < WINDOWS BUTTONS > ======= */
@@ -6730,6 +6705,46 @@ div[id='user-context-call'],
 .iconSpacing_d80634[aria-label="Muted"] .icon_d80634,
 .iconSpacing_d80634[aria-label="Deafened"] .icon_d80634 {
   color: hsl(0, 64%, 57%);
+}
+
+/* =================================== */
+/* ======= < TIMESTAMP ICON > ======= */
+/* ================================= */
+.timestamp_f8f345 {
+  border-radius: 7px;
+  padding: 2.5px;
+}
+
+.timestamp_f8f345::before {
+  content: url("data:image/svg+xml,%3Csvg width='12px' height='12px' role='img' fill='white' viewBox='0 0 520 520' xmlns='http://www.w3.org/2000/svg'%3E%3Ctitle%3EDiscord%3C/title%3E%3Cpath d='M256,8C119,8,8,119,8,256S119,504,256,504,504,393,504,256,393,8,256,8Zm92.49,313h0l-20,25a16,16,0,0,1-22.49,2.5h0l-67-49.72a40,40,0,0,1-15-31.23V112a16,16,0,0,1,16-16h32a16,16,0,0,1,16,16V256l58,42.5A16,16,0,0,1,348.49,321Z'/%3E%3C/svg%3E");
+  margin: 4px;
+  position: relative;
+  top: 1.5px;
+}
+
+.theme-light .timestamp_f8f345::before {
+  filter: invert(87%);
+}
+
+/* simplified edited icon */
+.edited_f9f2ca {
+  color: hsla(0, 0%, 0%, 0);
+}
+
+.edited_f9f2ca::before {
+  content: "(✎)";
+  color: var(--text-muted);
+  font-size: 0.625rem;
+  font-weight: 400;
+  line-height: 1;
+}
+
+
+/* ====================================== */
+/* ======= < JOINED VOICE ICON > ======= */
+/* ==================================== */
+.wrapper_d8bfb3.modeConnected_d8bfb3 .icon_d8bfb3 {
+  color: var(--status-positive);
 }
 
 
@@ -7588,47 +7603,6 @@ span[class*="username"]>span[class*="desaturateUserColors"]::after {
 [class*="jumpToPresentBar"]:hover>button svg {
   margin-right: 2px;
   margin-left: -6px;
-}
-
-
-/* =================================== */
-/* ======= < TIMESTAMP ICON > ======= */
-/* ================================= */
-.timestamp_f8f345 {
-  border-radius: 7px;
-  padding: 2.5px;
-}
-
-.timestamp_f8f345::before {
-  content: url("data:image/svg+xml,%3Csvg width='12px' height='12px' role='img' fill='white' viewBox='0 0 520 520' xmlns='http://www.w3.org/2000/svg'%3E%3Ctitle%3EDiscord%3C/title%3E%3Cpath d='M256,8C119,8,8,119,8,256S119,504,256,504,504,393,504,256,393,8,256,8Zm92.49,313h0l-20,25a16,16,0,0,1-22.49,2.5h0l-67-49.72a40,40,0,0,1-15-31.23V112a16,16,0,0,1,16-16h32a16,16,0,0,1,16,16V256l58,42.5A16,16,0,0,1,348.49,321Z'/%3E%3C/svg%3E");
-  margin: 4px;
-  position: relative;
-  top: 1.5px;
-}
-
-.theme-light .timestamp_f8f345::before {
-  filter: invert(87%);
-}
-
-/* simplified edited icon */
-.edited_f9f2ca {
-  color: hsla(0, 0%, 0%, 0);
-}
-
-.edited_f9f2ca::before {
-  content: "(✎)";
-  color: var(--text-muted);
-  font-size: 0.625rem;
-  font-weight: 400;
-  line-height: 1;
-}
-
-
-/* ====================================== */
-/* ======= < JOINED VOICE ICON > ======= */
-/* ==================================== */
-.wrapper_d8bfb3.modeConnected_d8bfb3 .icon_d8bfb3 {
-  color: var(--status-positive);
 }
 
 
