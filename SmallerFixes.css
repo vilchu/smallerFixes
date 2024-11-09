@@ -7879,7 +7879,7 @@ div.avatar_b2ca13.wrapper-1VLyxH {
 /* ======= < PROFILE MODIFICATIONS > ======= */
 /* ======================================== */
 /* View Full Bio in Popout Profiles alongside scrolling in Bios */
-[class^=viewFullBio_] {
+/*[class^=viewFullBio_] {
   display: none;
 }
 
@@ -7907,7 +7907,16 @@ div.avatar_b2ca13.wrapper-1VLyxH {
     background: hsla(0, 0%, 100%, 0.14);
     border-radius: 10px;
   }
+}*/
+
+.descriptionClamp_abaf7d:not(.headerText_d331f1 .descriptionClamp_abaf7d) {
+-webkit-line-clamp: unset;
+max-height: unset /*Set this to something like 112px if you want a scrollbar*/;
+overflow-x: hidden;
+overflow-y: auto;
 }
+.viewFullBio_abaf7d{display: none;}
+
 
 /* Unclamp status bubble size in user popout */
 [class^="userPopoutInner_"] [class^="statusBubble_"] [class*="clamp_"] {
@@ -7952,12 +7961,15 @@ div.avatar_b2ca13.wrapper-1VLyxH {
   background-color: var(--profile-gradient-button-color)!important;
 }
 
-
+/* Width of small/popout profiles */
 [class^="scroller"]>[class^="section"]>[data-list-id^="roles"] {
   width: 284px;
-  /* Width of small/popout profiles */
 }
 
+/* profile banner circle */
+.mask_d5fdb1 > foreignObject{
+  mask: unset!important;
+}
 
 /* ================================================================ */
 /* =================== < MAKE PRONOUNS STAND OUT MORE > ========== */
