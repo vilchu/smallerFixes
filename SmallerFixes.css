@@ -1,7 +1,7 @@
 /**
  * @name Smaller Fixes
  * @description my theme consisting of various theme snippets and stuff. I take no credit for anything'
- * @version 2.1.8
+ * @version 7.2.2
  * @author vilchu
  * @authorId 246276708242554890
 **/
@@ -642,8 +642,8 @@
 /* Improved Links */
 [class^=message_] [class^=contents_] [class^=anchor_], [class^=message_] [class^=repliedMessage_] [class^=anchor_], [class^=message_] [class^=modal] [class^=anchor_], [class^=message_] [class^=topic_] [class^=anchor_], [class^=focusLock] [class^=contents_] [class^=anchor_], [class^=focusLock] [class^=repliedMessage_] [class^=anchor_], [class^=focusLock] [class^=modal] [class^=anchor_], [class^=focusLock] [class^=topic_] [class^=anchor_], [class^=title] [class^=contents_] [class^=anchor_], [class^=title] [class^=repliedMessage_] [class^=anchor_], [class^=title] [class^=modal] [class^=anchor_], [class^=title] [class^=topic_] [class^=anchor_] {
   transition: background-color 50ms ease-out, color 50ms ease-out;
-  color: var(--mention-foreground);
-  background-color: var(--mention-background);
+  color: hsl(var(--mention-colour));
+  background-color: hsla(var(--mention-colour),0.4);
   padding: 1px 2px;
   border-radius: 3px;
   border-bottom: 1px solid var(--brand-700);
@@ -655,7 +655,7 @@
   font-size: small;
 }
 [class^=message_] [class^=contents_] [class^=anchor_]:hover, [class^=message_] [class^=repliedMessage_] [class^=anchor_]:hover, [class^=message_] [class^=modal] [class^=anchor_]:hover, [class^=message_] [class^=topic_] [class^=anchor_]:hover, [class^=focusLock] [class^=contents_] [class^=anchor_]:hover, [class^=focusLock] [class^=repliedMessage_] [class^=anchor_]:hover, [class^=focusLock] [class^=modal] [class^=anchor_]:hover, [class^=focusLock] [class^=topic_] [class^=anchor_]:hover, [class^=title] [class^=contents_] [class^=anchor_]:hover, [class^=title] [class^=repliedMessage_] [class^=anchor_]:hover, [class^=title] [class^=modal] [class^=anchor_]:hover, [class^=title] [class^=topic_] [class^=anchor_]:hover {
-  background-color: var(--brand-experiment);
+  background-color: hsla(var(--mention-colour),0.55);
 }
 
 .anchor_af404b[title$=")"]:after {
@@ -5059,7 +5059,6 @@ div.header_b56bbc,
 *  SERVERS LIST
 *
 */
-
 .wrapper_fea3ef {
   background-color: var(--sidebar-color);
 }
@@ -5081,7 +5080,7 @@ div.header_b56bbc,
   filter: none;
 }
 .gradient_aa1bff {
-  display: none;
+  display: none!important;
 }
 .childWrapper_f90abb,
 .circleIconButton_db6521 {
