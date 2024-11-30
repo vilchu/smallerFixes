@@ -7170,17 +7170,12 @@ button[class*=attachButton] {
 }
 
 /* forward to modal */
-#app-mount > div.appAsidePanelWrapper_bd26cc > div.notAppAsidePanel_bd26cc > div:nth-child(4) > div.layer_c9e2da > div > div > div.flex_dc333f.horizontalReverse_dc333f.justifyStart_ec1a20.alignStretch_ec1a20.noWrap_ec1a20.footer_f9a4c9.footerWithMessage_d0585c.footerSeparator_f9a4c9 > div.footerWarningWrapper_d0585c > div > div > div > div > div.buttons_bdf0de > div {
-  margin-left: -100px!important;
-  margin-top: 5px!important
-}
 .sendWithMessage_d0585c.button_dd4f85.lookFilled_dd4f85.colorBrand_dd4f85.sizeMedium_dd4f85.grow_dd4f85 {
   margin-left: -68px!important;
-  bottom: 5px
+  top: 6px
 }
-div.markup_f8f345.editor_a552a6.slateTextArea_e52116.fontSize16Padding_bdf0de.textAreaWithoutAttachmentButton_bdf0de {
+.inner_bdf0de.sansAttachButtonCreatePost_bdf0de {
   margin-left: -54px!important;
-  max-width: 280px;
 }
 
 /* about me message box */
