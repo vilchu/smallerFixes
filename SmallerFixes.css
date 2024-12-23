@@ -1,11 +1,10 @@
 /**
  * @name Smaller Fixes
  * @description my theme consisting of various theme snippets and stuff. I take no credit for anything'
- * @version 9.1.2
+ * @version 8.0.1
  * @author vilchu
  * @authorId 246276708242554890
 **/
-
 
 
 /* ================================= */
@@ -37,6 +36,7 @@
 /**:not(code) {
   font-family: 'Didact Gothic Regular', sans-serif;
 }*/
+
 
 :root {
   --font-primary: var(--SKIN-primary-font, "CreArts", "Whitney", "Helvetica Neue", "Helvetica", "Arial", "sans-serif") !important;
@@ -266,6 +266,7 @@
   --text-brand: hsl(var(--accent-hsl));
   --text-link: hsl(var(--accent-hsl));
 }
+
 
 /* ------------------------------------------------------------------------- start of long ass area ------------------------------------------------------------------------- */
 
@@ -2490,7 +2491,7 @@ button.fieldButton_b69b77.removeButton_b69b77.button_dd4f85.lookLink_dd4f85.lowS
 *  ATTACHMENTS
 *
 */
-.attachment_b52bef,
+.fileWrapper_f46c86,
 .embedFull_b0068a,
 .embedCard_a0eae1,
 .container_c15230 {
@@ -4952,12 +4953,12 @@ div.header_b56bbc,
   padding-bottom: 0;
 }
 
-.statusBubbleOuter_d0a252 {
+.statusBubbleOuter_af9888 {
   border: none !important;
 }
 
-.statusBubbleOuter_d0a252:before,
-.statusBubbleOuter_d0a252:after {
+.statusBubbleOuter_af9888:before,
+.statusBubbleOuter_af9888:after {
   border: inherit !important;
 }
 
@@ -6530,7 +6531,7 @@ svg.spine_e1e976 {
   left: 0;
   bottom: 0;
   width: 2px;
-  background-color: hsl(var(--mention-colour));
+  background-color: current;
   filter: saturate(var(--saturation-factor, 1));
   pointer-events: none;
 }
@@ -6715,6 +6716,7 @@ div[id='user-context-call'],
   color: hsl(0, 64%, 57%);
 }
 
+
 /* =================================== */
 /* ======= < TIMESTAMP ICON > ======= */
 /* ================================= */
@@ -6808,15 +6810,18 @@ div.welcomeCTA_f6dde0>button>div>div>div {
   width: 28px !important;
   height: 28px !important;
 }*/
-
+.assetWrapper_cb3343 {
+  width: 6vh !important;
+  height: 6vh !important;
+}
 
 /* ============================================ */
 /* ======= < COOLER EMBEDS AND MEDIA > ======= */
 /* ========================================== */
 #app-mount .embedFull_b0068a {
   background: hsla(0, 0%, 0%, 0.2);
-  border-left: 0px;
-  border-bottom: var(--chattyBorderRadius) solid;
+  /*border-bottom: var(--chattyBorderRadius) blue solid!important;*/
+  border-left: 6px solid;
   border-radius: var(--chattyBorderRadius);
   box-shadow: var(--elevationHigh);
 }
@@ -6855,11 +6860,12 @@ div.welcomeCTA_f6dde0>button>div>div>div {
 /* ========================================= */
 /* ======= < FULL COLOURED EMBEDS > ======= */
 /* ======================================= */
-.embedFull_b0068a {
+  /*border-top: 4px solid var(--background-tertiary);*/
+/*.embedFull_b0068a {
   overflow: hidden;
   background: var(--background-primary);
   border-left: none;
-  /*border-top: 4px solid var(--background-tertiary);*/
+
   z-index: 0;
 }
 
@@ -6873,15 +6879,17 @@ div.welcomeCTA_f6dde0>button>div>div>div {
   border-color: inherit;
   opacity: 0.15;
   z-index: -1;
-}
+}*/
 
+
+  /*width: fit-content;*/
 /* Embeds */
-.embedFull_b0068a {
+/*.embedFull_b0068a {
   overflow: hidden;
   border-left: none;
   z-index: 0;
   border-radius: var(--chat-bubble-border-radius);
-  /*width: fit-content;*/
+
   background-color: inherit;
   margin: 0.25em 0.125em 0 !important
 }
@@ -6905,7 +6913,7 @@ div.welcomeCTA_f6dde0>button>div>div>div {
   width: 100%;
   background: hsla(0, 0%, 0%, 0.99);
   z-index: -1;
-}
+}*/
 
 
 /* ==================================== */
@@ -7163,7 +7171,7 @@ button[class*=attachButton] {
 
 /* message bar position when no attachment button */
 .form_a7d72e:has(.channelTextAreaDisabled_bdf0de) {
-  width: 1390px;
+  width: 1615px;
 }
 .scrollableContainer_bdf0de:not(.forumGuidelines_bc05bb.scrollableContainer_bdf0de, .fileInput_a15d29, .bioTextArea_ccf27d.scrollableContainer_bdf0de.themedBackground_bdf0de, :has(.attachWrapper_f298d4)) .textArea_bdf0de:not(:has(>div>div>[class^="applicationCommand_"])) {
   margin-left: 64px;
@@ -8171,7 +8179,7 @@ div[data-selenium-video-tile="246276708242554890"] [class^=voiceChannelEffectsCo
     display: none;
 }
 
-
-#app-mount > div.appAsidePanelWrapper_bd26cc > div.notAppAsidePanel_bd26cc > div.app_bd26cc > div > div.layers_d4b6c5.layers_a01fb1 > div > div > div > div > div.sidebar_a4d4d9 > section > div.container_b2ca13 > div.avatarWrapper_b2ca13 > div.wrapper_c51b4e.avatar_b2ca13 > svg.mask_c51b4e.svg_c51b4e > rect {
-  display: none;
+/* gift star wrong side*/
+[class*='gifFavoriteButton_'] {
+  background-color: transparent;
 }
