@@ -1,7 +1,7 @@
 /**
  * @name Smaller Fixes Pastel
  * @description my theme consisting of various theme snippets and stuff. I take no credit for anything'
- * @version 8.0.1
+ * @version 0.5.1
  * @author vilchu
  * @authorId 246276708242554890
 **/
@@ -643,6 +643,7 @@ button.fieldButton_b69b77.removeButton_b69b77.button_dd4f85.lookLink_dd4f85.lowS
 /* ============================ */
 :root:has(bd-body) .wordmark_a934d8::after {
   content: var(--watermark);
+  color: white
 }
 
 .wordmark_a934d8 {
