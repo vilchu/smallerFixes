@@ -118,7 +118,7 @@
   --inner-secondary: 12px;
   --inner-tertiary: 16px;
 
-  --panel-colour: 	hsl(264, 41%, 87%) ; /*hsl(225, 6%, 13%)*/
+  --panel-colour:hsl(264, 41%, 87%); /*hsl(225, 6%, 13%)*/
   /* dark gray discord hsl(225, 6%, 13%);*/
 
   /* windows buttons close minimize etc */
@@ -225,7 +225,7 @@
   --server-folder-color: rgba(255, 255, 255, 0.1);
   --supporter-color: hsla(var(--accent-hsl), var(--accent-opacity));
   --tooltip-color: hsla(var(--accent-hsl), var(--accent-opacity));
-  --tooltip-text-color: #fff;
+  --tooltip-text-color: #000;
   --tooltip-font-size: 14px;
   --tooltip-padding: 8px 12px;
   --tooltip-radius: var(--app-radius);
@@ -247,15 +247,15 @@
   --scrollbar-opacity-hover: 0.0;
   --scrollbar-width: 10px;
 }
-
-.theme-dark,
 .theme-light {
+  --text-brand: hsl(var(--accent-hsl));
+  --text-link: hsl(var(--accent-hsl));
+}
+.theme-dark {
   --background-modifier-hover: rgba(255, 255, 255, 0.075);
   --background-modifier-active: rgba(255, 255, 255, 0.1);
   --background-modifier-selected: rgba(255, 255, 255, 0.125);
   --background-modifier-accent: rgba(255, 255, 255, 0.175);
-  --text-brand: hsl(var(--accent-hsl));
-  --text-link: hsl(var(--accent-hsl));
 }
 
 /*
@@ -285,20 +285,19 @@
 }
 
 /*.lookFilled_dd4f85,*/
-/*.lookOutlined_dd4f85,*/
+.lookOutlined_dd4f85,
 .lookLink_dd4f85,
 .lookInverted_a299dc,
-.bd-button-filled,
+/*.bd-button-filled,*/
 .bd-button-link {
   --button-background: hsla(var(--accent-hsl), var(--accent-opacity));
   --button-text-color: var(--accent-text-color);
   --button-outline: none;
-  /*background-color: var(--button-background) !important;*/
+  background-color: var(--button-background) !important;
   border: var(--button-outline) !important;
   color: var(--button-text-color) !important;
   border: var(--button-outline) !important;
 }
-
 
 .lookFilled_dd4f85:after,
 .lookOutlined_dd4f85:after,
@@ -337,7 +336,7 @@
   opacity: 0.15;
 }
 
-/*.lookFilled_dd4f85 .contents_dd4f85,*/
+.lookFilled_dd4f85 .contents_dd4f85,
 .lookFilled_dd4f85 .bd-button-content .defaultColor__77578,
 .lookFilled_dd4f85 .bd-button-content .defaultColor_e9e35f,
 .lookFilled_dd4f85 .bd-button-content .defaultColor_a595eb,
@@ -462,6 +461,7 @@
   --button-action-color: transparent;
 }
 
+
 button.fieldButton_b69b77.removeButton_b69b77.button_dd4f85.lookLink_dd4f85.lowSaturationUnderline_c7819f.colorPrimary_dd4f85.sizeSmall_dd4f85.grow_dd4f85 > div {
   color: hsl(0, 64%, 57%);
 }
@@ -512,7 +512,7 @@ button.fieldButton_b69b77.removeButton_b69b77.button_dd4f85.lookLink_dd4f85.lowS
 }
   
 .tooltip_b6c360 .activityIcon_a6ae3c {
-    color: var(--tooltip-text-color) !important;
+  color: var(--tooltip-text-color) !important;
 }
   
   /*.tooltip_b6c360 .muteText_a6ae3c {
@@ -522,10 +522,10 @@ button.fieldButton_b69b77.removeButton_b69b77.button_dd4f85.lookLink_dd4f85.lowS
 /* TOOLTIP -> UPSELLS */
 .reactionTooltip_fba897,
 .upsellTooltipWrapper_dafa63 {
-    background-color: transparent;
-    border-radius: var(--popout-radius);
-    box-shadow: none;
-    overflow: hidden;
+  background-color: transparent;
+  border-radius: var(--popout-radius);
+  box-shadow: none;
+  overflow: hidden;
 }
   
 .reactionTooltip_fba897:before,
@@ -620,8 +620,8 @@ button.fieldButton_b69b77.removeButton_b69b77.button_dd4f85.lookLink_dd4f85.lowS
 }
   
 .footer_d71945 {
-    position: fixed;
-    bottom: 15px!important;
+  position: fixed;
+  bottom: 15px!important;
 }
 
 
@@ -630,9 +630,7 @@ button.fieldButton_b69b77.removeButton_b69b77.button_dd4f85.lookLink_dd4f85.lowS
 /* ================================== */
 :root .winButton_a934d8 {
   background-color: var(--window-colour);
-  margin-top: -3px
 }
-
 :root .winButton_a934d8:last-child {
   border-bottom-left-radius: 8px;
 }
@@ -1276,7 +1274,7 @@ div.welcomeCTA_f6dde0>button>div>div>div {
   width: 100%;
   height: 100%;
   border-radius: 10px;
-  background: hsla(0, 0%, 0%, 0.56);
+  background: hsla(0, 45%, 91%, 0.67); /*hsla(0, 0%, 0%, 0.56)*/
   backdrop-filter: blur(5px);
 }
 
@@ -1984,12 +1982,22 @@ span[class*="username"]>span[class*="desaturateUserColors"]::after {
 /* ========================================= */
 /* ======= < PROFILE PANEL THINGY > ======= */
 /* ======================================= */
-:root .panels_a4d4d9 {
+.panels_a4d4d9 {
   margin: 0 5px 8px 5px;
   border-radius: calc(20px - 5px);
   background-color: var(--panel-colour);
   box-shadow: 0 2px 10px 0 hsla(0, 0%, 0%, 0.2), 0 0 0 1px hsla(0, 29%, 17%, 0.11);
   overflow: hidden;
+}
+
+.container_b2ca13 {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: 1fr 1fr;
+  height: calc(105px + var(--inner-primary) + var(--inner-primary));
+  padding: 0px;
+  margin: 0px;
+  background: var(--panel-colour)!important;
 }
 
 /* small shit in background */
@@ -2011,16 +2019,6 @@ span[class*="username"]>span[class*="desaturateUserColors"]::after {
 
 .panel_bf1a22.activityPanel_a4d4d9,
 .container_adcaac {
-  background-color: var(--panel-colour) !important;
-}
-
-.container_b2ca13 {
-  display: grid;
-  grid-template-columns: auto 1fr;
-  grid-template-rows: 1fr 1fr;
-  height: calc(105px + var(--inner-primary) + var(--inner-primary));
-  padding: 0px;
-  margin: 0px;
   background-color: var(--panel-colour) !important;
 }
 
@@ -2108,6 +2106,10 @@ div.avatar_b2ca13.wrapper-1VLyxH {
   background: 		hsl(265, 45%, 81%);
   /*var(--inversed-overlay, var(--background-primary))*/
   transition: color .15s ease-out, background-color .15s ease-out;
+}
+
+.lookFilled_dd4f85 {
+  background: hsl(265, 45%, 81%)!Important;
 }
 
 /* User Area Icon Recolor where the mic etc is */
