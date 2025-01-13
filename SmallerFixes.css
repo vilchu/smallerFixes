@@ -1,7 +1,7 @@
 /**
  * @name Smaller Fixes
  * @description my theme consisting of various theme snippets and stuff. I take no credit for anything'
- * @version 8.0.1
+ * @version 1.10.1
  * @author vilchu
  * @authorId 246276708242554890
 **/
@@ -21,6 +21,8 @@
 @import url("https://raw.githubusercontent.com/KrstlSkll69/vc-snippets/main/StageRecolor.css");
 @import url("https://github.com/lazuee/css-snippets/raw/main/discord/sidebar-notice/import.css");
 @import url('https://ukriu.github.io/cssCord/Other/gradientDM.css');
+
+
 
 
 /* icons */
@@ -6387,6 +6389,25 @@ div.header_b56bbc,
 
 /* ------------------------------------------------------------------------- end of long ass area ------------------------------------------------------------------------- */
 
+
+[class^="subtitleContainer_"] {
+  margin-left: 0px;
+  width: 1680px!important;
+}
+
+
+[class^="container_"]:has(> [class^="membersWrap_"]) {
+  position: relative;
+  top: -60px;
+  height: calc(100% + 60px);
+  border: none;
+  background: #2b2d31;
+}
+
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------ */
+
+
 /* ==================================== */
 /* ======= < WINDOWS BUTTONS > ======= */
 /* ================================== */
@@ -7661,6 +7682,7 @@ span[class*="username"]>span[class*="desaturateUserColors"]::after {
 .slider_cebd1c path {
   fill: transparent;
 }
+
 
 /* ============================================= */
 /* ======= < FANCY CHANNEL CATEGORIES > ======= */
