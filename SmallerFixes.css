@@ -6392,7 +6392,7 @@ div.header_b56bbc,
 
 [class^="subtitleContainer_"] {
   margin-left: 0px;
-  width: 1680px!important;
+  width: 1680px!important; /* 680px for laptop */
 }
 
 
