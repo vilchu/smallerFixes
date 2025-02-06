@@ -1,7 +1,7 @@
 /**
  * @name Smaller Fixes
  * @description my theme consisting of various theme snippets and stuff. I take no credit for anything'
- * @version 2.3.1
+ * @version 1.10.7
  * @author vilchu
  * @authorId 246276708242554890
 **/
@@ -6392,9 +6392,8 @@ div.header_fed6d3,
 
 [class^="subtitleContainer_"] {
   margin-left: 0px;
-  width: 1680px!important;
+  width: 1680px; /* 680px for laptop */
 }
-
 
 [class^="container_"]:has(> [class^="membersWrap_"]) {
   position: relative;
@@ -8022,13 +8021,14 @@ div.avatar__37e49.wrapper-1VLyxH {
 /* ====================================== */
 /* ======= < DM PROFILE WIDTH > ======= */
 /* ==================================== */
-.userPanelOuter_c69a7b.userProfileOuterThemed_c69a7b.theme-dark.custom-theme-background.custom-profile-theme.container_a823cd,
-.userPanelOuter_c69a7b.userProfileOuterUnthemed_c69a7b.theme-dark.container_a823cd {
+.outer_c0bea0.theme-dark.images-dark.custom-theme-background.custom-profile-theme.panel_c0bea0 {
   width: 240px;
+  height: calc(100% + 60px);
 }
-
-.banner__68edb.divider_c3e427.panelBanner_c3e427.bannerPremium_c3e427 {
-  margin-left: -100px;
+.outer_c0bea0.theme-dark.images-dark.panel_c0bea0 {
+  width: 240px; 
+  bottom: 48px;
+  height: 1183px!important
 }
 
 
@@ -8206,3 +8206,34 @@ div[data-selenium-video-tile="246276708242554890"] [class^=voiceChannelEffectsCo
 [class*='gifFavoriteButton_'] {
   background-color: transparent;
 }
+
+/* Remove the shitass new nitro tooltip */
+.tooltipWordmarkContainer_f240e3 {
+  display: none;
+  padding: 0;
+}
+.tooltipContainer_f240e3 > img {
+display: none;
+}
+.tooltipContainer_f240e3 > h1 {
+display: none;
+padding: 0;
+}
+.tooltipContainer_f240e3 {
+padding: 0;
+margin: 0 auto;
+}
+.tooltipDescription_f240e3 {
+color: white !important;
+font-size: 14px;
+padding: 0;
+}
+
+/* Pin page switcher to bottom of search results */
+[class^=searchResultsWrap_] [class^=container_]:has([class^=pageControlContainer_]){
+  position: sticky;
+  bottom: 0px;
+  z-index: 999;
+  background: var(--bg-overlay-1, var(--background-secondary));
+}
+
