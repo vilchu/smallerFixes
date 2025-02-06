@@ -1,7 +1,7 @@
 /**
  * @name Smaller Fixes
  * @description my theme consisting of various theme snippets and stuff. I take no credit for anything'
- * @version 1.10.7
+ * @version 1.10.9
  * @author vilchu
  * @authorId 246276708242554890
 **/
@@ -8003,6 +8003,7 @@ div.avatar__37e49.wrapper-1VLyxH {
 .mask__68edb > foreignObject{
   mask: unset!important;
 }
+
 
 /* ================================================================ */
 /* =================== < MAKE PRONOUNS STAND OUT MORE > ========== */
