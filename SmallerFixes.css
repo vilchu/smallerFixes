@@ -1,7 +1,7 @@
 /**
  * @name Smaller Fixes
  * @description my theme consisting of various theme snippets and stuff. I take no credit for anything'
- * @version 1.10.9
+ * @version 1.11.2
  * @author vilchu
  * @authorId 246276708242554890
 **/
@@ -7891,6 +7891,7 @@ div.avatar__37e49.wrapper-1VLyxH {
   top: 40px;
 }
 
+.button__67645.enabled__67645.button__201d5.lookBlank__201d5.colorBrand__201d5.grow__201d5.button__67645,
 .container__37e49>.flex__7c0ba>button {
   border-radius: var(--button-radius);
   width: 100%;
@@ -8237,4 +8238,3 @@ padding: 0;
   z-index: 999;
   background: var(--bg-overlay-1, var(--background-secondary));
 }
-
