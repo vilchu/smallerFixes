@@ -1,7 +1,7 @@
 /**
  * @name Smaller Fixes
  * @description my theme consisting of various theme snippets and stuff. I take no credit for anything'
- * @version 1.11.2
+ * @version 1.11.3
  * @author vilchu
  * @authorId 246276708242554890
 **/
@@ -23,11 +23,10 @@
 @import url('https://ukriu.github.io/cssCord/Other/gradientDM.css');
 
 
-
-
 /* icons */
 @import url("//dablulite.github.io/css-snippets/PrettyFolderIcons/import.css");
 @import url("https://maendisease.github.io/BetterDiscordStuff/css/bearableInbox.css");
+@import url("https://gold-me.github.io/DiscordIcons/main.css");
 
 
 /* ================================= */
@@ -6392,7 +6391,7 @@ div.header_fed6d3,
 
 [class^="subtitleContainer_"] {
   margin-left: 0px;
-  width: 1680px; /* 680px for laptop */
+  width: 1450px; /* 680px for laptop */
 }
 
 [class^="container_"]:has(> [class^="membersWrap_"]) {
@@ -7373,7 +7372,6 @@ div[class^=typing] {
   display: none;
 }
 
-
 /* DM right side profile shit */
 aside.profilePanel_b433b4 {
   width: 240px;
@@ -7383,10 +7381,6 @@ aside.profilePanel_b433b4 {
 .form_f75fb0::after {
   display: none;
 }
-
-/*.form_f75fb0:before {
-  display: none;
-}*/
 
 /* invisible typing button off */
 .invisibleTypingButton {
@@ -7501,30 +7495,6 @@ div.clipContainer__841c8 {
   pointer-events: none;
   max-width: 100%;
   margin: 0px
-}
-
-/* mascot above chatbar */
-:root {
-  --background-image: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/68c512cd-5771-4700-b611-d8bfe279847d/dcehv21-059039f7-f611-4e44-b898-d5dd9c91d981.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzY4YzUxMmNkLTU3NzEtNDcwMC1iNjExLWQ4YmZlMjc5ODQ3ZFwvZGNlaHYyMS0wNTkwMzlmNy1mNjExLTRlNDQtYjg5OC1kNWRkOWM5MWQ5ODEuZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.oEFjfzpapXzRJ28FPMooEGDnBa4o0X0L3dXwzA1doBE");
-  /* Change image here */
-  --size: 60px;
-  /* Change Image size here */
-  --align: 1233px;
-  /* Change alignment here */
-}
-
-main[class^="chatContent_"] form[class^="form_"]::before {
-  background-image: var(--background-image) !important;
-  background-size: contain !important;
-  background-position: var(--align) !important;
-  background-repeat: no-repeat !important;
-  /*  transform: scaleX(1);*/
-  margin-left: 2%;
-  margin-right: 2%;
-  height: var(--size);
-  max-height: var(--size);
-  top: calc(var(--size) - var(--size) - var(--size));
-  pointer-events: none;
 }
 
 /* Custom " i'm new here, say hi " icon */
@@ -8209,27 +8179,6 @@ div[data-selenium-video-tile="246276708242554890"] [class^=voiceChannelEffectsCo
   background-color: transparent;
 }
 
-/* Remove the shitass new nitro tooltip */
-.tooltipWordmarkContainer_f240e3 {
-  display: none;
-  padding: 0;
-}
-.tooltipContainer_f240e3 > img {
-display: none;
-}
-.tooltipContainer_f240e3 > h1 {
-display: none;
-padding: 0;
-}
-.tooltipContainer_f240e3 {
-padding: 0;
-margin: 0 auto;
-}
-.tooltipDescription_f240e3 {
-color: white !important;
-font-size: 14px;
-padding: 0;
-}
 
 /* Pin page switcher to bottom of search results */
 [class^=searchResultsWrap_] [class^=container_]:has([class^=pageControlContainer_]){
@@ -8237,4 +8186,30 @@ padding: 0;
   bottom: 0px;
   z-index: 999;
   background: var(--bg-overlay-1, var(--background-secondary));
+}
+
+/* Remove the shitass new nitro tooltip */
+.tooltipWordmarkContainer_f240e3 {
+  display: none;
+  padding: 0;
+}
+
+.tooltipContainer_f240e3 > img {
+display: none;
+}
+
+.tooltipContainer_f240e3 > h1 {
+display: none;
+padding: 0;
+}
+
+.tooltipContainer_f240e3 {
+padding: 0;
+margin: 0 auto;
+}
+
+.tooltipDescription_f240e3 {
+color: white !important;
+font-size: 14px;
+padding: 0;
 }
