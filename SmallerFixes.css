@@ -1,7 +1,7 @@
 /**
  * @name Smaller Fixes
  * @description my theme consisting of various theme snippets and stuff. I take no credit for anything'
- * @version 1.11.3
+ * @version 1.13.0
  * @author vilchu
  * @authorId 246276708242554890
 **/
@@ -7729,6 +7729,7 @@ span[class*="username"]>span[class*="desaturateUserColors"]::after {
   background-color: var(--background-secondary); /*var(--background-secondary)*/
 }
 
+.content__37e49,
 .container__37e49 {
   display: grid;
   grid-template-columns: auto 1fr;
@@ -7736,15 +7737,15 @@ span[class*="username"]>span[class*="desaturateUserColors"]::after {
   height: calc(105px + var(--inner-primary) + var(--inner-primary));
   padding: 0px;
   margin: 0px;
-  background-color: var(--panel-colour) !important;
+  background-color: var(--panel-colour)!important;
 }
 
 
 .container__37e49 .avatarWrapper__37e49 {
   background: var(--background-primary);
   border-radius: var(--radius-secondary);
-  margin: 10px 0px -5px 0px!important;
-  padding: 1px 90px 1px 10px;
+  margin: 10px 0px -5px 8px!important;
+  padding: 1px 90px 1px 12px;
 }
 
 .container__37e49:not(.container__37e49) .withTagAsButton_b2ca13,
