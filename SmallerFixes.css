@@ -6800,35 +6800,6 @@ div[id='user-context-call'],
 /* ===================================== */
 /* ======= < SMALLER STICKERS > ======= */
 /* =================================== */
-/*.inspectedIndicator_c6367b,
-.pngImage__31fc2.stickerAsset__31fc2,
-.lottieCanvas__31fc2.stickerAsset__31fc2:not(.otherEmoji_d5cd2d,div.welcomeCTA_f5d1e2>button>div>div>div>canvas),
-span.clickableSticker_abd7a8,
-span.clickableSticker_abd7a8 {
-  width: 80px;
-  height: 80px;
-}
-
-
-.assetWrapper__31fc2 {
-  width: 80px !important;
-  height: 80px !important;
-}
-div>div>div.emojiSection_d5cd2d>div>div:nth-child(1)>div>img {
-  width: 48px !important;
-  height: 48px !important;
-  top: 5px
-}
-
-div>div>div.emojiSection_d5cd2d>div>div:nth-child(1)>div {
-  width: 48px !important;
-  height: 48px !important;
-}
-
-div.welcomeCTA_f5d1e2>button>div>div>div {
-  width: 28px !important;
-  height: 28px !important;
-}*/
 .assetWrapper__31fc2 {
   width: 6vh !important;
   height: 6vh !important;
@@ -7754,26 +7725,8 @@ span[class*="username"]>span[class*="desaturateUserColors"]::after {
   overflow: hidden;
 }
 
-/* small shit in background */
 .sidebar_c48ade {
   background-color: var(--background-secondary); /*var(--background-secondary)*/
-}
-
-:root .panels_c48ade .wrapper_e131a9>.container_e131a9 {
-  background-color: var(--panel-colour);
-}
-
-:root .wrapper_e131a9>.container__13b2a .header-2C89wJ {
-  background-color: var(--panel-colour);
-}
-
-:root .wrapper_e131a9>.container__13b2a section {
-  background-color: var(--panel-colour);
-}
-
-.panel__5dec7.activityPanel_c48ade,
-.container_e131a9 {
-  background-color: var(--panel-colour) !important;
 }
 
 .container__37e49 {
@@ -7788,72 +7741,18 @@ span[class*="username"]>span[class*="desaturateUserColors"]::after {
 
 .container__37e49 .avatarWrapper__37e49 {
   background: var(--background-primary);
-  /* var(--background-primary) */
   border-radius: var(--radius-secondary);
-  margin: var(--inner-primary) 0px 0px var(--inner-primary);
-  padding: calc(3px + var(--inner-primary));
-  grid-column: 1;
-  height: 38px;
-  margin-right: 9px !important;
+  margin: 10px 0px -5px 0px!important;
+  padding: 0px 90px 0px 10px;
 }
 
-.container__37e49:not(.powercord-spotify .container__37e49) .withTagAsButton_b2ca13,
+.container__37e49:not(.container__37e49) .withTagAsButton_b2ca13,
 .container__37e49 .nameTag__37e49 {
   /*background: var(--background-primary);*/
   border-radius: 15px var(--radius-secondary) var(--radius-secondary) 15px;
-  margin: var(--inner-primary) var(--inner-primary) 0px 10px;
+  margin: 10px -80px 0px 10px;
   grid-column: 2;
   height: 38px;
-}
-
-.container__37e49 .flex__7c0ba {
-  display: grid;
-  margin-left: var(--inner-primary);
-  margin-right: var(--inner-primary);
-  grid-column: 1/-1;
-  grid-gap: var(--inner-primary);
-  grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
-}
-
-.container__37e49 .directionRow__65900 .button__67645 {
-  background: var(--background-primary);
-  border-radius: var(--radius-secondary);
-  width: 100%;
-  height: 34px;
-}
-
-div.avatar__37e49.wrapper-1VLyxH {
-  height: 40px !important;
-  width: 40px !important;
-}
-
-.tabBarContainer-sCZC4w {
-  justify-content: center;
-  display: flex;
-  padding-left: 0 !important;
-}
-
-.tabBarItem_b9fccc {
-  margin-right: 16px;
-  margin-left: 16px;
-}
-
-.button_e131a9.buttonColor_e131a9.button__201d5.lookFilled__201d5.colorBrand__201d5.sizeSmall__201d5 {
-  border-radius: var(--button-radius)!important;
-}
-
-#app-mount .userProfileActivity-sal5no {
-  padding-right: 8px;
-  padding-bottom: 8px;
-  padding-top: 8px;
-}
-
-#app-mount .userProfileActivity-sal5no .bodyNormal__2ef49,
-#app-mount .userProfileActivity-sal5no .bodyAlignCenter__2ef49 {
-  padding: 8px;
-  border-radius: 5px;
-  background-color: var(--background-secondary-alt);
-  border: 1px solid hsla(0, 0%, 50%, 0.4);
 }
 
 .theme-dark .newProfileActivityStyles .platformIcon__2ef49,
@@ -7863,25 +7762,28 @@ div.avatar__37e49.wrapper-1VLyxH {
 
 .button__67645.enabled__67645.button__201d5.lookBlank__201d5.colorBrand__201d5.grow__201d5.button__67645,
 .container__37e49>.flex__7c0ba>button {
+  /*display: grid;*/
   border-radius: var(--button-radius);
-  width: 100%;
-  padding: 6px 0;
-  height: fit-content;
+  /*padding: 6px 0;
+  height: fit-content;*/
+  width: 65px;
   --inversed-overlay: rgb(var(--bg-overlay-color-inverse)/var(--bg-overlay-opacity-6));
   background: var(--inversed-overlay, var(--background-primary));
   /*var(--inversed-overlay, var(--background-primary))*/
   transition: color .15s ease-out, background-color .15s ease-out;
+  top: 65px;
+  right: 217px;
+  margin: 4px;
 }
+
 
 /* User Area Icon Recolor where the mic etc is */
 .panels_c48ade .lottieIcon__5eb9b :not(defs *)[fill][fill-opacity] {
   fill: hsl(215, 9%, 73%);
 }
-
 .lottieIcon__5eb9b>svg>g>g>g:nth-child(1)>g>g:nth-child(2)>g:nth-child(2)>path {
   stroke: hsl(215, 9%, 73%);
 }
-
 .postEnrollmentBackground__636a2.postEnrollmentBackgroundCollapsed__636a2 {
   background-color: var(--panel-colour) !important;
 }
