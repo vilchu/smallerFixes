@@ -7762,7 +7762,7 @@ span[class*="username"]>span[class*="desaturateUserColors"]::after {
   top: 40px;
 }
 
-.button__67645.enabled__67645.button__201d5.lookBlank__201d5.colorBrand__201d5.grow__201d5.button__67645:not(div.actions__4cd01 > div > button),
+.button__67645.enabled__67645.button__201d5.lookBlank__201d5.colorBrand__201d5.grow__201d5.button__67645:not(div.panel__5dec7.activityPanel_c48ade > div > div.actions__4cd01 > div > button),
 .container__37e49>.flex__7c0ba>button {
   /*display: grid;*/
   border-radius: var(--button-radius);
