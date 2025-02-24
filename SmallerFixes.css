@@ -1,7 +1,7 @@
 /**
  * @name Smaller Fixes
  * @description my theme consisting of various theme snippets and stuff. I take no credit for anything'
- * @version 1.13.0
+ * @version 1.13.8
  * @author vilchu
  * @authorId 246276708242554890
 **/
@@ -6800,7 +6800,10 @@ div[id='user-context-call'],
 /* ===================================== */
 /* ======= < SMALLER STICKERS > ======= */
 /* =================================== */
-
+.assetWrapper__31fc2 {
+  width: 7vh !important;
+  height: 7vh !important;
+}
 
 /* ============================================ */
 /* ======= < COOLER EMBEDS AND MEDIA > ======= */
@@ -8063,11 +8066,6 @@ div[data-selenium-video-tile="246276708242554890"] [class^=voiceChannelEffectsCo
   flex: 0 1 auto !important;
 }
 
-/* hide active voice channels not on list */
-.containerDefault_c69b6d:has(.collapsed_c3cd7d),
-.containerDefault__29444:has(.wrapperStatic__29444) {
-  display: none;
-}
 
 /* revamped quests page */
 .questTile__60f82:has(.colorPrimary__201d5):not(:has(.circularRewardTileWrapper__956c6)){
