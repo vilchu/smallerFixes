@@ -1,7 +1,7 @@
 /**
  * @name Smaller Fixes
  * @description my theme consisting of various theme snippets and stuff. I take no credit for anything'
- * @version 1.13.8
+ * @version 1.14.0
  * @author vilchu
  * @authorId 246276708242554890
 **/
@@ -7726,7 +7726,7 @@ span[class*="username"]>span[class*="desaturateUserColors"]::after {
 }
 
 .sidebar_c48ade {
-  background-color: var(--background-secondary); /*var(--background-secondary)*/
+  background-color: var(--background-secondary);
 }
 
 .content__37e49,
@@ -7740,6 +7740,17 @@ span[class*="username"]>span[class*="desaturateUserColors"]::after {
   background-color: var(--panel-colour)!important;
 }
 
+.button__67645.enabled__67645.button__201d5.lookBlank__201d5.colorBrand__201d5.grow__201d5.button__67645:not(div.panel__5dec7.activityPanel_c48ade > div > div.actions__4cd01 > div > button,.voiceButtonsContainer_e131a9 > button:nth-child(1),.voiceButtonsContainer_e131a9 > button:nth-child(2)),
+.container__37e49>.flex__7c0ba>button {
+  border-radius: var(--button-radius);
+  --inversed-overlay: rgb(var(--bg-overlay-color-inverse)/var(--bg-overlay-opacity-6));
+  background: var(--inversed-overlay, var(--background-primary));
+  transition: color .15s ease-out, background-color .15s ease-out;
+  top: 65px;
+  right: 217px;
+  min-width: 65px;
+  margin: 4px;
+}
 
 .container__37e49 .avatarWrapper__37e49 {
   background: var(--background-primary);
@@ -7762,21 +7773,12 @@ span[class*="username"]>span[class*="desaturateUserColors"]::after {
   top: 40px;
 }
 
-.button__67645.enabled__67645.button__201d5.lookBlank__201d5.colorBrand__201d5.grow__201d5.button__67645:not(div.panel__5dec7.activityPanel_c48ade > div > div.actions__4cd01 > div > button),
-.container__37e49>.flex__7c0ba>button {
-  /*display: grid;*/
-  border-radius: var(--button-radius);
-  /*height: fit-content;*/
-  width: 65px;
-  --inversed-overlay: rgb(var(--bg-overlay-color-inverse)/var(--bg-overlay-opacity-6));
-  background: var(--inversed-overlay, var(--background-primary));
-  /*var(--inversed-overlay, var(--background-primary))*/
-  transition: color .15s ease-out, background-color .15s ease-out;
-  top: 65px;
-  right: 217px;
-  margin: 4px;
-}
+/*  min-width: 65px;
+  margin: 4px;*/
 
+  /*display: grid;*/
+  /*height: fit-content;*/
+  /*var(--inversed-overlay, var(--background-primary))*/
 
 /* User Area Icon Recolor where the mic etc is */
 .panels_c48ade .lottieIcon__5eb9b :not(defs *)[fill][fill-opacity] {
