@@ -1,7 +1,7 @@
 /**
  * @name Smaller Fixes
  * @description my theme consisting of various theme snippets and stuff. I take no credit for anything'
- * @version 1.14.0
+ * @version 1.14.2
  * @author vilchu
  * @authorId 246276708242554890
 **/
@@ -7773,13 +7773,6 @@ span[class*="username"]>span[class*="desaturateUserColors"]::after {
   top: 40px;
 }
 
-/*  min-width: 65px;
-  margin: 4px;*/
-
-  /*display: grid;*/
-  /*height: fit-content;*/
-  /*var(--inversed-overlay, var(--background-primary))*/
-
 /* User Area Icon Recolor where the mic etc is */
 .panels_c48ade .lottieIcon__5eb9b :not(defs *)[fill][fill-opacity] {
   fill: hsl(215, 9%, 73%);
@@ -7943,6 +7936,19 @@ span[class*="username"]>span[class*="desaturateUserColors"]::after {
   border-radius: 4px;
 }
 
+/* ====================================================== */
+/* ======= < STATUS BASED ACTIVITY STATUS ICON > ======= */
+/* ==================================================== */
+
+[class^=memberInner]:has(> div > [aria-label*="Online"]) [class^=subText] svg > path[fill="#23a55a"] { fill: #43b581 }
+
+[class^=memberInner]:has(> div >[aria-label*=Idle]) [class^=subText] svg > path[fill="#23a55a"] { fill: #f0b232 }
+
+[class^=memberInner]:has(> div > [aria-label*="Do Not Disturb"]) [class^=subText] svg > path[fill="#23a55a"] { fill: #f23f43 }
+
+[class^=memberInner]:has(> div > [aria-label*=Streaming]) [class^=subText] svg > path[fill="#23a55a"] { fill: #643da7 }
+
+[class^=memberInner] [class^=subText] svg > path[fill="#23a55a"] { fill: #747f8d }
 
 /* ================================================================= */
 /* ======= < ADD DANGER COLOURS TO DANGEROUS USER ACTIONS > ======= */
