@@ -1,7 +1,7 @@
 /**
  * @name Smaller Fixes
  * @description my theme consisting of various theme snippets and stuff. I take no credit for anything'
- * @version 1.14.2
+ * @version 1.14.3
  * @author vilchu
  * @authorId 246276708242554890
 **/
@@ -7510,12 +7510,12 @@ span[class*="username"]>span[class*="desaturateUserColors"]::after {
   content: '';
   top: 0;
   left: 0;
-  width: 100%;
+  width: 217px;
   height: 100%;
   position: absolute;
   opacity: 0.125;
   background: currentColor;
-  border-radius: 5px;
+  border-radius: 8px;
 }
 
 [class*="nameAndDecorators-"] {
@@ -7941,14 +7941,11 @@ span[class*="username"]>span[class*="desaturateUserColors"]::after {
 /* ==================================================== */
 
 [class^=memberInner]:has(> div > [aria-label*="Online"]) [class^=subText] svg > path[fill="#23a55a"] { fill: #43b581 }
-
 [class^=memberInner]:has(> div >[aria-label*=Idle]) [class^=subText] svg > path[fill="#23a55a"] { fill: #f0b232 }
-
 [class^=memberInner]:has(> div > [aria-label*="Do Not Disturb"]) [class^=subText] svg > path[fill="#23a55a"] { fill: #f23f43 }
-
 [class^=memberInner]:has(> div > [aria-label*=Streaming]) [class^=subText] svg > path[fill="#23a55a"] { fill: #643da7 }
-
 [class^=memberInner] [class^=subText] svg > path[fill="#23a55a"] { fill: #747f8d }
+
 
 /* ================================================================= */
 /* ======= < ADD DANGER COLOURS TO DANGEROUS USER ACTIONS > ======= */
