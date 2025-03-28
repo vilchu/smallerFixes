@@ -1422,56 +1422,12 @@
 *  HEADER SEARCH BAR
 *
 */
-.searchBar__97492 {
-  padding: 0 4px;
-  background-color: rgba(var(--textarea-color), var(--textarea-alpha));
-  border-radius: 12px;
-}
-.search__97492.open__97492 {
-  padding: 0 4px;
-  background-color: rgba(var(--textarea-color), var(--textarea-alpha));
+.visual-refresh .searchBar__97492 {
+  border: none;
+  background: rgb(62,62,66);
   border-radius: 12px;
 }
 
-.searchBar__97492 .searchBarComponent__35e86 {
-  padding: 0 8px;
-  border-radius: 14px;
-}
-
-.searchBar__97492 .DraftEditor-editorContainer .searchFilter_bd8186,
-.searchBar__97492 .DraftEditor-editorContainer .searchFilter_bd8186+span[data-offset-key],
-.searchBar__97492 .DraftEditor-editorContainer .searchAnswer_bd8186 span[data-offset-key] {
-  background-color: var(--textarea-block-color) !important;
-  color: var(--textarea-block-text-color);
-}
-
-.searchBar__97492 .DraftEditor-editorContainer .searchFilter_bd8186 {
-  margin-right: 2px;
-  padding: 0 4px 0 8px;
-  border-radius: 10px 0 0 10px;
-}
-
-.searchBar__97492 .DraftEditor-editorContainer .searchFilter_bd8186:only-child {
-  padding: 0 8px;
-  border-radius: 11px;
-}
-
-.searchBar__97492 .DraftEditor-editorContainer .searchAnswer_bd8186 {
-  background-color: transparent;
-}
-
-.searchBar__97492 .DraftEditor-editorContainer .searchFilter_bd8186+span[data-offset-key],
-.searchBar__97492 .DraftEditor-editorContainer .searchAnswer_bd8186 span[data-offset-key] {
-  display: inline-block;
-  height: 20px;
-  margin: 0 2px 0 -2px;
-  padding: 0px 8px 0px 0;
-  border-radius: 0 11px 11px 0;
-}
-
-.searchFilter_bd8186 {
-  background-color: var(--attachment-color) !important;
-}
 
 /*
 *
@@ -4348,7 +4304,7 @@ div.header_fed6d3,
   overflow: hidden;
 }
 
-.messagesPopoutWrap__45690:before {
+/*.messagesPopoutWrap__45690:before {
   position: absolute;
   content: " ";
   width: 100%;
@@ -4374,7 +4330,7 @@ div.header_fed6d3,
 
 .footer__45690 {
   background-color: transparent;
-}
+}*/
 
 /* MESSAGES POPOUT -> PINNED MESSAGES */
 .messageGroupWrapper__45690 {
@@ -7038,7 +6994,7 @@ div[id='user-context-call'],
   border-radius: 10px;
   background: hsla(0, 0%, 0%, 0.56);
   backdrop-filter: blur(5px);
-  margin-left: -55px!important
+  margin-left: -40px!important
 }
 
 ul.resultsGroup__56fec {
@@ -7585,29 +7541,66 @@ span[class*="username"]>span[class*="desaturateUserColors"]::after {
 /* ======================================== */
 /* ======= < JUMP TO PRESENT BAR > ======= */
 /* ====================================== */
-/* Better Jump To Present Button - Visual Refresh Edit */
+/* Jump To Present Bar Revamp */
 [class*="jumpToPresentBar"] {
-  background-color: transparent!important;
-  box-shadow: none!important;
-  pointer-events: none;
+  display: contents;
 }
-[class*="jumpToPresentBar"]:before {
+
+[class*="jumpToPresentBar"]>button:first-child {
   display: none;
 }
-[class*="jumpToPresentBar"] > button:last-child {
+
+[class*="jumpToPresentBar"]>button:last-child {
   position: absolute;
   z-index: 1;
   bottom: 24px;
   right: 22px;
+  padding: 8px !important;
   height: auto;
+  background-color: #1B1B1E;
+  box-shadow: var(--elevation-high);
+  border-radius: 100px;
+  display: flex;
+  font-size: 0px;
+  color: transparent;
+  transition: font-size .2s .1s, color .2s, padding .4s .1s;
+}
+
+[class*="jumpToPresentBar"]>button svg {
+  order: -1;
+  margin: 0px;
+  height: 24px;
+  width: 24px;
+  top: auto;
+  margin-right: 0px;
+  margin-left: 0px;
+  color: hsl(0, 0%, 100%);
+  transition: margin .6s;
+}
+[class*="jumpToPresentBar"] > button:last-child {
+  position: absolute;
+  z-index: 1;
+  bottom: 15px;
+  right: 22px;
+  height: 40px;
+  width: auto;
   border-radius: 100px;
   display: flex;
   padding: 8px 18px 8px 18px!important;
   pointer-events:initial;
   transition: font-size .2s .1s, color .2s, padding .4s .1s;
 }
-[class*="jumpToPresentBar"] > button:first-child {
-  font-size: 0px;
+
+[class*="jumpToPresentBar"]:hover>button {
+  padding: 8px 18px !important;
+  font-size: 14px;
+  color: hsl(0, 0%, 100%);
+  transition: font-size .2s, color .2s .1s, padding .4s;
+}
+
+[class*="jumpToPresentBar"]:hover>button svg {
+  margin-right: 2px;
+  margin-left: -6px;
 }
 
 /* =================================== */
