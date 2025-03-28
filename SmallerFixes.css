@@ -6456,7 +6456,7 @@ div.header_fed6d3,
 /* ======= < WHOLE ASS LOOK > ======= */
 /* ================================= */
 .guilds_c48ade {
-  margin: -1px;
+  margin: 10px;
   border-radius: 15px;
 }
 
@@ -7742,9 +7742,9 @@ span[class*="username"]>span[class*="desaturateUserColors"]::after {
 /* ======================================= */
 .visual-refresh [class^="panels_"] {
   border-radius: 10;
-  left: 88px;
+  left: 100px;
   bottom: 0;
-  width: 280px;
+  width: 289px;
 
 }
 
@@ -7779,7 +7779,7 @@ span[class*="username"]>span[class*="desaturateUserColors"]::after {
   background: var(--inversed-overlay, var(--background-primary));
   transition: color .15s ease-out, background-color .15s ease-out;
   top: 65px;
-  right: 243px;
+  right: 250px;
   min-width: 65px;
   margin: 4px;
 }
@@ -7788,7 +7788,7 @@ span[class*="username"]>span[class*="desaturateUserColors"]::after {
   background: var(--background-primary);
   border-radius: var(--radius-secondary);
   margin: 5px 0px -5px 8px!important;
-  padding: 1px 120px 1px 12px;
+  padding: 1px 130px 1px 12px;
 }
 
 .container__37e49:not(.container__37e49) .withTagAsButton_b2ca13,
