@@ -7120,8 +7120,13 @@ ul.resultsGroup__56fec {
   margin-left: 0;
   padding: 0;
   border-radius: var(--channeltextarea-button-rounding);
-  background-color: var(--channeltextarea-button-background);
   transition: background-color ease-in-out 125ms;
+  background-color: hsla(0, 0%, 0%, 0.25) !important;
+  -webkit-backdrop-filter: blur(4px);
+  -o-backdrop-filter: blur(4px);
+  -moz-backdrop-filter: blur(4px);
+  backdrop-filter: blur(4px);
+  filter: drop-shadow(0rem 0rem 0.5rem hsla(240, 100%, 4%, 0.2));
 }
 .base_c48ade .channelTextArea__74017 .inner__74017 .button__201d5:hover:not([disabled]), .base_c48ade .channelTextArea__74017 .inner__74017 .button__201d5:active:not([disabled]) {
   background-color: var(--channeltextarea-button-hover);
@@ -7133,7 +7138,6 @@ ul.resultsGroup__56fec {
 .channelTextArea_f75fb0.channelTextArea__74017 {
   background: transparent;
 }
-
 
 [class*=chat] [class*=textArea]:not(div.channelTextArea__5126c.channelTextArea__74017 > div > div > div.textArea__74017.textAreaSlate__74017.slateContainer_ec4baf,.textArea__74017.textAreaSlate__74017.slateContainer_ec4baf,div.textArea__74017.textAreaSlate__74017.slateContainer_ec4baf div.markup__75297.editor__1b31f.slateTextArea_ec4baf.fontSize16Padding__74017.textAreaWithoutAttachmentButton__74017.textAreaForPostCreation__74017, .markup__75297.editor__1b31f.slateTextArea_ec4baf.fontSize16Padding__74017.textAreaWithoutAttachmentButton__74017, div.bodyContainer_d9be46>div>div>div>div>div>div>div, .inputDefault__0f084.input__0f084.textArea__7aff3.scrollbarDefault__506b3.scrollbar__506b3.title_d9be46) {
   background-color: hsla(0, 0%, 0%, 0.25) !important;
@@ -7151,7 +7155,7 @@ ul.resultsGroup__56fec {
 [class*=chat] [class*=buttons]:not([class*=attachButton]),
 [class*=jumpToPresentBar] {
   order: 3 !important;
-  background: var(--background-secondary);
+  background: transparent;
   border-radius: 90px;
   padding-right: 0px;
   padding-left: 0px;
@@ -7190,6 +7194,12 @@ button[class*=attachButton],
   margin: 0px;
   width: 44px
 }*/
+
+.visual-refresh .channelTextArea__74017,
+.visual-refresh .channelTextArea__74017:focus-within {
+  border-width: 0px;
+}
+
 
 [class*=textAreaSlate]:not([class*=attachButton]) {
   margin-right: 20px;
@@ -8259,3 +8269,5 @@ padding: 0;
 nav.guilds_c48ade {
   margin-bottom: 0 !important;
 }
+
+
