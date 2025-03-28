@@ -6391,7 +6391,7 @@ div.header_fed6d3,
 
 [class^="subtitleContainer_"] {
   margin-left: 0px;
-  max-width: 1410px;
+  max-width: 1362px;
 }
 
 [class^="container_"]:has(> [class^="membersWrap_"]) {
@@ -6455,20 +6455,20 @@ div.header_fed6d3,
 /* =================================== */
 /* ======= < WHOLE ASS LOOK > ======= */
 /* ================================= */
-/*.guilds_c48ade {
-  margin: 10px;
+.guilds_c48ade {
+  margin: -1px;
   border-radius: 15px;
 }
 
 .content_c48ade>.sidebar_c48ade,
 .chat_f75fb0 {
-  margin: 10px 13px 10px 0;
+  margin: 0px 10px 0px 0;
   border-radius: 15px !important;
 }
 
 .flex__7c0ba.flex_abf706.horizontalReverse__7c0ba.horizontalReverse_d76671.flex_abf706.directionRowReverse_f644aa.justifyStart_abf706.alignStretch_abf706.noWrap_abf706.footer-31IekZ.footerSeparator-VzAYwb {
   background-color: var(--background-floating);
-}*/
+}
 
 
 /* ============================== */
@@ -7521,7 +7521,6 @@ div.clipContainer__841c8 {
 }
 
 /* Custom " i'm new here, say hi " icon */
-/*i'm new here, say hi!*/
 [class*=newMemberBadge]:before {
   content: url(https://cdn-icons-png.flaticon.com/256/4207/4207666.png);
   transform: translate(-568%, -565%);
@@ -7584,55 +7583,30 @@ span[class*="username"]>span[class*="desaturateUserColors"]::after {
 /* ======================================== */
 /* ======= < JUMP TO PRESENT BAR > ======= */
 /* ====================================== */
-/* Jump To Present Bar Revamp */
+/* Better Jump To Present Button - Visual Refresh Edit */
 [class*="jumpToPresentBar"] {
-  display: contents;
+  background-color: transparent!important;
+  box-shadow: none!important;
+  pointer-events: none;
 }
-
-[class*="jumpToPresentBar"]>button:first-child {
+[class*="jumpToPresentBar"]:before {
   display: none;
 }
-
-[class*="jumpToPresentBar"]>button:last-child {
+[class*="jumpToPresentBar"] > button:last-child {
   position: absolute;
   z-index: 1;
   bottom: 24px;
   right: 22px;
-  padding: 8px !important;
   height: auto;
-  background-color: var(--background-tertiary);
-  box-shadow: var(--elevation-high);
   border-radius: 100px;
   display: flex;
-  font-size: 0px;
-  color: transparent;
+  padding: 8px 18px 8px 18px!important;
+  pointer-events:initial;
   transition: font-size .2s .1s, color .2s, padding .4s .1s;
 }
-
-[class*="jumpToPresentBar"]>button svg {
-  order: -1;
-  margin: 0px;
-  height: 24px;
-  width: 24px;
-  top: auto;
-  margin-right: 0px;
-  margin-left: 0px;
-  color: hsl(0, 0%, 100%);
-  transition: margin .6s;
+[class*="jumpToPresentBar"] > button:first-child {
+  font-size: 0px;
 }
-
-[class*="jumpToPresentBar"]:hover>button {
-  padding: 8px 18px !important;
-  font-size: 14px;
-  color: hsl(0, 0%, 100%);
-  transition: font-size .2s, color .2s .1s, padding .4s;
-}
-
-[class*="jumpToPresentBar"]:hover>button svg {
-  margin-right: 2px;
-  margin-left: -6px;
-}
-
 
 /* =================================== */
 /* ======= < BDRED SWITCHES > ======= */
@@ -7768,9 +7742,9 @@ span[class*="username"]>span[class*="desaturateUserColors"]::after {
 /* ======================================= */
 .visual-refresh [class^="panels_"] {
   border-radius: 10;
-  left: 78px;
+  left: 88px;
   bottom: 0;
-  width: 290px;
+  width: 280px;
 
 }
 
@@ -7805,7 +7779,7 @@ span[class*="username"]>span[class*="desaturateUserColors"]::after {
   background: var(--inversed-overlay, var(--background-primary));
   transition: color .15s ease-out, background-color .15s ease-out;
   top: 65px;
-  right: 257px;
+  right: 243px;
   min-width: 65px;
   margin: 4px;
 }
@@ -7813,15 +7787,15 @@ span[class*="username"]>span[class*="desaturateUserColors"]::after {
 .container__37e49 .avatarWrapper__37e49 {
   background: var(--background-primary);
   border-radius: var(--radius-secondary);
-  margin: 10px 0px -5px 8px!important;
-  padding: 1px 140px 1px 12px;
+  margin: 5px 0px -5px 8px!important;
+  padding: 1px 120px 1px 12px;
 }
 
 .container__37e49:not(.container__37e49) .withTagAsButton_b2ca13,
 .container__37e49 .nameTag__37e49 {
   /*background: var(--background-primary);*/
   border-radius: 15px var(--radius-secondary) var(--radius-secondary) 15px;
-  margin: 10px -80px 0px 10px;
+  margin: 5px -105px 0px 5px;
   grid-column: 2;
   height: 38px;
 }
@@ -8269,5 +8243,3 @@ padding: 0;
 nav.guilds_c48ade {
   margin-bottom: 0 !important;
 }
-
-
