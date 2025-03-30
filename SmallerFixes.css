@@ -1437,6 +1437,15 @@
 .button__201d5 {
   border-radius: var(--button-radius); /*var(--button-radius)*/
 }
+.contextMenuNubExperiment_f1ceac.colorable_f1ceac.attachedCaret_f1ceac.experimentDark_f1ceac {
+  background: transparent!important;
+}
+.staticButton_f1ceac.centerButton_f1ceac.colorable_f1ceac.experimentButton_f1ceac.colorable_f1ceac.disconnect_f1ceac.fullRegionButton_f1ceac.button__201d5.lookBlank__201d5.colorBrand__201d5 {
+  background-color: #C24849!important;
+  height: 44px;
+  width: 44px;
+
+}
 
 .button__201d5 * {
   text-shadow: none;
@@ -4378,7 +4387,7 @@ div.header_fed6d3,
 }
 
 /* MESSAGES POPOUT -> MENTIONS */
-.channelHeader__35a7e,
+/*.channelHeader__35a7e,
 .messageContainer__95796 {
   background-color: transparent;
 }
@@ -4410,14 +4419,14 @@ div.header_fed6d3,
   padding: 16px 0;
 }
 
-/*.messageContainer__95796 .wrapper_c19a55 {
+.messageContainer__95796 .wrapper_c19a55 {
   margin-left: 60px;
   margin-right: 0;
   overflow: visible;
 }*/
 
 /* MESSAGES POPOUT -> UNREADS */
-.recentMentionsPopout__95796 {
+/*.recentMentionsPopout__95796 {
   background-color: transparent;
   border-radius: var(--popout-radius);
   box-shadow: none;
@@ -4455,7 +4464,7 @@ div.header_fed6d3,
 
 .messages__1ccd1 {
   background-color: transparent;
-}
+}*/Q
 
 /*
 *
@@ -6401,6 +6410,7 @@ div.header_fed6d3,
   content: var(--watermark);
 }
 
+
 /* link color */
 .userPopoutInner_c69a7b .anchor_edefb8,
 .userPopoutInner_c69a7b .anchorUnderlineOnHover_edefb8 {
@@ -7178,7 +7188,7 @@ button[class*=attachButton],
 
 /* message bar position when no attachment button */
 .form_f75fb0:has(.channelTextAreaDisabled__74017) {
-  width: 1325px;
+  max-width: 1325px;
 }
 .scrollableContainer__74017:not(.forumGuidelines__0511a.scrollableContainer__74017, .fileInput__94439, .bioTextArea__6a919.scrollableContainer__74017.themedBackground__74017, :has(.attachWrapper__0923f)) .textArea__74017:not(:has(>div>div>[class^="applicationCommand_"])) {
   margin-left: 64px;
@@ -7365,9 +7375,8 @@ aside.profilePanel_b433b4 {
   display: none;
 }
 
-/* invisible typing button off */
-.invisibleTypingButton {
-  display: none
+button.invisibleTypingButton {
+  display: none!important;
 }
 
 /*Shake animation hover to the text area when you don't have permission !*/
@@ -8144,9 +8153,12 @@ padding: 0;
 }
 
 
+#bd-notices {
+  grid-area: notice;
+}
 
 
-
+/* fix servers in new UI */
 :root {
   --guildbar-avatar-size: 48px !important;
 }
