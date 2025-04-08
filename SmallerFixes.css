@@ -1,7 +1,7 @@
 /**
  * @name Smaller Fixes
  * @description my theme consisting of various theme snippets and stuff. I take no credit for anything'
- * @version 1.16.2
+ * @version 1.18.0
  * @author vilchu
  * @authorId 246276708242554890
 **/
@@ -4996,6 +4996,46 @@ div.header_fed6d3,
   z-index: -1;
 }
 
+:root {
+  /* --Voice Spine Settigs-- */
+  /* Determines the thickness of the line on the Voice User panel. Default: 3px */
+  --Spine-Thickness: 3px;
+
+  /* Shifts the Spine of not the last user by a certain amount. May need to be adjusted if used */
+  /* Alongside Better Channels List. Must be a Negative amount: Default: -35px */
+  --Spine-Upward-Margin: -35px;
+  
+  /* Determines the bluntness of the angle of for the last user. Default: 8px */
+  --Spine-Last-User-Angle: 8px;
+
+  /* Spine Accent Color. Set to var(--variable-name-zyx) to use a global var. */
+  /* Or set a color manually using RGB, Hex or HSL. Default: var(--brand-experiment) */
+  --Spine-Color: var(--brand-experiment)
+}
+
+/* Voice Spine Code */
+.list_c3cd7d  {
+  .draggable__55bab {
+      margin-left: -15px;
+      display: flex;
+      align-items: center;
+      &:not(:last-of-type):before {
+          content: "";
+          border-left: var(--Spine-Thickness) solid var(--Spine-Color);
+          margin-top: var(--Spine-Upward-Margin);
+          padding: 20px 5px;
+      }
+      &:last-of-type:before { 
+          content: "";
+          border-left: var(--Spine-Thickness) solid var(--Spine-Color);
+          border-bottom: var(--Spine-Thickness) solid var(--Spine-Color);
+          border-bottom-left-radius: 5px;
+          margin-top: -35px;
+          padding: 20px 5px;
+      }
+  }
+}
+
 /*
 *
 *  SERVER FOLDERS
@@ -6356,13 +6396,14 @@ div.header_fed6d3,
 
 [class^="subtitleContainer_"] {
   margin-left: 0px;
-  max-width: 1392px;
+  max-width: 1415px;
 
 }
 
 [class^="container_"]:has(> [class^="membersWrap_"]) {
   position: relative;
   top: -60px;
+  width: 250px;
   height: calc(100% + 60px);
   border: none;
 }
@@ -7536,12 +7577,10 @@ span[class*="username"]>span[class*="desaturateUserColors"]::after {
 [class*="nameAndDecorators-"] {
   z-index: 0;
 }
-
 [class*="member-"] [class*="container-"] [class*="selected-"]::after {
   border-radius: 4px;
   background: hsl(0, 0%, 100%);
 }
-
 [class*="membersGroup-"]+[class*="container-"] {
   margin-top: 5px;
 }
@@ -7746,9 +7785,9 @@ span[class*="username"]>span[class*="desaturateUserColors"]::after {
 /* ======================================= */
 .visual-refresh [class^="panels_"] {
   border-radius: 10;
-  left: 90px;
+  left: 79px;
   bottom: 0;
-  width: 289px;
+  width: 290px;
 
 }
 
@@ -7928,7 +7967,7 @@ span[class*="username"]>span[class*="desaturateUserColors"]::after {
 /* ======= < DM PROFILE WIDTH > ======= */
 /* ==================================== */
 .outer_c0bea0.theme-dark.images-dark.custom-theme-background.custom-profile-theme.panel_c0bea0 {
-  width: 240px;
+  width: 250px;
   height: calc(100% + 60px);
 }
 .outer_c0bea0.theme-dark.images-dark.panel_c0bea0 {
@@ -8092,11 +8131,13 @@ span[class*="username"]>span[class*="desaturateUserColors"]::after {
   color: var(--highlight-icon) !important;
 }
 
-
-/* Disable discord mirroring your preview of the camera */
+/* =========================================== */
+/* ======= < DISABLE VIDEO MIRRORING CAMERA > ======= */
+/* ========================================= */
 div[data-selenium-video-tile="246276708242554890"] [class^=voiceChannelEffectsContainer] + [class*=videoWrapper] {
   transform: scaleX(-1);
 }
+
 
 /*Centered Voice Controls*/
 .bottomControls_bfe55a > .flex__7c0ba:is(:first-child, :last-child) {
@@ -8152,7 +8193,6 @@ font-size: 14px;
 padding: 0;
 }
 
-
 #bd-notices {
   grid-area: notice;
 }
@@ -8165,10 +8205,10 @@ padding: 0;
 
 .visual-refresh nav[class*="guilds_"] {
   /* Uncomment if you changed up your nameplate */
-  /* margin: 0;
+  margin: 0;
   [class*="sidebar_"]:has(&)::after {
       height: 0;
-  } */
+  }
   
 
   [class*="listItem__"] {
