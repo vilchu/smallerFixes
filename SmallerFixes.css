@@ -7682,12 +7682,15 @@ span[class*="username"]>span[class*="desaturateUserColors"]::after {
 }
 
 /* discord settings switch */
-.container__87bf1[style*="128"] {
-  background: var(--BDswitch-color) !important;
+.control__0d850>.checked__87bf1 {
+  background-color: hsl(153, 46%, 49%)!important;
+  path {
+    fill: var(--redesign-input-control-selected) !important;
+  }
 }
-
-.slider__87bf1 path {
-  fill: transparent;
+.control__0d850>div {
+  background-color: var(--BDswitch-color)!important;
+  transition: background-color 0.1s ease;
 }
 
 
