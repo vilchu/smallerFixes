@@ -10,7 +10,6 @@
 /* ================================= */
 /* ======= < OTHER IMPORT > ======= */
 /* =============================== */
-/*@import url("https://mwittrien.github.io/BetterDiscordAddons/Themes/SettingsModal/SettingsModal.css");*/
 @import url("https://discord-theme.pages.dev/assets/snippets/watermark.css");
 @import url("https://dablulite.github.io/css-snippets/AccountDetailsGrid/import.css");
 @import url("//dablulite.github.io/css-snippets/BetterFloatingEditor/import.css");
@@ -25,13 +24,12 @@
 @import url(https://raw.githubusercontent.com/mudaranrhiod/discord-iconpacks/refs/heads/master/vencord/solar/solar.css);
 @import url("https://dablulite.github.io/css-snippets/BetterStatusPicker/import.css");
 @import url("https://dablulite.github.io/css-snippets/QuickSwitchV2/import.css");
+@import url("https://maendisease.github.io/BetterDiscordStuff/css/bearableInbox.css");
 
 
 /* icons */
 @import url("https://dablulite.github.io/css-snippets/PrettyFolderIcons/import.css");
-@import url("https://maendisease.github.io/BetterDiscordStuff/css/bearableInbox.css");
 @import url("https://gold-me.github.io/DiscordIcons/main.css");
-
 
 
 /* ================================= */
@@ -7180,6 +7178,11 @@ button[class*=attachButton],
 
 [class*=textAreaSlate]:not([class*=attachButton]) {
   margin-right: 20px;
+}
+/* send timestamp button */
+div.scrollableContainer__74017.themedBackground__74017 > div > div:nth-child(5) > button:nth-child(1) {
+  margin-right: -20px;
+  margin-left: 10px;
 }
 
 .textArea__74017:has(>div>div>[class^="applicationCommand_"]) {
