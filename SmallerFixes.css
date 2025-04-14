@@ -1,7 +1,7 @@
 /**
  * @name Smaller Fixes
  * @description my theme consisting of various theme snippets and stuff. I take no credit for anything'
- * @version 1.18.5
+ * @version 1.18.8
  * @author vilchu
  * @authorId 246276708242554890
 **/
@@ -5169,26 +5169,6 @@ div.header_fed6d3,
 .item__58105 {
   background-color: var(--notification-color);
 }
-
-/* move add a server button lower */
-.guilds_c48ade .tree_ef3116:focus {
-  outline-color: transparent;
-}
-.guilds_c48ade .scroller_ef3116 {
-  margin-bottom: 56px;
-}
-.tree_ef3116>.footer__214dc{background:none}
-.guilds_c48ade .scroller_ef3116>[aria-label]+.tutorialContainer__650eb {
-  position: fixed;
-  transform: translatey(-100%);
-  bottom: -25px!important;
-}
-
-.footer__214dc {
-  position: fixed;
-  bottom: 15px!important;
-}
-
 
 
 /*
