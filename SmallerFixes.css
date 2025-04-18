@@ -1,7 +1,7 @@
 /**
  * @name Smaller Fixes
  * @description my theme consisting of various theme snippets and stuff. I take no credit for anything'
- * @version 1.18.8
+ * @version 1.19.2
  * @author vilchu
  * @authorId 246276708242554890
 **/
@@ -23,10 +23,9 @@
 @import url("https://raw.githubusercontent.com/KrstlSkll69/vc-snippets/main/SyncedWithGameRecolor.css");
 @import url("https://raw.githubusercontent.com/mudaranrhiod/discord-iconpacks/refs/heads/master/vencord/solar/solar.css");
 @import url("https://dablulite.github.io/css-snippets/BetterStatusPicker/import.css");
-@import url("https://dablulite.github.io/css-snippets/QuickSwitchV2/import.css");
+
 @import url("https://maendisease.github.io/BetterDiscordStuff/css/bearableInbox.css");
 @import url("https://nspc911.github.io/themes/vencord/BlurryBackdrop.theme.css");
-
 
 
 /* icons */
@@ -1647,6 +1646,46 @@ button.fieldButton__1fed1.removeButton__1fed1.button__201d5.lookLink__201d5.lowS
 .container_b7e1cb .children__1647d .lookFilled__201d5 {
   --button-height: 28px;
   --button-padding: 0 8px;
+}
+
+/*
+*
+*  QUICKSWITCHER
+*
+*/
+.quickswitcher_ac6cb0 {
+  background-color: var(--popout-color);
+  border-radius: var(--popout-radius);
+  box-shadow: var(--popout-shadow);
+  backdrop-filter: blur(var(--popout-blur));
+}
+
+.quickswitcher_ac6cb0 .input_ac6cb0 {
+  margin-bottom: 16px;
+  height: 42px;
+  border-radius: 21px;
+  background-color: rgba(var(--textarea-color), var(--textarea-alpha));
+  border: none;
+  color: var(--textarea-text-color);
+  transition: var(--transition-time) var(--transition-type);
+  font-size: 1.1em;
+}
+
+.quickswitcher_ac6cb0 .input_ac6cb0:focus {
+  background-color: rgba(var(--textarea-color), var(--textarea-alpha-focus));
+}
+
+.quickswitcher_ac6cb0 .scroller_ac6cb0 {
+  margin-top: 0;
+  background-color: transparent;
+}
+
+.quickswitcher_ac6cb0 .scroller_ac6cb0::-webkit-scrollbar-track {
+  background-color: transparent !important;
+}
+
+.quickswitcher_ac6cb0 .result__71961 {
+  border-radius: var(--list-item-radius);
 }
 
 /*
@@ -3425,7 +3464,6 @@ div[id='user-context-call'],
   box-sizing: border-box;
 }
 
-
 .codeContainer__75297,
 .scrollbarGhostHairline__506b3.scrollbar__506b3.hljs {
   width: max-content!important;
@@ -3611,24 +3649,10 @@ button[class*=attachButton],
   top: 4px!important
 }
 
-
 [class*=chat] [class*=scrollableContainer] {
   background: transparent !important;
   background-color: hsla(0, 0%, 88%, 0.77);
 }
-
-/*button[class*=attachButton] {
-  margin-left: 0px;
-  padding: 0px;
-  height: 44px;
-  width: 44px;
-}
-
-.button__74017 {
-  padding: 0px;
-  margin: 0px;
-  width: 44px
-}*/
 
 .visual-refresh .channelTextArea__74017,
 .visual-refresh .channelTextArea__74017:focus-within {
@@ -3638,18 +3662,6 @@ button[class*=attachButton],
 [class*=textAreaSlate]:not([class*=attachButton]) {
   margin-right: 20px;
 }
-
-/* send timestamp button */
-div.scrollableContainer__74017.themedBackground__74017 > div > div:nth-child(5) > button:nth-child(1) {
-  margin-right: -15px;
-  margin-left: -5px;
-}
-
-button.invisibleTypingButton {
-  display: inline;
-  margin: 0px 0px 80px -20px;
-}
-
 
 .textArea__74017:has(>div>div>[class^="applicationCommand_"]) {
   margin-left: 21px;
@@ -3664,69 +3676,6 @@ button.invisibleTypingButton {
   left: 10px;
   position: relative;
 }
-
-/* message bar position when no attachment button */
-.form_f75fb0:has(.channelTextAreaDisabled__74017) {
-  max-width: 1325px;
-}
-.scrollableContainer__74017:not(.forumGuidelines__0511a.scrollableContainer__74017, .fileInput__94439, .bioTextArea__6a919.scrollableContainer__74017.themedBackground__74017, :has(.attachWrapper__0923f)) .textArea__74017:not(:has(>div>div>[class^="applicationCommand_"])) {
-  margin-left: 64px;
-  width: 1575px !important;
-}
-
-/* forward to modal */
-.sendWithMessage__62280.button__201d5.lookFilled__201d5.colorBrand__201d5.sizeMedium__201d5.grow__201d5 {
-  margin-left: -68px!important;
-  top: 6px
-}
-.inner__74017.sansAttachButtonCreatePost__74017 {
-  margin-left: -54px!important;
-}
-
-/* about me message box */
-.markup__75297.editor__1b31f.slateTextArea_ec4baf.fontSize16Padding__74017.textAreaWithoutAttachmentButton__74017 {
-  margin-left: -7px !important;
-}
-
-.bioTextArea__6a919.scrollableContainer__74017.themedBackground__74017 {
-  width: 364px !important;
-  background-color: var(--background-secondary-alt);
-}
-
-/* bio message box emoji placement */
-div.bioTextArea__6a919.scrollableContainer__74017.themedBackground__74017>div>div.buttons__74017>div>button>div>div {
-  margin-left: -7px;
-}
-
-/* profile customization text placement */
-div>div.contents_c19a55>div>div.channelTextArea__5126c.channelTextArea__74017>div>div>div.textArea__74017.textAreaSlate__74017.slateContainer_ec4baf {
-  margin-left: 0px !important;
-}
-
-/* editing message box */
-div > div.contents_c19a55 > div > div.channelTextArea__5126c.channelTextArea__74017 > div > div > div.textArea__74017.textAreaSlate__74017.slateContainer_ec4baf {
-  left: -15px;
-}
-div > div.contents_c19a55 > div > div.channelTextArea__5126c.channelTextArea__74017 > div > div > div.textArea__74017.textAreaSlate__74017.slateContainer_ec4baf > div > div {
-  left: 16px;
-  margin: -1px
-}
-
-
-/* forum send message bar or somth*/
-#app-mount>div.appAsidePanelWrapper_a3002d>div.notAppAsidePanel_a3002d>div.app_a3002d>div>div.layers__960e4.layers__160d8>div>div>div>div>div.chat_f75fb0>div.content_f75fb0>div.container_f369db>div.list_f369db.auto__99f8c.scrollerBase__99f8c>div>div.card_f369db.headerRow_f369db.columnsSpan_f369db>div.mainCard_f369db.header_f369db>div>form>div.formContainer_d9be46>div.form_d9be46>div.bodyContainer_d9be46>div>div>div>div>div>div {
-  margin-left: 0px;
-  background-color: transparent !important;
-}
-
-div.formContainer_d9be46>div.form_d9be46>div.bodyContainer_d9be46>div>div>div>div>div>div>div>div {
-  margin-top: 9px;
-}
-
-.textArea__74017.textAreaSlate__74017.slateContainer_ec4baf>div>div.placeholder__1b31f.slateTextArea_ec4baf.fontSize16Padding__74017.textAreaWithoutAttachmentButton__74017 {
-  display: none !important;
-}
-
 
 [class*=textAreaSlate]::-webkit-scrollbar-thumb,
 [class*=textAreaSlate]::-webkit-scrollbar-track {
@@ -3827,6 +3776,65 @@ div.formContainer_d9be46>div.form_d9be46>div.bodyContainer_d9be46>div>div>div>di
   background: transparent !important;
 }
 
+/* message bar position when no attachment button */
+.form_f75fb0:has(.channelTextAreaDisabled__74017) {
+  max-width: 1301px;
+}
+.scrollableContainer__74017:not(.forumGuidelines__0511a.scrollableContainer__74017, .fileInput__94439, .bioTextArea__6a919.scrollableContainer__74017.themedBackground__74017, :has(.attachWrapper__0923f)) .textArea__74017:not(:has(>div>div>[class^="applicationCommand_"])) {
+  margin-left: 64px;
+  width: 1575px !important;
+}
+
+/* forward to modal */
+.sendWithMessage__62280.button__201d5.lookFilled__201d5.colorBrand__201d5.sizeMedium__201d5.grow__201d5 {
+  margin-left: -68px!important;
+  top: -5px
+}
+.channelTextArea__74017.inlineContainer__74017 {
+  width: 335px
+}
+.inner__74017.sansAttachButtonCreatePost__74017 {
+  margin-left: -64px!important;
+}
+
+/* about me message box and emoji replacement */
+.bioTextArea__6a919.scrollableContainer__74017.themedBackground__74017 {
+  width: 364px !important;
+  background-color: var(--background-secondary-alt);
+}
+
+div.bioTextArea__6a919.scrollableContainer__74017.themedBackground__74017>div>div.buttons__74017>div>button>div>div {
+  margin-left: -7px;
+}
+
+/* profile customization text placement */
+div>div.contents_c19a55>div>div.channelTextArea__5126c.channelTextArea__74017>div>div>div.textArea__74017.textAreaSlate__74017.slateContainer_ec4baf {
+  margin-left: 0px !important;
+}
+
+/* editing message box */
+div > div.contents_c19a55 > div > div.channelTextArea__5126c.channelTextArea__74017 > div > div > div.textArea__74017.textAreaSlate__74017.slateContainer_ec4baf {
+  left: -15px;
+}
+div > div.contents_c19a55 > div > div.channelTextArea__5126c.channelTextArea__74017 > div > div > div.textArea__74017.textAreaSlate__74017.slateContainer_ec4baf > div > div {
+  left: 16px;
+  margin: -1px
+}
+
+
+/* forum send message bar or somth*/
+#app-mount>div.appAsidePanelWrapper_a3002d>div.notAppAsidePanel_a3002d>div.app_a3002d>div>div.layers__960e4.layers__160d8>div>div>div>div>div.chat_f75fb0>div.content_f75fb0>div.container_f369db>div.list_f369db.auto__99f8c.scrollerBase__99f8c>div>div.card_f369db.headerRow_f369db.columnsSpan_f369db>div.mainCard_f369db.header_f369db>div>form>div.formContainer_d9be46>div.form_d9be46>div.bodyContainer_d9be46>div>div>div>div>div>div {
+  margin-left: 0px;
+  background-color: transparent !important;
+}
+
+div.formContainer_d9be46>div.form_d9be46>div.bodyContainer_d9be46>div>div>div>div>div>div>div>div {
+  margin-top: 9px;
+}
+
+.textArea__74017.textAreaSlate__74017.slateContainer_ec4baf>div>div.placeholder__1b31f.slateTextArea_ec4baf.fontSize16Padding__74017.textAreaWithoutAttachmentButton__74017 {
+  display: none !important;
+}
 
 /* Move typing indicators */
 div[class^=typing] {
@@ -3837,7 +3845,6 @@ div[class^=typing] {
   padding-left: 2px;
   padding-right: 9px;
   border-radius: 8px 8px 0px 0px;
-  /*background-color: var(--channeltextarea-background);*/
 }
 
 .textArea__74017.textAreaSlate__74017.slateContainer_ec4baf>div>div.placeholder__1b31f.slateTextArea_ec4baf.fontSize16Padding__74017.textAreaWithoutAttachmentButton__74017 {
@@ -3849,23 +3856,15 @@ div[class^=typing] {
   display: none;
 }
 
-
-/*Shake animation hover to the text area when you don't have permission !*/
-@keyframes shake {
-  0%, 100% { transform: translateX(0); }
-  20%, 60% { transform: translateX(-10px); }
-  40%, 80% { transform: translateX(10px); }
+/* send timestamp button */
+div.scrollableContainer__74017.themedBackground__74017 > div > div:nth-child(5) > button:nth-child(1) {
+  margin-right: -15px;
+  margin-left: -5px;
 }
 
-/* Initial state of the element */
-[class*=channelTextAreaDisabled] {
-  position: relative;
-  transition: transform 0.5s, opacity 0.5s;
-}
-
-/* Hover state to trigger the shake animation */
-[class*=channelTextAreaDisabled]:hover {
-  animation: shake 0.5s ease-in-out;
+button.invisibleTypingButton {
+  display: inline;
+  margin: 0px 0px 80px -20px;
 }
 
 /* -------------------------------------------------------- */
@@ -3951,10 +3950,6 @@ div.clipContainer__841c8 {
   grid-template-rows: auto 1fr auto;
   height: 100%;
   width: auto
-}
-
-.drawerSizingWrapper__08434 {
-  resize: vertical
 }
 
 .positionContainer__08434 {
@@ -4226,8 +4221,9 @@ span[class*="username"]>span[class*="desaturateUserColors"]::after {
 /* ======================================= */
 .visual-refresh [class^="panels_"] {
   border-radius: 10;
-  left: 79px;
-  bottom: 0;
+  left: 80px;
+  bottom: -2px;
+  height: 125px;
   width: 290px;
 }
 
