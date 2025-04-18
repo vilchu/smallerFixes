@@ -1,7 +1,7 @@
 /**
  * @name Smaller Fixes
  * @description my theme consisting of various theme snippets and stuff. I take no credit for anything'
- * @version 1.19.2
+ * @version 1.19.8
  * @author vilchu
  * @authorId 246276708242554890
  * @source https://github.com/vilchu/smallerFixes/blob/main/SmallerFixes.css
@@ -262,8 +262,8 @@
   --scrollbar-opacity: 0.0;
   --scrollbar-opacity-hover: 0.0;
   --scrollbar-width: 10px;
-
 }
+
 
 .theme-dark,
 .theme-light {
@@ -272,7 +272,6 @@
   --background-modifier-selected: rgba(255, 255, 255, 0.125);
   --background-modifier-accent: rgba(255, 255, 255, 0.175);
   --text-brand: hsl(var(--accent-hsl));
-  --text-link: hsl(var(--accent-hsl));
 }
 
 
@@ -1101,6 +1100,96 @@ button.fieldButton__1fed1.removeButton__1fed1.button__201d5.lookLink__201d5.lowS
   background-color: hsla(var(--accent-hsl), var(--accent-opacity));
   border-color: hsla(var(--accent-hsl), var(--accent-opacity));
   box-shadow: var(--popout-shadow);
+}
+
+/*
+*
+*  RADIO BUTTONS
+*
+*/
+.item__001a7 {
+  background-color: var(--card-color) !important;
+  border-radius: var(--card-radius) !important;
+  border: none !important;
+}
+
+.item__001a7:hover {
+  background-color: var(--card-color-hover) !important;
+  border: none;
+}
+
+[aria-checked=true].item__001a7 {
+  background-color: var(--card-color-select) !important;
+}
+
+[aria-checked=true].item__001a7 path,
+[aria-checked=true].item__001a7 .radioIconForeground__001a7 {
+  fill: hsla(var(--accent-hsl), var(--accent-opacity));
+}
+
+.item__001a7 .radioBar__001a7 {
+  border-radius: var(--card-radius);
+}
+
+/* RADIO BUTTONS -> CONTEXT MENU */
+[role=menuitemradio][aria-checked=true].item_c1e9c4 .icon_c1e9c4 {
+  color: hsl(var(--accent-hsl));
+}
+
+.icon_c1e9c4 .radioSelection_c1e9c4 {
+  color: currentColor !important;
+}
+
+
+/*
+*
+*  SELECT MENUS
+*
+*/
+.select__3f413 {
+  padding: 6px 6px 6px 12px;
+}
+
+.select__3f413.lookFilled__3f413 {
+  height: var(--input-height);
+  border-radius: var(--input-radius);
+  background-color: rgba(var(--textarea-color), var(--textarea-alpha));
+  border: none;
+  color: var(--textarea-text-color);
+  transition: var(--transition-time) var(--transition-type);
+}
+
+.select__3f413.lookFilled__3f413:focus {
+  background-color: rgba(var(--textarea-color), var(--textarea-alpha-focus));
+}
+
+.select__3f413 .subtitle_e9c087 {
+  color: var(--text-muted);
+}
+
+.popout__3f413 {
+  background-color: var(--popout-color);
+  border-radius: var(--popout-radius);
+  box-shadow: var(--popout-shadow);
+  backdrop-filter: blur(var(--popout-blur));
+  border: none;
+}
+
+.popout__3f413:not(.popoutPositionTop-1GenHR) {
+  margin-top: 8px;
+}
+
+.popout__3f413.popoutPositionTop-1GenHR {
+  margin-bottom: 8px;
+  border-radius: var(--popout-radius);
+}
+
+.popout__3f413 .option__3f413:hover {
+  background-color: var(--background-modifier-hover);
+}
+
+.popout__3f413 [aria-selected=true].option__3f413 {
+  background-color: var(--background-modifier-selected) !important;
 }
 
 /*
@@ -2950,12 +3039,6 @@ ul.resultsGroup__56fec {
   content: var(--watermark);
 }
 
-/* link colour */
-.userPopoutInner_c69a7b .anchor_edefb8,
-.userPopoutInner_c69a7b .anchorUnderlineOnHover_edefb8 {
-  color: hsl(0, 70%, 76%) !important;
-}
-
 
 /* =================================== */
 /* ======= < WHOLE ASS LOOK > ======= */
@@ -4218,13 +4301,11 @@ div.mask__0d616 > div > div {
 [class^=viewFullBio_] {
   display: none;
 }
-
 [class^=inner_]>[class^=body_] [class^="descriptionClamp_"] {
   -webkit-line-clamp: unset;
   line-clamp: unset;
   transition: max-height 1s ease;
 }
-
 [class^=inner_]>[class^=body_] [class^="descriptionClamp_"]:hover {
   max-height: 112px;
   overflow-y: auto;
@@ -4245,6 +4326,10 @@ div.mask__0d616 > div > div {
   }
 }
 
+/* link colour in bio*/
+.anchor_edefb8.anchorUnderlineOnHover_edefb8 {
+  color: hsl(0, 60%, 76%)!important;
+}
 
 /* Unclamp status bubble size in user popout */
 [class^="userPopoutInner_"] [class^="statusBubble_"] [class*="clamp_"] {
@@ -4263,11 +4348,9 @@ div.mask__0d616 > div > div {
 .custom-profile-theme [class^=statusBubble_] {
   background-color: var(--profile-gradient-primary-color);
 }
-
 .custom-profile-theme [class^=statusBubbleOuter_]:before {
   background-color: var(--profile-gradient-primary-color);
 }
-
 .custom-profile-theme [class^=statusBubbleOuter_]:after {
   background-color: var(--profile-gradient-primary-color);
 }
@@ -4276,11 +4359,6 @@ div.mask__0d616 > div > div {
 .custom-profile-theme [class^=activityBiteSizePopout_] button,
 .custom-profile-theme [class^=activitySimplifiedProfile_] button {
   background-color: var(--profile-gradient-button-color)!important;
-}
-
-/* Width of small/popout profiles */
-[class^="scroller"]>[class^="section"]>[data-list-id^="roles"] {
-  width: 284px;
 }
 
 /* profile banner circle */
