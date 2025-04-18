@@ -4,6 +4,7 @@
  * @version 1.19.2
  * @author vilchu
  * @authorId 246276708242554890
+ * @source https://github.com/vilchu/smallerFixes/blob/main/SmallerFixes.css
 **/
 
 
@@ -22,15 +23,13 @@
 @import url("https://raw.githubusercontent.com/KrstlSkll69/vc-snippets/main/SyncedWithGameRecolor.css");
 @import url("https://raw.githubusercontent.com/mudaranrhiod/discord-iconpacks/refs/heads/master/vencord/solar/solar.css");
 @import url("https://dablulite.github.io/css-snippets/BetterStatusPicker/import.css");
-
 @import url("https://maendisease.github.io/BetterDiscordStuff/css/bearableInbox.css");
 @import url("https://nspc911.github.io/themes/vencord/BlurryBackdrop.theme.css");
 
-
 /* icons */
 @import url("https://dablulite.github.io/css-snippets/PrettyFolderIcons/import.css");
-@import url("https://gold-me.github.io/DiscordIcons/main.css");
 @import url("https://anubisnekhet.github.io/discordCSS/notification-icons.css");
+
 
 
 /* ================================= */
@@ -468,6 +467,29 @@
   font-size: 0.63rem;
   line-height: 0.75rem;
   opacity: 0.8;
+}
+
+/*
+*
+*  MESSAGES ACTIONS
+*
+*/
+.wrapper_f7ecac {
+  background-color: var(--popout-color) !important;
+  border-radius: var(--popout-radius) !important;
+  box-shadow: var(--popout-shadow) !important;
+  backdrop-filter: blur(var(--popout-blur));
+}
+
+.message__89466 {
+  padding: 0;
+  background-color: transparent !important;
+  box-shadow: none !important;
+}
+
+.message__89466 .wrapper_c19a55 {
+  margin-left: 48px;
+  margin-right: 0;
 }
 
 /*
@@ -2875,7 +2897,7 @@ ul.resultsGroup__56fec {
 
 [class^="subtitleContainer_"] {
   margin-left: 0px;
-  max-width: 1428px;
+  max-width: 1440px;
 }
 
 [class^="container_"]:has(> [class^="membersWrap_"]) {
@@ -2927,7 +2949,6 @@ ul.resultsGroup__56fec {
   font-family: var(--font-headline);
   content: var(--watermark);
 }
-
 
 /* link colour */
 .userPopoutInner_c69a7b .anchor_edefb8,
@@ -4148,8 +4169,8 @@ svg.spine__5b40b {
   background: var(--inversed-overlay, var(--background-primary));
   transition: color .15s ease-out, background-color .15s ease-out;
   top: 65px;
-  right: 250px;
-  min-width: 65px;
+  right: 265px;
+  min-width: 55px;
   margin: 4px;
 }
 
@@ -4559,3 +4580,5 @@ div[data-selenium-video-tile="246276708242554890"] [class^=voiceChannelEffectsCo
 nav.guilds_c48ade {
   margin-bottom: 0 !important;
 }
+
+/* --------------------------------------------------------------------------------------------------------------------------------------------------------------- */
