@@ -1672,21 +1672,20 @@ button.fieldButton__1fed1.removeButton__1fed1.button__201d5.lookLink__201d5.lowS
 */
 .reaction_f8896c,
 .reaction__23977 {
-  background-color: var(--message-color);
-  border-radius: 7PX;
+  border-radius: 7px;
   border: none;
 }
 
 .reaction_f8896c:hover,
 .reaction__23977:hover {
-  background-color: var(--message-color);
+  background-color: var(--message-color)!important;
 }
 
 .reaction_f8896c.reactionMe_f8896c,
 .reaction__23977.reactionMe_f8896c,
 .reaction_f8896c.reactionMe__23977,
 .reaction__23977.reactionMe__23977 {
-  background-color: hsla(var(--accent-hsl), 0.25);
+  background-color: hsla(var(--accent-hsl), 0.25)!important;
   border-color: transparent;
 }
 
@@ -1694,7 +1693,7 @@ button.fieldButton__1fed1.removeButton__1fed1.button__201d5.lookLink__201d5.lowS
 .reaction__23977.reactionMe_f8896c:hover,
 .reaction_f8896c.reactionMe__23977:hover,
 .reaction__23977.reactionMe__23977:hover {
-  background-color: hsla(var(--accent-hsl), 0.35);
+  background-color: hsla(var(--accent-hsl), 0.35)!important;
 }
 
 .reaction_f8896c.reactionMe_f8896c .reactionCount_f8896c,
@@ -1705,7 +1704,7 @@ button.fieldButton__1fed1.removeButton__1fed1.button__201d5.lookLink__201d5.lowS
 .reaction__23977.reactionMe_f8896c .reactionCount__23977,
 .reaction_f8896c.reactionMe__23977 .reactionCount__23977,
 .reaction__23977.reactionMe__23977 .reactionCount__23977 {
-  color: hsla(var(--accent-hsl), var(--accent-opacity));
+  color: hsla(var(--accent-hsl), var(--accent-opacity))!important;
 }
 
 .reaction_f8896c .burstGlow_f8896c,
