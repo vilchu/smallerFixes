@@ -2985,13 +2985,14 @@ ul.resultsGroup__56fec {
 
 [class^="subtitleContainer_"] {
   margin-left: 0px;
-  max-width: 1435px;
+  max-width: 1415px;
+
 }
 
 [class^="container_"]:has(> [class^="membersWrap_"]) {
   position: relative;
   top: -60px;
-  width: 240px;
+  width: fit-content!important;
   height: calc(100% + 60px);
   border: none;
 }
@@ -3293,7 +3294,6 @@ div[id='user-context-call'],
 }
 
 
-
 /* ========================== */
 /* ======= < ICONS > ======= */
 /* ======================== */
@@ -3446,7 +3446,7 @@ div[id='user-context-call'],
   position: relative;
 }
 
-.container_b7e1cb> :not(.wrapper_d5f3cd,.container__5e208, .reactions__23977, .searchResultsWrap_a9e706 *),
+.container_b7e1cb> :not(.embed__98ba8.showVideoOnFocus__98ba8,.wrapper_d5f3cd,.container__5e208, .reactions__23977, .searchResultsWrap_a9e706 *),
 .groupStart__5126c.cozyMessage__5126c:not(.codeContainer__75297.systemMessage__5126c)  .contents_c19a55>.markup__75297,
 .cozyMessage__5126c:not(.groupStart__5126c)>.contents_c19a55>.markup__75297:not(:empty, .searchResultsWrap_a9e706 *) {
   margin:  0;
@@ -4125,9 +4125,8 @@ span[class*="username"]>span[class*="desaturateUserColors"]::after {
 [aria-label="Channels"] .containerDefault__29444 ~ .containerDefault_c69b6d,
 [aria-label="Channels"] .containerDefault__29444, .voiceUserSummary__629e4,
 .container__5b40b {
-  background-color: var(--catagory-background) !important; /* set color */
-  margin-left: 8px; padding-right: 8px; /* clean up formatting */
-
+    background-color: var(--catagory-background) !important; /* set color */
+    margin-left: 8px; padding-right: 8px; /* clean up formatting */
 }
 [aria-label="Channels"] .container__5b40b .containerDefault_c69b6d {
     margin-bottom: 0; /* Fix forum gap */ 
@@ -4135,12 +4134,11 @@ span[class*="username"]>span[class*="desaturateUserColors"]::after {
 [aria-label="Channels"] .containerDefault_c69b6d:has(+ .containerDefault__29444),
 [aria-label="Channels"] .containerDefault__29444:has(+ .containerDefault__29444),
 [aria-label="Channels"] .container__5b40b:has(+ .containerDefault__29444),
-[aria-label="Channels"] li:last-child  {
-  margin-bottom: var(--catagory-spacing); /* space between catagories */
-  border-radius: 0 0 var(--catagory-radius) var(--catagory-radius); /* add border to bottom of catagories */
-  margin-bottom: 8px; /* clean up formatting */
+[aria-label="Channels"] li:last-child {
+    margin-bottom: var(--catagory-spacing); /* space between catagories */
+    border-radius: 0 0 var(--catagory-radius) var(--catagory-radius); /* add border to bottom of catagories */
+    margin-bottom: 10px; /* clean up formatting */
 }
-
 
 .containerDefault__29444{
     border-radius: var(--catagory-radius) var(--catagory-radius) 0 0; /* add border to top of catagories */
@@ -4149,9 +4147,9 @@ span[class*="username"]>span[class*="desaturateUserColors"]::after {
 [aria-label="Channels"] .containerDefault__29444:not(:has(+ .containerDefault_c69b6d)) {
     border-radius: var(--catagory-radius); /* add border to closed catagories */
 }
-.sidebar_c48ade .name__29444 {
+.sidebar_c48ade .name__29444{
     text-transform: var(--catagoryTitleUppercase); /* make catagory title uppercase */
-    text-align: var(--catagoryAlignment); /* center title */
+    text-align: var(--catagoryAlignment) /* center title */
 }
 .name__2ea32{
     text-transform: var(--capitalizeName);  /* capitalize channel name */
@@ -4168,13 +4166,13 @@ span[class*="username"]>span[class*="desaturateUserColors"]::after {
 	border-radius: var(--catagory-radius);
 }
 [aria-label="Channels"] .containerDefault_c69b6d:has(+ .voiceChannelsButton__29444){
-	padding-bottom: 8px;
+	padding-bottom: 8px
 }
 
 .voiceChannelsButton__29444{
 	border-radius: 0 0 var(--catagory-radius) var(--catagory-radius);
 	background-color: var(--catagory-background);
-	margin: 0 0 0 8px;
+	margin: 0 0 0 8px
 }
 
 .channel__972a0:first-of-type{
@@ -4190,14 +4188,14 @@ span[class*="username"]>span[class*="desaturateUserColors"]::after {
 	display: none
 }
 [aria-label="Channels"]::before {
-  content: "\00a0";
-  position: relative;
-  height: 8px !important;
+    content: "\00a0";
+    position: relative;
+    height: 8px !important;
 }
 [aria-label="Channels"]::after {
-  content: "";
+    content: "";
 	position: absolute;
-  height: 1px;
+    height: 1px;
 }
 
 [aria-label="Channels"]::after, [aria-label="Channels"]::before {
@@ -4216,18 +4214,12 @@ svg.spine__5b40b {
 /* ========================================= */
 /* ======= < PROFILE PANEL THINGY > ======= */
 /* ======================================= */
-.visual-refresh [class^="panels_"] {
-  border-radius: 10;
-  left: 80px;
-  bottom: -3px;
-  width: 290px;
-}
-
-:root .panels_c48ade {
-  margin: 0 5px 8px 5px;
-  border-radius: calc(20px - 5px);
-  background-color: var(--panel-colour);
-  box-shadow: 0 2px 10px 0 hsla(0, 0%, 0%, 0.2), 0 0 0 1px hsla(0, 29%, 17%, 0.11);
+.visual-refresh .panels_c48ade {
+  border-radius: 10px!important;
+  bottom: 5px!important;
+  left: calc(0px + var(--custom-guild-list-width))!important;
+  transition: ease 0.3s;
+  width: calc(100% - var(--custom-guild-list-width))!important;
 }
 
 .sidebar_c48ade {
@@ -4267,7 +4259,7 @@ svg.spine__5b40b {
 .container__37e49:not(.container__37e49) .withTagAsButton_b2ca13,
 .container__37e49 .nameTag__37e49 {
   border-radius: 15px var(--radius-secondary) var(--radius-secondary) 15px;
-  margin: 5px -115px 0px 5px;
+  margin: 5px -15px 0px 5px;
   grid-column: 2;
   height: 38px;
 }
@@ -4385,13 +4377,13 @@ div.mask__0d616 > div > div {
 /* ======= < DM PROFILE WIDTH > ======= */
 /* ==================================== */
 .outer_c0bea0.theme-dark.images-dark.custom-theme-background.custom-profile-theme.panel_c0bea0 {
-  width: 250px;
+  width: 240px;
   height: calc(100% + 60px);
 }
 .outer_c0bea0.theme-dark.images-dark.panel_c0bea0 {
-  width: 240px; 
-  bottom: 48px;
-  height: 1183px!important
+  width: 264px; 
+  bottom: 55px;
+  height: calc(100% + 50px);
 }
 
 
@@ -4534,6 +4526,7 @@ div.mask__0d616 > div > div {
 #app-mount .containerDefault_c69b6d:hover .wrapper__2ea32 .icon__2ea32 {
   color: var(--highlight-icon) !important;
 }
+
 
 /* =========================================== */
 /* ======= < DISABLE VIDEO MIRRORING CAMERA > ======= */
