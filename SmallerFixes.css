@@ -131,7 +131,7 @@
   /* dark gray discord hsl(225, 6%, 13%);*/
 
   /* windows buttons close minimize etc */
-  --window-colour: hsl(223, 7%, 21%);
+  --window-colour: hsl(220, 7%, 26%);
   /* normal grey: hsl(223, 7%, 21%);*/
 
   /* link color when sending caht */
@@ -3003,12 +3003,15 @@ ul.resultsGroup__56fec {
 /* ==================================== */
 /* ======= < WINDOWS BUTTONS > ======= */
 /* ================================== */
-:root .winButton__421ed {
-  background-color: var(--window-colour)!important;
+body {
+  --top-bar-height: 30px;
+  --custom-app-top-bar-height: var(--top-bar-height);
 }
 
-:root .winButton__421ed:last-child {
-  border-bottom-left-radius: 8px!important;
+:root .winButtons_c38106 {
+  background-color: var(--window-colour)!important;
+  height: 25px;
+  border-radius:  0px 0px 0px  10px !important;
 }
 
 
@@ -3052,6 +3055,16 @@ ul.resultsGroup__56fec {
 .chat_f75fb0 {
   margin: 0px 7px 0px 0;
   border-radius: 15px!important;
+}
+
+body {
+  /* sizes */
+  --gap: 7px; /* spacing between panels */
+}
+.visual-refresh {
+  .sidebar_c48ade /* server list + channel list + user panel group */ {
+    margin: 0 var(--gap) var(--gap) var(--gap);
+}
 }
 
 .flex__7c0ba.flex_abf706.horizontalReverse__7c0ba.horizontalReverse_d76671.flex_abf706.directionRowReverse_f644aa.justifyStart_abf706.alignStretch_abf706.noWrap_abf706.footer-31IekZ.footerSeparator-VzAYwb {
@@ -4201,9 +4214,15 @@ span[class*="username"]>span[class*="desaturateUserColors"]::after {
     width: 240px;
 }
 
-.header_f37cb1 {
-  background-color: #323339!important;
+
+.visual-refresh {
+  .clickable_f37cb1,
+  .container__2637a /* channel list inner */,
+  .header_f37cb1 /* server name */ {
+      background: #323339;
+  }
 }
+
 
 /* thread color */
 div.spineBorder__5b40b {
