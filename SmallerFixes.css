@@ -4378,12 +4378,18 @@ svg.spine__5b40b {
   background-color: var(--panel-colour) !important;
 }
 
+div.buttons__37e49 > div > div > button,
+div.buttons__37e49 > div > button {
+  background-color: #36373E!important;
+}
+
 /* quest bitch ass thing */
 div.mask__0d616 > div > div {
   border-radius: 15px!important;
 }
 
-.container__4bbc6.fadeIn__4bbc6 {
+/* userpanel nameplathe thingy */
+.container__4bbc6 {
   border-radius: 10px;
   width: 251px;
   height: 45px;
