@@ -1,7 +1,7 @@
 /**
  * @name Smaller Fixes
  * @description my theme consisting of various theme snippets and stuff. I take no credit for anything'
- * @version 1.19.8
+ * @version 1.20.3
  * @author vilchu
  * @authorId 246276708242554890
  * @source https://github.com/vilchu/smallerFixes/blob/main/SmallerFixes.css
@@ -4383,6 +4383,13 @@ div.mask__0d616 > div > div {
   border-radius: 15px!important;
 }
 
+.container__4bbc6.fadeIn__4bbc6 {
+  border-radius: 10px;
+  width: 251px;
+  height: 45px;
+  left: 20px;
+  top: 20px
+}
 
 /* ========================================== */
 /* ======= < PROFILE MODIFICATIONS > ======= */
