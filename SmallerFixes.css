@@ -3919,7 +3919,7 @@ div[class^=typing] {
   margin-left: auto;
   width: fit-content;
   padding-left: 2px;
-  padding-right: 9px;
+  padding-right: 30px;
   border-radius: 8px 8px 0px 0px;
 }
 
@@ -4071,7 +4071,7 @@ div.clipContainer__841c8 {
 /* ==================================================== */
 /* ======= < SERVER CHANNEL MEMBERS COLOURS > ======= */
 /* ================================================= */
-span[class*="username"]>span[class*="desaturateUserColors"]::after {
+span[class*="username"] > span[class*="desaturateUserColors"]::after {
   content: '';
   top: 0;
   left: 0;
@@ -4080,17 +4080,17 @@ span[class*="username"]>span[class*="desaturateUserColors"]::after {
   position: absolute;
   opacity: 0.125;
   background: currentColor;
-  border-radius: 8px;
+  border-radius: 5px;
 }
 
 [class*="nameAndDecorators-"] {
   z-index: 0;
 }
-[class*="member-"] [class*="container-"] [class*="selected-"]::after {
+[class*="member-"] [class*="container-"] [class*="selected-"] ::after {
   border-radius: 4px;
-  background: hsl(0, 0%, 100%);
+  background: white
 }
-[class*="membersGroup-"]+[class*="container-"] {
+[class*="membersGroup-"] + [class*="container-"] {
   margin-top: 5px;
 }
 
@@ -4389,7 +4389,8 @@ div.mask__0d616 > div > div {
 }
 
 /* userpanel nameplathe thingy */
-.container__4bbc6 {
+.container__4bbc6.fadeIn__4bbc6,
+div.container__37e49 > div.container__4bbc6 {
   border-radius: 10px;
   width: 251px;
   height: 45px;
@@ -4487,7 +4488,8 @@ div.mask__0d616 > div > div {
 /* ====================================== */
 /* ======= < DM PROFILE WIDTH > ======= */
 /* ==================================== */
-.outer_c0bea0.theme-dark.images-dark.panel_c0bea0 {
+.outer_c0bea0.theme-dark.images-dark.user-profile-sidebar,
+.outer_c0bea0.theme-dark.images-dark.user-profile-sidebar.custom-theme-background.custom-user-profile-theme {
   width: 268px; 
   bottom: 65px;
   height: calc(100% + 70px);
@@ -4757,6 +4759,37 @@ div[data-selenium-video-tile="246276708242554890"] [class^=voiceChannelEffectsCo
 
 nav.guilds_c48ade {
   margin-bottom: 0 !important;
+}
+
+
+
+/* Customizable is typing... message */
+.typingDots_b88801 > .ellipsis_b88801+.text_b88801 {
+  font-size: 0;
+  height: 16px;
+  >strong {
+    font-size: 12px;
+    &::after {
+      color: var(--text-secondary);
+      font-weight: 500;
+    }
+    &:last-child::after {
+      content: " is yapping…";
+    }
+    &:last-child:not(:first-child)::after {
+      content: " are yapping…";
+    }
+    &:nth-last-child(2)::after {
+      content: " and "
+    }
+    &:nth-last-child(3)::after {
+      content: ", ";
+    }
+  }
+  &:not(:has(>strong))::after {
+    font-size: 12px;
+    content: "Several people are yapping…";
+  }
 }
 
 /* --------------------------------------------------------------------------------------------------------------------------------------------------------------- */
