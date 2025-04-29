@@ -4071,27 +4071,23 @@ div.clipContainer__841c8 {
 /* ==================================================== */
 /* ======= < SERVER CHANNEL MEMBERS COLOURS > ======= */
 /* ================================================= */
-span[class*="username"] > span[class*="desaturateUserColors"]::after {
-  content: '';
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+.nameContainer__703b9:not(div > a > span > span)::after {
+  content: "";
+  background: currentColor;
+  z-index: -10;
+  border-radius: 8px;
+  width: 240px;
+  height: 40px;
   position: absolute;
   opacity: 0.125;
-  background: currentColor;
-  border-radius: 5px;
+  left: -0px;
+  top: 0px;
 }
-
-[class*="nameAndDecorators-"] {
-  z-index: 0;
+.nameContainer__703b9{
+  position: unset
 }
-[class*="member-"] [class*="container-"] [class*="selected-"] ::after {
-  border-radius: 4px;
-  background: white
-}
-[class*="membersGroup-"] + [class*="container-"] {
-  margin-top: 5px;
+.childContainer__91a9d {
+  height:40px
 }
 
 
