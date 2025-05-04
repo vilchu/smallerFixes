@@ -19,7 +19,6 @@
 @import url("https://minidiscordthemes.github.io/Snippets/ForumImprovements/main.css");
 @import url("https://raw.githubusercontent.com/KrstlSkll69/vc-snippets/main/StageRecolor.css");
 @import url("https://github.com/lazuee/css-snippets/raw/main/discord/sidebar-notice/import.css");
-@import url("https://ukriu.github.io/cssCord/Other/gradientDM.css");
 @import url("https://raw.githubusercontent.com/KrstlSkll69/vc-snippets/main/SyncedWithGameRecolor.css");
 @import url("https://raw.githubusercontent.com/mudaranrhiod/discord-iconpacks/refs/heads/master/vencord/solar/solar.css");
 @import url("https://dablulite.github.io/css-snippets/BetterStatusPicker/import.css");
@@ -156,6 +155,7 @@
   --gDM-dnd: linear-gradient(to right, rgb(130,70,70) , transparent);
   --gDM-idle: linear-gradient(to right, rgb(135, 105, 75) , transparent);
   --gDM-streaming: linear-gradient(to right, rgb(63, 33, 88) , transparent);
+  --gDM-border-radius: 12px;
 }
 
 
@@ -2976,7 +2976,7 @@ ul.resultsGroup__56fec {
 
 [class^="subtitleContainer_"] {
   margin-left: 0px;
-  max-width: 1360px;
+  max-width: 1363px;
 
 }
 
@@ -3542,7 +3542,7 @@ div[id='user-context-call'],
 
 .codeContainer__75297,
 .scrollbarGhostHairline__506b3.scrollbar__506b3.hljs {
-  width: max-content!important;
+  max-width: max-content!important;
 }
 
 .container_b7e1cb> :not(.container__5e208, .reactions__23977, .searchResultsWrap_a9e706 *):hover,
@@ -4073,14 +4073,14 @@ div.clipContainer__841c8 {
 /* ================================================= */
 .nameContainer__703b9:not(div > a > span > span)::after {
   content: "";
-  background: currentColor;
+  background: linear-gradient(-90deg,transparent, 30%, currentcolor);
   z-index: -10;
   border-radius: 8px;
-  width: 240px;
+  width: 248px;
   height: 40px;
   position: absolute;
-  opacity: 0.125;
-  left: -0px;
+  opacity: 0.25;
+  left: 0px;
   top: 0px;
 }
 .nameContainer__703b9{
@@ -4090,6 +4090,30 @@ div.clipContainer__841c8 {
   height:40px
 }
 
+/* DM members */
+
+ul > li > [class*="interactive_"] {
+  border-radius: var(--gDM-border-radius);
+  margin: 0.3px;
+}
+
+[class^="link_"]:has([mask*="online"], [fill="#43a25a"]) {
+  background: var(--gDM-online);
+}
+[class^="link_"]:has([mask*="offline"], [fill="#f0b232"]) {
+  background: var(--gDM-offline);
+}
+[class^="link_"]:has([mask*="dnd"], [fill="#d83a42"]) {
+  background: var(--gDM-dnd);
+}
+[class^="link_"]:has([mask*="idle"], [fill="#ca9654"]) {
+  background: var(--gDM-idle);
+}
+[class^="link_"]:has([mask*="streaming"], [fill="#9147ff"]) {
+  background: var(--gDM-streaming);
+}
+/* make the pill fill all of the memberlist */
+[class*="memberInner_"][class*="layout_"] {width: 100%}
 
 /* ======================================== */
 /* ======= < JUMP TO PRESENT BAR > ======= */
