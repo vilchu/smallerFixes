@@ -4514,6 +4514,11 @@ div.container__37e49 > div.container__4bbc6 {
   bottom: 65px;
   height: calc(100% + 70px);
 }
+/* dm nameplate on hover*/
+.container__4bbc6.fadeIn__4bbc6 {
+  top: 2px;
+  left: 23px
+}
 
 
 /* ===================================== */
@@ -4691,27 +4696,22 @@ div[data-selenium-video-tile="246276708242554890"] [class^=voiceChannelEffectsCo
 }
 
 
-#bd-notices {
-  grid-area: notice;
+/* remove gradient glow in chat and user list */
+.threeColorGradient_e5de78,
+.twoColorGradient_e5de78 {
+  &.usernameGradient_e5de78 {
+    color: color-mix(in lab, var(--custom-gradient-color-1), var(--custom-gradient-color-2));
+    background: none;
+    -webkit-text-fill-color: initial;
+  }
+
+  &::after,
+  &.nameGlow__703b9 {
+      display: none;
+  }
 }
 
-
-/* fix servers in new UI */
-:root {
-  --guildbar-avatar-size: 40px !important;
-}
-
-
-
-      [class*="childWrapper__"],
-      [class*="childWrapper__"] img,
-      [class*="icon_"],
-      [class*="circleIconButton__"] {
-          border-radius: 100% !important;
-          transition: border-radius 150ms;
-      }
-
-
+/* fix gray area below folders when folders opened */
 nav.guilds_c48ade {
   margin-bottom: 0 !important;
 }
