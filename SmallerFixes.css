@@ -1,7 +1,7 @@
 /**
  * @name Smaller Fixes
  * @description my theme consisting of various theme snippets and stuff. I take no credit for anything'
- * @version 1.20.3
+ * @version 2.5.3
  * @author vilchu
  * @authorId 246276708242554890
  * @source https://github.com/vilchu/smallerFixes/blob/main/SmallerFixes.css
@@ -46,14 +46,6 @@
   --font-display: var(--SKIN-display-font, "CreArts", "Ginto", "Helvetica Neue", "Helvetica", "Arial", "sans-serif") !important
 }
 
-@font-face {
-  font-family: "CreArts-Dash";
-  font-style: normal;
-  font-display: swap;
-  src: url(https://crearts-community.github.io/Assets/fonts/dash/dash.woff2) format("woff2");
-  unicode-range: U+002D
-}
-
 
 @font-face {
   font-family: "CreArts";
@@ -63,16 +55,6 @@
   src: url(https://crearts-community.github.io/Assets/fonts/quicksand/quicksand-400.woff2) format("woff2");
   unicode-range: U+0020-007F, U+00A0-00FF, U+0100-017F, U+0180-024F
 }
-
-@font-face {
-  font-family: "CreArts";
-  font-style: normal;
-  font-weight: 700;
-  font-display: swap;
-  src: url(https://crearts-community.github.io/Assets/fonts/quicksand/quicksand-700.woff2) format("woff2");
-  unicode-range: U+0020-007F, U+00A0-00FF, U+0100-017F, U+0180-024F
-}
-
 
 
 /* ================================== */
@@ -103,9 +85,6 @@
   --catagoryAlignment: center; /* Channel Catagory alignment: left, right, center */
   --catagoryTitleUppercase: uppercase; /* change to 'none' to remove Uppercasing of catagory titles */
 
-  /* Watermark */
-  --watermark: "UwUcord";
-
   /* chatbar shit */
   --radius-primary: 18px;
   --radius-tertiary: 6px;
@@ -117,13 +96,9 @@
   --inner-primary: 8px;
   --inner-secondary: 12px;
   --inner-tertiary: 16px;
-
   --panel-colour: hsl(225, 6%, 13%);
-  /* dark gray discord hsl(225, 6%, 13%);*/
 
-  /* windows buttons close minimize etc */
   --window-colour: hsl(220, 7%, 26%);
-  /* normal grey: hsl(223, 7%, 21%);*/
 
   /* link color when sending caht */
   --text-link: hsl(0, 60%, 76%)!important;
@@ -156,6 +131,22 @@
   --gDM-idle: linear-gradient(to right, rgb(135, 105, 75) , transparent);
   --gDM-streaming: linear-gradient(to right, rgb(63, 33, 88) , transparent);
   --gDM-border-radius: 12px;
+
+  /* || send message bar */
+  --channeltextarea-rounding: var(--radius-primary);
+  --channeltextarea-background: var(--background-secondary-alt);
+  --channeltextarea-border: var(--background-secondary);
+  /* || Default Buttons */
+  --channeltextarea-button-rounding: 50%;
+  --channeltextarea-button-icon: var(--interactive-normal);
+  --channeltextarea-button-background: var(--channeltextarea-background);
+  --channeltextarea-button-hover: var(--background-tertiary);
+  /* || Accents */
+  --channeltextarea-caret: var(--brand-400);
+  --channeltextarea-sendbutton-icon: var(--brand-130);
+  --channeltextarea-sendbutton-background: var(--brand-500);
+  --channeltextarea-sendbutton-hover: var(--brand-460);
+  --channeltextarea-sendbutton-active: var(--brand-530);
 }
 
 
@@ -255,9 +246,7 @@
   --scrollbar-width: 10px;
 }
 
-
-.theme-dark,
-.theme-light {
+.theme-dark {
   --background-modifier-hover: rgba(255, 255, 255, 0.075);
   --background-modifier-active: rgba(255, 255, 255, 0.1);
   --background-modifier-selected: rgba(255, 255, 255, 0.125);
@@ -436,27 +425,6 @@
 
 .barButtonBase__0f481 {
   color: var(--accent-text-color);
-}
-
-/* Improved Links */
-.messageContent_c19a55 a[href][title*="("] {
-  position: relative;
-  overflow: visible;
-  border-radius: 3px;
-  padding: 0 2px;
-  font-weight: 500;
-  background: hsla(var(--mention-colour),0.4);
-  color: hsl(var(--mention-colour));
-}
-.messageContent_c19a55 a[href][title*="("]:hover {
-  background-color: hsla(var(--mention-colour),0.3);
-  color: hsl(var(--mention-colour));
-}
-.messageContent_c19a55 a[href][title*="("]::after {
-  content: " (" attr(href) ")";
-  font-size: 0.63rem;
-  line-height: 0.75rem;
-  opacity: 0.8;
 }
 
 /*
@@ -2099,7 +2067,6 @@ ul.resultsGroup__56fec {
   --search-popout-option-fade-hover: linear-gradient(90deg, transparent, var(--item-hover-bg) 50%);
 }
 
-
 /*
 *
 *  EMOJI PICKER
@@ -3005,11 +2972,10 @@ body {
   border-radius:  0px 0px 0px  10px !important;
 }
 
-
 /* ============================== */
 /* ======= < WATERMARK > ======= */
 /* ============================ */
-:root:has(bd-body) .wordmark__421ed::after {
+/*:root:has(bd-body) .wordmark__421ed::after {
   content: var(--watermark);
 }
 
@@ -3031,8 +2997,7 @@ body {
   white-space: nowrap;
   font-family: var(--font-headline);
   content: var(--watermark);
-}
-
+}*/
 
 /* =================================== */
 /* ======= < WHOLE ASS LOOK > ======= */
@@ -3141,8 +3106,6 @@ body {
   }
 }
 
-
-
 /* ============================== */
 /* ======= < HOME ICON > ======= */
 /* ============================ */
@@ -3168,7 +3131,6 @@ body {
   display: none;
 }
 
-
 /* ========================================== */
 /* ======= < TEXT SELECTION COLOUR > ======= */
 /* ======================================== */
@@ -3179,7 +3141,6 @@ body {
 .highlight {
   background: hsla(var(--mention-colour), 0.75) !important;
 }
-
 
 /* ======================================== */
 /* ======= < HI-COLOUR MENTIONS > ======= */
@@ -3276,7 +3237,6 @@ div[class*='replying']::before {
 .mentioned__5126c:after {
   content: unset;
 }
-
 
 /* ================================= */
 /* ======= < REMOVE STUFF > ======= */
@@ -3609,28 +3569,34 @@ div[id='user-context-call'],
   pointer-events: none;
 }
 
+.role_dfa8b6.pill_dfa8b6 .twoColorGradient_e5de78::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        90deg,
+        var(--custom-gradient-color-1),
+        var(--custom-gradient-color-2),
+        var(--custom-gradient-color-3)
+    );
+    background-size: 50% 100%;
+    transition: background-position 0s;
+}
+.role_dfa8b6.pill_dfa8b6:hover .twoColorGradient_e5de78::before {
+    animation: seamlessGradient 5s linear infinite;
+}
+@keyframes seamlessGradient {
+    0% {
+        background-position: 0% 0%;
+    }
+    100% {
+        background-position: 100% 0%;
+    }
+} 
 
 /* ===================================== */
 /* ======= < SEND MESSAGE BAR > ======= */
 /* =================================== */
-:root {
-  /* || Main */
-  --channeltextarea-rounding: var(--radius-primary);
-  --channeltextarea-background: var(--background-secondary-alt);
-  --channeltextarea-border: var(--background-secondary);
-  /* || Default Buttons */
-  --channeltextarea-button-rounding: 50%;
-  --channeltextarea-button-icon: var(--interactive-normal);
-  --channeltextarea-button-background: var(--channeltextarea-background);
-  --channeltextarea-button-hover: var(--background-tertiary);
-  /* || Accents */
-  --channeltextarea-caret: var(--brand-400);
-  --channeltextarea-sendbutton-icon: var(--brand-130);
-  --channeltextarea-sendbutton-background: var(--brand-500);
-  --channeltextarea-sendbutton-hover: var(--brand-460);
-  --channeltextarea-sendbutton-active: var(--brand-530);
-}
-
 .base_c48ade .channelTextArea__5126c,
 .base_c48ade .channelTextArea_f75fb0,
 .base_c48ade .scrollableContainer__74017 {
@@ -3928,9 +3894,9 @@ div[class^=typing] {
 }
 
 /* weird ass gray line on scroller */
-.form_f75fb0::after {
+/*.form_f75fb0::after {
   display: none;
-}
+}*/
 
 /* send timestamp button */
 div.scrollableContainer__74017.themedBackground__74017 > div > div:nth-child(5) > button:nth-child(1) {
@@ -3981,11 +3947,11 @@ div.clipContainer__841c8 {
 }
 
 /* honestly I have no idea what's this */
-.threadSuggestionBar__841c8 {
+/*.threadSuggestionBar__841c8 {
   width: 1500px;
   margin-left: 65px;
   border-radius: 10px;
-}
+}*/
 
 .bioTextArea__6a919.scrollableContainer__74017.themedBackground__74017 {
   border-radius: 15px;
@@ -4043,11 +4009,6 @@ div.clipContainer__841c8 {
   transform: translate(-568%, -565%);
   display: inline-block;
   scale: 0.081;
-}
-
-/** Hide apps button next to chatbar */
-.channelAppLauncher_e6e74f {
-  display: none;
 }
 
 
@@ -4114,6 +4075,7 @@ ul > li > [class*="interactive_"] {
 }
 /* make the pill fill all of the memberlist */
 [class*="memberInner_"][class*="layout_"] {width: 100%}
+
 
 /* ======================================== */
 /* ======= < JUMP TO PRESENT BAR > ======= */
@@ -4346,6 +4308,7 @@ svg.spine__5b40b {
 
 .content__37e49,
 .container__37e49 {
+  border-radius: 10px!important;
   display: grid;
   grid-template-columns: auto 1fr;
   grid-template-rows: 1fr 1fr;
@@ -4449,6 +4412,8 @@ div.container__37e49 > div.container__4bbc6 {
     border-radius: 10px;
   }
 }
+
+
 
 /* link colour in bio*/
 .anchor_edefb8.anchorUnderlineOnHover_edefb8 {
@@ -4705,7 +4670,6 @@ div[data-selenium-video-tile="246276708242554890"] [class^=voiceChannelEffectsCo
     -webkit-text-fill-color: initial;
   }
 
-  &::after,
   &.nameGlow__703b9 {
       display: none;
   }
