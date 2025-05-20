@@ -24,6 +24,7 @@
 @import url("https://dablulite.github.io/css-snippets/BetterStatusPicker/import.css");
 @import url("https://maendisease.github.io/BetterDiscordStuff/css/bearableInbox.css");
 @import url("https://nspc911.github.io/themes/vencord/BlurryBackdrop.theme.css");
+@import url('https://raw.githubusercontent.com/Krammeth/css-snippets/refs/heads/main/PopoutsRevamped.css');
 
 /* icons */
 @import url("https://dablulite.github.io/css-snippets/PrettyFolderIcons/import.css");
@@ -2943,7 +2944,7 @@ ul.resultsGroup__56fec {
 
 [class^="subtitleContainer_"] {
   margin-left: 0px;
-  max-width: 1363px;
+  max-width: 1365px;
 
 }
 
@@ -2956,7 +2957,6 @@ ul.resultsGroup__56fec {
 }
 
 /* ------------------------------------------------------------------------------------------------------------------------------------------------------------ */
-
 
 /* ==================================== */
 /* ======= < WINDOWS BUTTONS > ======= */
@@ -2971,33 +2971,6 @@ body {
   height: 25px;
   border-radius:  0px 0px 0px  10px !important;
 }
-
-/* ============================== */
-/* ======= < WATERMARK > ======= */
-/* ============================ */
-/*:root:has(bd-body) .wordmark__421ed::after {
-  content: var(--watermark);
-}
-
-.wordmark__421ed {
-  pointer-events: unset;
-  padding: 0
-}
-
-.wordmark__421ed>svg {
-  display: none
-}
-
-.wordmark__421ed::after {
-  position: absolute;
-  top: 4px;
-  padding: 4px 9px 3px;
-  font-size: 9px;
-  letter-spacing: .4px;
-  white-space: nowrap;
-  font-family: var(--font-headline);
-  content: var(--watermark);
-}*/
 
 /* =================================== */
 /* ======= < WHOLE ASS LOOK > ======= */
@@ -3336,7 +3309,6 @@ div[id='user-context-call'],
   display: var(--shop);
 }
 
-
 /* ========================== */
 /* ======= < ICONS > ======= */
 /* ======================== */
@@ -3352,22 +3324,6 @@ div[id='user-context-call'],
 .iconSpacing__07f91[aria-label="Deafened"] .icon__07f91 {
   color: hsl(0, 64%, 57%);
 }
-
-/* ====================================== */
-/* ======= < JOINED VOICE ICON > ======= */
-/* ==================================== */
-.wrapper__2ea32.modeConnected__2ea32 .icon__2ea32 {
-  color: var(--status-positive);
-}
-
-
-/* ================================== */
-/* ======= < REORDER STUFF > ======= */
-/* ================================ */
-.iconWrapper__9293f {
-  order: -1;
-}
-
 
 /* =================================== */
 /* ======= < TIMESTAMP ICON > ======= */
@@ -3401,6 +3357,19 @@ div[id='user-context-call'],
   line-height: 1;
 }
 
+/* ====================================== */
+/* ======= < JOINED VOICE ICON > ======= */
+/* ==================================== */
+.wrapper__2ea32.modeConnected__2ea32 .icon__2ea32 {
+  color: var(--status-positive);
+}
+
+/* ================================== */
+/* ======= < REORDER STUFF > ======= */
+/* ================================ */
+.iconWrapper__9293f {
+  order: -1;
+}
 
 /* ============================================ */
 /* ======= < SERVER HOVER MUTED TEXT > ======= */
@@ -3412,60 +3381,6 @@ div[id='user-context-call'],
 [class^=tooltip] /* Allow the server tooltip to fit the entire server name in one line */ {
   max-width: unset !important; 
 }
-
-
-/* ===================================== */
-/* ======= < SMALLER STICKERS > ======= */
-/* =================================== */
-
-
-/* ============================================ */
-/* ======= < COOLER EMBEDS AND MEDIA > ======= */
-/* ========================================== */
-#app-mount .embedFull__623de {
-  background: hsla(0, 0%, 0%, 0.2);
-
-  border-left: 6px solid;
-  border-radius: var(--chattyBorderRadius);
-  box-shadow: var(--elevationHigh);
-}
-
-#app-mount .embedFull__623de .grid__623de {
-  padding-top: 3px;
-  padding-bottom: 10px;
-}
-
-#app-mount .imageWrapper__178ee {
-  border-radius: var(--chattyBorderRadius);
-  box-shadow: var(--elevationHigh);
-  transition: 0.2s ease-in-out;
-}
-
-#app-mount .imageWrapper__178ee:hover {
-  transform: scaleY(1.02) scaleX(1.02);
-}
-
-#app-mount .video_f316dd {
-  border-radius: var(--chattyBorderRadius);
-  box-shadow: var(--elevationHigh);
-}
-
-.accountProfileCard__1fed1 {
-  background-color: transparent !important;
-  background: transparent !important;
-  backdrop-filter: blur(var(--chattyBlur)) brightness(0.7) !important;
-  border-radius: var(--chattyBorderRadius) !important;
-}
-.accountProfileCard__1fed1 {
-  box-shadow: 0px 0px 20px black !important;
-}
-
-
-/* ========================================= */
-/* ======= < FULL COLOURED EMBEDS > ======= */
-/* ======================================= */
-
-
 
 /* ==================================== */
 /* ======= < BUBBLE MESSAGES > ======= */
@@ -3537,6 +3452,69 @@ div[id='user-context-call'],
   background: var(--chat-bubble-mentioned-hover)
 }
 
+/* ======================================== */
+/* ======= < JUMP TO PRESENT BAR > ======= */
+/* ====================================== */
+[class*="jumpToPresentBar"] {
+  display: contents;
+}
+
+[class*="jumpToPresentBar"]>button:first-child {
+  display: none;
+}
+
+[class*="jumpToPresentBar"]>button:last-child {
+  position: absolute;
+  z-index: 1;
+  bottom: 24px;
+  right: 22px;
+  padding: 8px !important;
+  height: auto;
+  background-color: #1B1B1E;
+  box-shadow: var(--elevation-high);
+  border-radius: 100px;
+  display: flex;
+  font-size: 0px;
+  color: transparent;
+  transition: font-size .2s .1s, color .2s, padding .4s .1s;
+}
+
+[class*="jumpToPresentBar"]>button svg {
+  order: -1;
+  margin: 0px;
+  height: 24px;
+  width: 24px;
+  top: auto;
+  margin-right: 0px;
+  margin-left: 0px;
+  color: hsl(0, 0%, 100%);
+  transition: margin .6s;
+}
+[class*="jumpToPresentBar"] > button:last-child {
+  position: absolute;
+  z-index: 1;
+  bottom: 15px;
+  right: 22px;
+  height: 40px;
+  width: auto;
+  border-radius: 100px;
+  display: flex;
+  padding: 8px 18px 8px 18px!important;
+  pointer-events:initial;
+  transition: font-size .2s .1s, color .2s, padding .4s .1s;
+}
+
+[class*="jumpToPresentBar"]:hover>button {
+  padding: 8px 18px !important;
+  font-size: 14px;
+  color: hsl(0, 0%, 100%);
+  transition: font-size .2s, color .2s .1s, padding .4s;
+}
+
+[class*="jumpToPresentBar"]:hover>button svg {
+  margin-right: 2px;
+  margin-left: -6px;
+}
 
 /* ======================================= */
 /* ========== < ROLE COLOURS > ========== */
@@ -3894,10 +3872,6 @@ div[class^=typing] {
   display: none;
 }
 
-/* weird ass gray line on scroller */
-/*.form_f75fb0::after {
-  display: none;
-}*/
 
 /* send timestamp button */
 div.scrollableContainer__74017.themedBackground__74017 > div > div:nth-child(5) > button:nth-child(1) {
@@ -3911,21 +3885,30 @@ button.invisibleTypingButton {
 }
 
 /* -------------------------------------------------------- */
+
 .autocomplete__13533.outerWrapper_d1405b,
 .autocomplete__13533.autocomplete__6b0e0.autocompleteAttached__6b0e0:not(.scroller__6b0e0.thin__99f8c.scrollerBase__99f8c,
   .autocompleteInner__13533.autocompleteInner__6b0e0) {
   width: auto;
-  margin-right: 72px;
-  margin-left: 80px;
+  margin-right: 120px;
+  margin-left: 70px;
 }
+
+.stackedBars__74017 {
+    width: auto;
+  margin-right: 50px;
+  margin-left: 75px;
+}
+
 div.clipContainer__841c8 {
   background-color: #313338!important
 }
+
 .wrapper__14245.categoryHeader_d1405b {
   background-color: rgba(0, 0, 0, 0);
 }
 
-.barButtonAlt__0f481.barButtonBase__0f481,
+/*.barButtonAlt__0f481.barButtonBase__0f481,
 .barButtonMain__0f481.barButtonBase__0f481 {
   margin-bottom: -6px;
 }
@@ -3947,17 +3930,11 @@ div.clipContainer__841c8 {
   border-radius: 10px;
 }
 
-/* honestly I have no idea what's this */
-/*.threadSuggestionBar__841c8 {
-  width: 1500px;
-  margin-left: 65px;
-  border-radius: 10px;
-}*/
 
 .bioTextArea__6a919.scrollableContainer__74017.themedBackground__74017 {
   border-radius: 15px;
   width: 300px;
-}
+}*/
 
 /* bigger emoji picker */
 .drawerSizingWrapper__08434 {
@@ -3984,7 +3961,7 @@ div.clipContainer__841c8 {
   margin-left: 0px
 }
 
-.emojiPickerInExpressionPicker-2nOwH8 .emojiPicker_c0e32c {
+/*.emojiPickerInExpressionPicker-2nOwH8 .emojiPicker_c0e32c {
   background-color: hsla(0, 0%, 0%, 0);
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 0;
@@ -4002,16 +3979,7 @@ div.clipContainer__841c8 {
   pointer-events: none;
   max-width: 100%;
   margin: 0px
-}
-
-/* Custom " i'm new here, say hi " icon */
-[class*=newMemberBadge]:before {
-  content: url(https://cdn-icons-png.flaticon.com/256/4207/4207666.png);
-  transform: translate(-568%, -565%);
-  display: inline-block;
-  scale: 0.081;
-}
-
+}*/
 
 /* ==================================================== */
 /* ======= < SHOW CREATE CHANNEL UNTIL HOVER > ======= */
@@ -4029,19 +3997,18 @@ div.clipContainer__841c8 {
   display: block;
 }
 
-
 /* ==================================================== */
 /* ======= < SERVER CHANNEL MEMBERS COLOURS > ======= */
 /* ================================================= */
-.nameContainer__703b9:not(div > a > span > span)::after {
+.nameContainer__703b9:not(span.userName__0f2e8.container__703b9 > span,div > a > span > span)::after {
   content: "";
-  background: linear-gradient(-90deg,transparent, 30%, currentcolor);
+  background: linear-gradient(-50deg,transparent, 66%, currentcolor);
   z-index: -10;
   border-radius: 8px;
   width: 248px;
   height: 40px;
   position: absolute;
-  opacity: 0.25;
+  opacity: 0.40;
   left: 0px;
   top: 0px;
 }
@@ -4076,72 +4043,6 @@ ul > li > [class*="interactive_"] {
 }
 /* make the pill fill all of the memberlist */
 [class*="memberInner_"][class*="layout_"] {width: 100%}
-
-
-/* ======================================== */
-/* ======= < JUMP TO PRESENT BAR > ======= */
-/* ====================================== */
-[class*="jumpToPresentBar"] {
-  display: contents;
-}
-
-[class*="jumpToPresentBar"]>button:first-child {
-  display: none;
-}
-
-[class*="jumpToPresentBar"]>button:last-child {
-  position: absolute;
-  z-index: 1;
-  bottom: 24px;
-  right: 22px;
-  padding: 8px !important;
-  height: auto;
-  background-color: #1B1B1E;
-  box-shadow: var(--elevation-high);
-  border-radius: 100px;
-  display: flex;
-  font-size: 0px;
-  color: transparent;
-  transition: font-size .2s .1s, color .2s, padding .4s .1s;
-}
-
-[class*="jumpToPresentBar"]>button svg {
-  order: -1;
-  margin: 0px;
-  height: 24px;
-  width: 24px;
-  top: auto;
-  margin-right: 0px;
-  margin-left: 0px;
-  color: hsl(0, 0%, 100%);
-  transition: margin .6s;
-}
-[class*="jumpToPresentBar"] > button:last-child {
-  position: absolute;
-  z-index: 1;
-  bottom: 15px;
-  right: 22px;
-  height: 40px;
-  width: auto;
-  border-radius: 100px;
-  display: flex;
-  padding: 8px 18px 8px 18px!important;
-  pointer-events:initial;
-  transition: font-size .2s .1s, color .2s, padding .4s .1s;
-}
-
-[class*="jumpToPresentBar"]:hover>button {
-  padding: 8px 18px !important;
-  font-size: 14px;
-  color: hsl(0, 0%, 100%);
-  transition: font-size .2s, color .2s .1s, padding .4s;
-}
-
-[class*="jumpToPresentBar"]:hover>button svg {
-  margin-right: 2px;
-  margin-left: -6px;
-}
-
 
 /* =================================== */
 /* ======= < BDRED SWITCHES > ======= */
@@ -4291,7 +4192,6 @@ svg.spine__5b40b {
   color: hsla(147, 50%, 52%, 0.993)!important;
 }
 
-
 /* ========================================= */
 /* ======= < PROFILE PANEL THINGY > ======= */
 /* ======================================= */
@@ -4319,7 +4219,7 @@ svg.spine__5b40b {
   background-color: var(--panel-colour)!important;
 }
 
-.button__67645.enabled__67645.button__201d5.lookBlank__201d5.colorBrand__201d5.grow__201d5.button__67645:not(div.flex__7c0ba.horizontal__7c0ba.justifyStart_abf706.alignStretch_abf706.noWrap_abf706.voiceButtonsContainer_e131a9 > button:nth-child(4),div.panel__5dec7.activityPanel_c48ade > div > div.actions__4cd01 > div > button,.voiceButtonsContainer_e131a9 > button:nth-child(1),.voiceButtonsContainer_e131a9 > button:nth-child(2)),
+.button__67645.enabled__67645.button__201d5.lookBlank__201d5.colorBrand__201d5.grow__201d5.button__67645:not(div.flex__7c0ba.horizontal__7c0ba.justifyStart_abf706.alignStretch_abf706.noWrap_abf706.voiceButtonsContainer_e131a9 > button:nth-child(3),div.flex__7c0ba.horizontal__7c0ba.justifyStart_abf706.alignStretch_abf706.noWrap_abf706.voiceButtonsContainer_e131a9 > button:nth-child(4),div.panel__5dec7.activityPanel_c48ade > div > div.actions__4cd01 > div > button,.voiceButtonsContainer_e131a9 > button:nth-child(1),.voiceButtonsContainer_e131a9 > button:nth-child(2)),
 .container__37e49>.flex__7c0ba>button {
   border-radius: var(--button-radius);
   --inversed-overlay: rgb(var(--bg-overlay-color-inverse)/var(--bg-overlay-opacity-6));
@@ -4415,7 +4315,6 @@ div.container__37e49 > div.container__4bbc6 {
 }
 
 
-
 /* link colour in bio*/
 .anchor_edefb8.anchorUnderlineOnHover_edefb8 {
   color: hsl(0, 60%, 76%)!important;
@@ -4434,28 +4333,30 @@ div.container__37e49 > div.container__4bbc6 {
   display: none;
 }
 
-/* Match Status Bubble color with Profile Primary Color */
-.custom-profile-theme [class^=statusBubble_] {
-  background-color: var(--profile-gradient-primary-color);
-}
-.custom-profile-theme [class^=statusBubbleOuter_]:before {
-  background-color: var(--profile-gradient-primary-color);
-}
-.custom-profile-theme [class^=statusBubbleOuter_]:after {
-  background-color: var(--profile-gradient-primary-color);
-}
-
-/* Match Activity Buttons Color with Profile Button Color for Custom Profiles */
-.custom-profile-theme [class^=activityBiteSizePopout_] button,
-.custom-profile-theme [class^=activitySimplifiedProfile_] button {
-  background-color: var(--profile-gradient-button-color)!important;
-}
 
 /* profile banner circle */
 .mask__68edb > foreignObject{
   mask: unset!important;
 }
 
+[class^=avatar_] {
+  border-radius: 28%!important;
+}
+[class^=message_]:hover [class^=avatar_] {
+  border-radius: 28%!important
+}
+[class^=message_]:not(:hover) [class^=avatar_] {
+  border-radius: 28%!important
+}
+
+.clickable__75742:hover .overlay__75742:after {
+  border-radius: 28%!important;
+}
+
+#app-mount .wrapper__44b0c foreignObject {
+  -webkit-mask: none;
+          mask: none;
+}
 
 /* ================================================================ */
 /* =================== < MAKE PRONOUNS STAND OUT MORE > ========== */
@@ -4469,7 +4370,6 @@ div.container__37e49 > div.container__4bbc6 {
   margin: 0.25rem 0 0 0;
   border-radius: 1rem;
 }
-
 
 /* ====================================== */
 /* ======= < DM PROFILE WIDTH > ======= */
@@ -4494,10 +4394,105 @@ div.container__37e49 > div.container__4bbc6 {
   font-family: Discord;
 }
 
-
 /* ======================================================================================================================================= */
 /* ============================================================== < CRAP > ============================================================== */
 /* ===================================================================================================================================== */
+
+/* gift star wrong side*/
+[class*='gifFavoriteButton_'] {
+  background-color: transparent;
+}
+
+/* Pin page switcher to bottom of search results */
+[class^=searchResultsWrap_] [class^=container_]:has([class^=pageControlContainer_]){
+  position: sticky;
+  bottom: 0px;
+  z-index: 999;
+  background: var(--bg-overlay-1, var(--background-secondary));
+}
+
+/* remove gradient glow in chat and user list */
+.threeColorGradient_e5de78,
+.twoColorGradient_e5de78 {
+  &.usernameGradient_e5de78 {
+    color: color-mix(in lab, var(--custom-gradient-color-1), var(--custom-gradient-color-2));
+    background: none;
+    -webkit-text-fill-color: initial;
+  }
+
+  &.nameGlow__703b9 {
+      display: none;
+  }
+}
+
+/* Transparent Folders Left */
+.folderPreview__48112 {
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2px;
+  height: calc(var(--guildbar-folder-size) - var(--custom-folder-preview-padding)* 2);
+  width: calc(var(--guildbar-folder-size) - var(--custom-folder-preview-padding)* 2);
+  align-items: center;
+  justify-content: center;
+}
+.expandedFolderIconWrapper__48112 > svg:has(>path[d="M2 5a3 3 0 0 1 3-3h3.93a2 2 0 0 1 1.66.9L12 5h7a3 3 0 0 1 3 3v11a3 3 0 0 1-3 3H5a3 3 0 0 1-3-3V5Z"]) {
+  scale: 10;
+}
+.expandedFolderIconWrapper__48112::after,
+.folderPreview__48112::after {
+  content: "";
+  background-color: #ffffff;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  clip-path: path("M20 7H12L10.553 5.106C10.214 4.428 9.521 4 8.764 4H3C2.447 4 2 4.447 2 5V19C2 20.104 2.895 21 4 21H20C21.104 21 22 20.104 22 19V9C22 7.896 21.104 7 20 7Z");
+}
+.folderPreview__48112 > .folderPreviewGuildIcon__48112 {
+  opacity: .4;
+  filter: blur(2px);
+}
+.theme-dark .hiddenVisually__27f77[aria-expanded="false"] {
+  background-color: #000000;
+}
+.theme-light .hiddenVisually__27f77[aria-expanded="false"] {
+  background-color: #747474;
+}
+
+/* fix gray area below folders when folders opened */
+nav.guilds_c48ade {
+  margin-bottom: 0 !important;
+}
+
+/* Customizable is typing... message */
+.typingDots_b88801 > .ellipsis_b88801+.text_b88801 {
+  font-size: 0;
+  height: 16px;
+  >strong {
+    font-size: 12px;
+    &::after {
+      color: var(--text-secondary);
+      font-weight: 500;
+    }
+    &:last-child::after {
+      content: " is yapping…";
+    }
+    &:last-child:not(:first-child)::after {
+      content: " are yapping…";
+    }
+    &:nth-last-child(2)::after {
+      content: " and "
+    }
+    &:nth-last-child(3)::after {
+      content: ", ";
+    }
+  }
+  &:not(:has(>strong))::after {
+    font-size: 12px;
+    content: "Several people are yapping…";
+  }
+}
+
 
 /* ================================================ */
 /* ======= < USERNAME BACKGROUND COLOUR > ======= */
@@ -4587,163 +4582,3 @@ div.container__37e49 > div.container__4bbc6 {
 .channel__972a0:hover {
   margin-left: 18px;
 }
-
-
-/* =========================================== */
-/* ======= < PRETTY SERVER CHANNELS > ======= */
-/* ========================================= */
-:root {
-  --highlight-select: linear-gradient(-45deg, hsla(0, 61%, 76%, 0.363) 60%, hsla(320, 71%, 89%, 0.24));
-  --highlight-icon: hsl(0, 60%, 76%);
-}
-
-/* channel outlines and highlighted icons */
-#app-mount .containerDefault_c69b6d.selected_c69b6d .wrapper__2ea32 .link__2ea32 {
-  background: var(--highlight-select);
-  border-radius: 12px;
-}
-
-.icon__2ea32 {
-  width: 18px;
-  height: 18px;
-}
-
-[aria-label="Channels"] [class^="content"],
-[class^="popout-"] [class^="row-"] {
-  border-style: solid;
-  border-width: 0px;
-  border-color: transparent;
-  background-color: transparent;
-}
-
-[aria-label="Channels"] [class^="content"]:hover,
-[class^="popout-"] [class^="row-"]:hover {
-  border-color: var(--highlight-icon) !important;
-}
-
-.modeUnreadImportant__2ea32 .icon__2ea32,
-#app-mount .containerDefault_c69b6d.selected_c69b6d .wrapper__2ea32 .icon__2ea32,
-#app-mount .containerDefault_c69b6d:hover .wrapper__2ea32 .icon__2ea32 {
-  color: var(--highlight-icon) !important;
-}
-
-
-/* =========================================== */
-/* ======= < DISABLE VIDEO MIRRORING CAMERA > ======= */
-/* ========================================= */
-div[data-selenium-video-tile="246276708242554890"] [class^=voiceChannelEffectsContainer] + [class*=videoWrapper] {
-  transform: scaleX(-1);
-}
-
-/*Centered Voice Controls*/
-.bottomControls_bfe55a > .flex__7c0ba:is(:first-child, :last-child) {
-  flex: 1 1 50% !important;
-}
-.bottomControls_bfe55a > .flex__7c0ba:nth-child(2) {
-  flex: 0 1 auto !important;
-}
-
-/* revamped quests page */
-.questTile__60f82:has(.colorPrimary__201d5):not(:has(.circularRewardTileWrapper__956c6)){
-    display: none;
-}
-
-/* gift star wrong side*/
-[class*='gifFavoriteButton_'] {
-  background-color: transparent;
-}
-
-/* Pin page switcher to bottom of search results */
-[class^=searchResultsWrap_] [class^=container_]:has([class^=pageControlContainer_]){
-  position: sticky;
-  bottom: 0px;
-  z-index: 999;
-  background: var(--bg-overlay-1, var(--background-secondary));
-}
-
-
-/* remove gradient glow in chat and user list */
-.threeColorGradient_e5de78,
-.twoColorGradient_e5de78 {
-  &.usernameGradient_e5de78 {
-    color: color-mix(in lab, var(--custom-gradient-color-1), var(--custom-gradient-color-2));
-    background: none;
-    -webkit-text-fill-color: initial;
-  }
-
-  &.nameGlow__703b9 {
-      display: none;
-  }
-}
-
-/* fix gray area below folders when folders opened */
-nav.guilds_c48ade {
-  margin-bottom: 0 !important;
-}
-
-/* Transparent Folders Left */
-.folderPreview__48112 {
-  box-sizing: border-box;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 2px;
-  height: calc(var(--guildbar-folder-size) - var(--custom-folder-preview-padding)* 2);
-  width: calc(var(--guildbar-folder-size) - var(--custom-folder-preview-padding)* 2);
-  align-items: center;
-  justify-content: center;
-}
-.expandedFolderIconWrapper__48112 > svg:has(>path[d="M2 5a3 3 0 0 1 3-3h3.93a2 2 0 0 1 1.66.9L12 5h7a3 3 0 0 1 3 3v11a3 3 0 0 1-3 3H5a3 3 0 0 1-3-3V5Z"]) {
-  scale: 10;
-}
-.expandedFolderIconWrapper__48112::after,
-.folderPreview__48112::after {
-  content: "";
-  background-color: #ffffff;
-  width: 24px;
-  height: 24px;
-  position: absolute;
-  clip-path: path("M20 7H12L10.553 5.106C10.214 4.428 9.521 4 8.764 4H3C2.447 4 2 4.447 2 5V19C2 20.104 2.895 21 4 21H20C21.104 21 22 20.104 22 19V9C22 7.896 21.104 7 20 7Z");
-}
-.folderPreview__48112 > .folderPreviewGuildIcon__48112 {
-  opacity: .4;
-  filter: blur(2px);
-}
-.theme-dark .hiddenVisually__27f77[aria-expanded="false"] {
-  background-color: #000000;
-}
-.theme-light .hiddenVisually__27f77[aria-expanded="false"] {
-  background-color: #747474;
-}
-
-
-
-/* Customizable is typing... message */
-.typingDots_b88801 > .ellipsis_b88801+.text_b88801 {
-  font-size: 0;
-  height: 16px;
-  >strong {
-    font-size: 12px;
-    &::after {
-      color: var(--text-secondary);
-      font-weight: 500;
-    }
-    &:last-child::after {
-      content: " is yapping…";
-    }
-    &:last-child:not(:first-child)::after {
-      content: " are yapping…";
-    }
-    &:nth-last-child(2)::after {
-      content: " and "
-    }
-    &:nth-last-child(3)::after {
-      content: ", ";
-    }
-  }
-  &:not(:has(>strong))::after {
-    font-size: 12px;
-    content: "Several people are yapping…";
-  }
-}
-
-/* --------------------------------------------------------------------------------------------------------------------------------------------------------------- */
