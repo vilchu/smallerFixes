@@ -801,14 +801,6 @@
   background-image: linear-gradient(0deg, transparent, transparent 1px, hsl(var(--accent-hsl)) 0, hsl(var(--accent-hsl)) 2px, transparent 0) !important;
 }
 
-.colorable_f1ceac {
-  --button-background: var(--background-modifier-hover);
-  --button-text-color: #fff;
-  --button-radius: 50%;
-  background-color: var(--button-background) !important;
-  color: var(--button-text-color) !important;
-}
-
 .colorable_f1ceac:after {
   position: absolute;
   content: " ";
