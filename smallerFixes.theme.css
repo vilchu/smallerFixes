@@ -175,6 +175,7 @@
   --mention-lightness: var(--accent-lightness);
   --mention-hsl: var(--mention-hue), calc(var(--mention-saturation) * var(--saturation-factor)), var(--mention-lightness);
   --mention-opacity: 1;
+  --message-radius: var(--app-radius);
   --notification-color: #fff;
   --input-height: 36px;
   --input-radius: calc(var(--input-height) / 4);
@@ -214,7 +215,6 @@
   --background-modifier-active: rgba(255, 255, 255, 0.1);
   --background-modifier-selected: rgba(255, 255, 255, 0.125);
   --background-modifier-accent: rgba(255, 255, 255, 0.175);
-
 }
 
 
