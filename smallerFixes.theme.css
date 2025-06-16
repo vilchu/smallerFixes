@@ -4271,7 +4271,6 @@ div.container__37e49 > div.container__4bbc6 {
   }
 }
 
-
 /* link colour in bio*/
 .anchor_edefb8.anchorUnderlineOnHover_edefb8 {
   color: hsl(0, 60%, 76%)!important;
@@ -4289,8 +4288,6 @@ div.container__37e49 > div.container__4bbc6 {
 .footer__5be3e .channelTextArea__74017 {
   display: none;
 }
-
-
 
 /* profile banner circle */
 .mask__68edb > foreignObject{
@@ -4313,7 +4310,7 @@ div.container__37e49 > div.container__4bbc6 {
 
 #app-mount .wrapper__44b0c foreignObject {
   -webkit-mask: none;
-          mask: none;
+  mask: none;
 }
 
 /* ================================================================ */
@@ -4373,13 +4370,13 @@ div.container__37e49 > div.container__4bbc6 {
 .threeColorGradient_e5de78,
 .twoColorGradient_e5de78 {
   &.usernameGradient_e5de78 {
-    color: color-mix(in lab, var(--custom-gradient-color-1), var(--custom-gradient-color-2));
-    background: none;
-    -webkit-text-fill-color: initial;
+  color: color-mix(in lab, var(--custom-gradient-color-1), var(--custom-gradient-color-2));
+  background: none;
+  -webkit-text-fill-color: initial;
   }
 
   &.nameGlow__703b9 {
-      display: none;
+    display: none;
   }
 }
 
@@ -4429,25 +4426,25 @@ nav.guilds_c48ade {
   >strong {
     font-size: 12px;
     &::after {
-      color: var(--text-secondary);
-      font-weight: 500;
+    color: var(--text-secondary);
+    font-weight: 500;
     }
     &:last-child::after {
-      content: " is yapping…";
+    content: " is yapping…";
     }
     &:last-child:not(:first-child)::after {
-      content: " are yapping…";
+    content: " are yapping…";
     }
     &:nth-last-child(2)::after {
-      content: " and "
+    content: " and "
     }
     &:nth-last-child(3)::after {
-      content: ", ";
+    content: ", ";
     }
   }
   &:not(:has(>strong))::after {
-    font-size: 12px;
-    content: "Several people are yapping…";
+  font-size: 12px;
+  content: "Several people are yapping…";
   }
 }
 
@@ -4515,28 +4512,4 @@ nav.guilds_c48ade {
 
 .voiceChannelsButton__29444 {
   display: none;
-}
-
-
-/* ================================================================== */
-/* ======= < ANIMATION ON CHANNEL/SETTINGS/DMS/MEMBER LIST > ======= */
-/* ================================================================ */
-.wrapper__2ea32 .link__2ea32,
-/* channels */
-.container__91a9d,
-/* members */
-.channel__972a0,
-/* dms */
-.side_b3f026 .item_b3f026 {
-  transition: margin-left 0.2s ease;
-}
-
-.wrapper__2ea32:hover .link__2ea32,
-.side_b3f026 .item_b3f026:hover {
-  margin-left: 10px;
-}
-
-.container__91a9d:hover,
-.channel__972a0:hover {
-  margin-left: 18px;
 }
