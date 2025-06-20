@@ -2892,7 +2892,7 @@ ul.resultsGroup__56fec {
 
 [class^="subtitleContainer_"] {
   margin-left: 0px;
-  max-width: 1373px;
+  max-width: 1370px;
 
 }
 
@@ -3746,7 +3746,8 @@ div[class^=typing] {
 
 
 /* send timestamp button */
-#app-mount > div.appAsidePanelWrapper_a3002d > div.notAppAsidePanel_a3002d > div.app_a3002d > div > div.layers__960e4.layers__160d8 > div > div > div > div.content_c48ade > div.page_c48ade > div > div > div.content_f75fb0 > main > form > div > div > div > div.scrollableContainer__74017.themedBackground__74017 > div > div.buttons__74017 > button {
+div.content_c48ade > div.page_c48ade > div > div > div.content_f75fb0 > main > form > div > div > div > div > div.buttons__74017 > button,
+div.content_c48ade > div.page_c48ade > div > div > div.content_f75fb0 > main > form > div > div > div > div.scrollableContainer__74017.themedBackground__74017 > div > div.buttons__74017 > button {
   margin-right: -25px;
   margin-left: -15px;
 }
@@ -4248,7 +4249,7 @@ div.container__37e49 > div.container__4bbc6 {
 /* ==================================== */
 .outer_c0bea0.theme-dark.images-dark.user-profile-sidebar,
 .outer_c0bea0.theme-dark.images-dark.user-profile-sidebar.custom-theme-background.custom-user-profile-theme {
-  width: 268px; 
+  width: 267px; 
   bottom: 65px;
   height: calc(100% + 70px);
 }
