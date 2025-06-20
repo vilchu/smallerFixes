@@ -2892,7 +2892,7 @@ ul.resultsGroup__56fec {
 
 [class^="subtitleContainer_"] {
   margin-left: 0px;
-  max-width: 1367px;
+  max-width: 1373px;
 
 }
 
@@ -2926,6 +2926,7 @@ body {
 .guilds_c48ade {
   margin: 5px;
   border-radius: 15px;
+  background-color: transparent!important;
 }
 
 .content_c48ade>.sidebar_c48ade,
@@ -4038,7 +4039,6 @@ ul > li > [class*="interactive_"] {
     width: 240px;
 }
 
-
 .visual-refresh {
   .privateChannels__35e86 /* dm list */,
   .scroller__99e7c /* dm list inner */ {
@@ -4046,12 +4046,10 @@ ul > li > [class*="interactive_"] {
 }
 .sidebarList_c48ade /* channel list (includes dm list) */,
   .clickable_f37cb1,
-  .container__2637a /* channel list inner */,
-  .header_f37cb1 /* server name */ {
+  .container__2637a /* channel list inner */ {
       background: #323339;
   }
 }
-
 
 /* thread color */
 div.spineBorder__5b40b {
