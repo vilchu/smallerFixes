@@ -4094,11 +4094,11 @@ svg.spine__5b40b {
   background-color: var(--panel-colour)!important;
 }
 
-.button__67645.enabled__67645.button__201d5.lookBlank__201d5.colorBrand__201d5.grow__201d5.button__67645:not(div.actions__4cd01 > button,div.flex__7c0ba.horizontal__7c0ba.justifyStart_abf706.alignStretch_abf706.noWrap_abf706.voiceButtonsContainer_e131a9 > button:nth-child(3),div.flex__7c0ba.horizontal__7c0ba.justifyStart_abf706.alignStretch_abf706.noWrap_abf706.voiceButtonsContainer_e131a9 > button:nth-child(4),div.panel__5dec7.activityPanel_c48ade > div > div.actions__4cd01 > div > button,.voiceButtonsContainer_e131a9 > button:nth-child(1),.voiceButtonsContainer_e131a9 > button:nth-child(2)),
-.container__37e49>.flex__7c0ba>button {
+.button__67645.enabled__67645.plated__67645.button__201d5.lookBlank__201d5.colorBrand__201d5.grow__201d5.button__67645,
+.button__67645.enabled__67645.plated__67645.button__201d5.lookBlank__201d5 .olorBrand__201d5.grow__201d5.button__67645 {
   border-radius: var(--button-radius);
-  --inversed-overlay: rgb(var(--bg-overlay-color-inverse)/var(--bg-overlay-opacity-6));
-  background: var(--inversed-overlay, var(--background-primary));
+  --inversed-overlay: #36373E;
+  background: var(--inversed-overlay, var(--background-primary))!important;
   transition: color .15s ease-out, background-color .15s ease-out;
   top: 65px;
   right: 263px;
