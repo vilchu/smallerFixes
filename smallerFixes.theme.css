@@ -3673,7 +3673,7 @@ button[class*=attachButton],
 .form_f75fb0:has(.channelTextAreaDisabled__74017) {
   max-width: 1301px;
 }
-.scrollableContainer__74017:not(.forumGuidelines__0511a.scrollableContainer__74017, .fileInput__94439, .bioTextArea__6a919.scrollableContainer__74017.themedBackground__74017, :has(.attachWrapper__0923f)) .textArea__74017:not(:has(>div>div>[class^="applicationCommand_"])) {
+.scrollableContainer__74017:not(.topic__0511a.scrollableContainer__74017, .fileInput__94439, .bioTextArea__6a919.scrollableContainer__74017.themedBackground__74017, :has(.attachWrapper__0923f)) .textArea__74017:not(:has(>div>div>[class^="applicationCommand_"])) {
   margin-left: 64px;
   width: 1575px !important;
 }
@@ -4109,8 +4109,8 @@ svg.spine__5b40b {
 .container__37e49 .avatarWrapper__37e49 {
   background: var(--background-primary);
   border-radius: var(--radius-secondary);
-  margin: 9px 0px -5px 8px!important;
-  padding: 1px 130px 1px 12px;
+  margin: 20px -4px -5px 20px!important;
+  padding: 1px 135px 1px 5px;
 }
 
 .container__37e49:not(.container__37e49) .withTagAsButton_b2ca13,
