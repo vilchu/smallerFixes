@@ -1996,7 +1996,7 @@ div.label_c1e9c4 {
   border-radius: 10px;
   background: hsla(0, 0%, 0%, 0.56);
   backdrop-filter: blur(5px);
-  margin-left: -40px!important
+  margin-left: -240px!important
 }
 
 ul.resultsGroup__56fec {
@@ -3197,6 +3197,39 @@ div[id='user-context-call'],
   color: hsl(0, 64%, 57%);
 }
 
+    .upperContainer__9293f .toolbar__9293f .search__49676 { /* Re-Iconify Search */
+        order: -1;
+        .searchBar__97492 { /* Make the default state only show an icon that can be clicked. */
+            transition: all ease 0.3s;
+            width: 25px;
+            box-sizing: unset;
+            cursor: pointer;
+            background: none;
+            border: none;
+            padding: 0;
+            .icon__97492 {
+                height: 32px;
+                width: 32px;
+                scale: 1.2;
+                cursor: pointer;
+            }
+        }
+        .focused__97492 .searchBar__97492, .open__97492 .searchBar__97492 { /* Expand the search bar when focused, and keep it expanded when text is entered. These classes make it really easy, thanks discord! */
+            width: 225px;
+            box-sizing: border-box;
+            cursor: text;
+            background: var(--background-gradient-low, var(--input-background));
+            border: 1px solid var(--input-border);
+            padding: 2px 0;
+            .icon__97492 {
+                height: 24px;
+                width: 24px;
+                scale: 1;
+                cursor: pointer;
+            }
+        }
+    }
+
 /* =================================== */
 /* ======= < TIMESTAMP ICON > ======= */
 /* ================================= */
@@ -3327,7 +3360,7 @@ div[id='user-context-call'],
 /* ======================================== */
 /* ======= < JUMP TO PRESENT BAR > ======= */
 /* ====================================== */
-[class*="jumpToPresentBar"] {
+/*[class*="jumpToPresentBar"] {
   display: contents;
 }
 
@@ -3386,7 +3419,7 @@ div[id='user-context-call'],
 [class*="jumpToPresentBar"]:hover>button svg {
   margin-right: 2px;
   margin-left: -6px;
-}
+}*/
 
 /* ======================================= */
 /* ========== < ROLE COLOURS > ========== */
@@ -3748,7 +3781,7 @@ div[class^=typing] {
 /* send timestamp button */
 div.content_c48ade > div.page_c48ade > div > div > div.content_f75fb0 > main > form > div > div > div > div > div.buttons__74017 > button,
 div.content_c48ade > div.page_c48ade > div > div > div.content_f75fb0 > main > form > div > div > div > div.scrollableContainer__74017.themedBackground__74017 > div > div.buttons__74017 > button {
-  margin-right: -18px;
+  margin-right: -20px;
   margin-left: -20px;
 }
 button.invisibleTypingButton {
