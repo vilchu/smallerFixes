@@ -3514,7 +3514,7 @@ div[id='user-context-call'],
   background-color: transparent!important;
 }
 .base_c48ade .channelTextArea__74017 .inner__74017 {
-  margin-right: 10px;
+  margin-right: 0px;
 }
 .base_c48ade .channelTextArea__74017 .inner__74017 .textArea__74017 {
   margin-right: 10px!important;
@@ -3539,8 +3539,8 @@ div[id='user-context-call'],
 .base_c48ade .channelTextArea__74017 .inner__74017 .buttons__74017 {
   margin-right: 10;
 }
-
-.buttons__74017 > div:nth-child(9) > div,
+div.attachWrapper__0923f > div,
+div.buttons__74017 > div:nth-child(7) > div,
 .base_c48ade .channelTextArea__74017 .inner__74017 .button__201d5 {
   width: 44px;
   height: 44px;
@@ -3579,6 +3579,7 @@ div[id='user-context-call'],
   border-radius: var(--radius-primary);
   margin-right: calc((var(--layout-margin) / 2) + (var(--layout-margin) / 2));
 }
+
 
 [class*=chat] [class*=buttons]:not([class*=attachButton]),
 [class*=jumpToPresentBar] {
@@ -3813,8 +3814,8 @@ div[class^=typing] {
 /* send timestamp button */
 div.content_c48ade > div.page_c48ade > div > div > div.content_f75fb0 > main > form > div > div > div > div > div.buttons__74017 > button,
 div.content_c48ade > div.page_c48ade > div > div > div.content_f75fb0 > main > form > div > div > div > div.scrollableContainer__74017.themedBackground__74017 > div > div.buttons__74017 > button {
-  margin-right: -15px;
-  margin-left: -15px;
+  margin-right: -18px;
+  margin-left: 0px;
 }
 button.invisibleTypingButton {
   display: none;
