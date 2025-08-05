@@ -3480,7 +3480,7 @@ div[id='user-context-call'],
   pointer-events: none;
 }
 
-.role_dfa8b6.pill_dfa8b6 .twoColorGradient_e5de78::before {
+/*.role_dfa8b6.pill_dfa8b6 .twoColorGradient_e5de78::before {
     content: "";
     position: absolute;
     inset: 0;
@@ -3503,7 +3503,7 @@ div[id='user-context-call'],
     100% {
         background-position: 100% 0%;
     }
-} 
+} */
 
 /* ===================================== */
 /* ======= < SEND MESSAGE BAR > ======= */
