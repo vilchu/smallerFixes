@@ -742,54 +742,54 @@
 /*.lookFilled__201d5 .contents__201d5,*/
 .lookFilled__201d5 .bd-button-content .defaultColor__77578,
 .lookFilled__201d5 .bd-button-content .defaultColor_e9e35f,
-.lookFilled__201d5 .bd-button-content .defaultColor__4bd52,
+.lookFilled__201d5 .bd-button-content .defaultColor_b717a1,
 .lookOutlined__201d5 .contents__201d5,
 .lookOutlined__201d5 .bd-button-content .defaultColor__77578,
 .lookOutlined__201d5 .bd-button-content .defaultColor_e9e35f,
-.lookOutlined__201d5 .bd-button-content .defaultColor__4bd52,
+.lookOutlined__201d5 .bd-button-content .defaultColor_b717a1,
 .lookLink__201d5 .contents__201d5,
 .lookLink__201d5 .bd-button-content .defaultColor__77578,
 .lookLink__201d5 .bd-button-content .defaultColor_e9e35f,
-.lookLink__201d5 .bd-button-content .defaultColor__4bd52,
+.lookLink__201d5 .bd-button-content .defaultColor_b717a1,
 .lookInverted_a299dc .contents__201d5,
 .lookInverted_a299dc .bd-button-content .defaultColor__77578,
 .lookInverted_a299dc .bd-button-content .defaultColor_e9e35f,
-.lookInverted_a299dc .bd-button-content .defaultColor__4bd52,
+.lookInverted_a299dc .bd-button-content .defaultColor_b717a1,
 .bd-button-filled .contents__201d5,
 .bd-button-filled .bd-button-content .defaultColor__77578,
 .bd-button-filled .bd-button-content .defaultColor_e9e35f,
-.bd-button-filled .bd-button-content .defaultColor__4bd52,
+.bd-button-filled .bd-button-content .defaultColor_b717a1,
 .bd-button-link .contents__201d5,
 .bd-button-link .bd-button-content .defaultColor__77578,
 .bd-button-link .bd-button-content .defaultColor_e9e35f,
-.bd-button-link .bd-button-content .defaultColor__4bd52 {
+.bd-button-link .bd-button-content .defaultColor_b717a1 {
   color: hsl(0, 64%, 57%);
 }
 
 .lookFilled__201d5 .contents__201d5 svg,
 .lookFilled__201d5 .bd-button-content .defaultColor__77578 svg,
 .lookFilled__201d5 .bd-button-content .defaultColor_e9e35f svg,
-.lookFilled__201d5 .bd-button-content .defaultColor__4bd52 svg,
+.lookFilled__201d5 .bd-button-content .defaultColor_b717a1 svg,
 .lookOutlined__201d5 .contents__201d5 svg,
 .lookOutlined__201d5 .bd-button-content .defaultColor__77578 svg,
 .lookOutlined__201d5 .bd-button-content .defaultColor_e9e35f svg,
-.lookOutlined__201d5 .bd-button-content .defaultColor__4bd52 svg,
+.lookOutlined__201d5 .bd-button-content .defaultColor_b717a1 svg,
 .lookLink__201d5 .contents__201d5 svg,
 .lookLink__201d5 .bd-button-content .defaultColor__77578 svg,
 .lookLink__201d5 .bd-button-content .defaultColor_e9e35f svg,
-.lookLink__201d5 .bd-button-content .defaultColor__4bd52 svg,
+.lookLink__201d5 .bd-button-content .defaultColor_b717a1 svg,
 .lookInverted_a299dc .contents__201d5 svg,
 .lookInverted_a299dc .bd-button-content .defaultColor__77578 svg,
 .lookInverted_a299dc .bd-button-content .defaultColor_e9e35f svg,
-.lookInverted_a299dc .bd-button-content .defaultColor__4bd52 svg,
+.lookInverted_a299dc .bd-button-content .defaultColor_b717a1 svg,
 .bd-button-filled .contents__201d5 svg,
 .bd-button-filled .bd-button-content .defaultColor__77578 svg,
 .bd-button-filled .bd-button-content .defaultColor_e9e35f svg,
-.bd-button-filled .bd-button-content .defaultColor__4bd52 svg,
+.bd-button-filled .bd-button-content .defaultColor_b717a1 svg,
 .bd-button-link .contents__201d5 svg,
 .bd-button-link .bd-button-content .defaultColor__77578 svg,
 .bd-button-link .bd-button-content .defaultColor_e9e35f svg,
-.bd-button-link .bd-button-content .defaultColor__4bd52 svg {
+.bd-button-link .bd-button-content .defaultColor_b717a1 svg {
   filter: none;
 }
 
@@ -3567,7 +3567,7 @@ div.buttons__74017 > div:nth-child(7) > div,
   background: transparent;
 }
 
-[class*=chat] [class*=textArea]:not(div.channelTextArea__5126c.channelTextArea__74017 > div > div > div.textArea__74017.textAreaSlate__74017.slateContainer_ec4baf,.textArea__74017.textAreaSlate__74017.slateContainer_ec4baf,div.textArea__74017.textAreaSlate__74017.slateContainer_ec4baf div.markup__75297.editor__1b31f.slateTextArea_ec4baf.fontSize16Padding__74017.textAreaWithoutAttachmentButton__74017.textAreaForPostCreation__74017, .markup__75297.editor__1b31f.slateTextArea_ec4baf.fontSize16Padding__74017.textAreaWithoutAttachmentButton__74017, div.bodyContainer_d9be46>div>div>div>div>div>div>div, .inputDefault__0f084.input__0ed4f.textArea__7aff3.scrollbarDefault__506b3.scrollbar__506b3.title_d9be46) {
+[class*=chat] [class*=textArea]:not(div.channelTextArea__5126c.channelTextArea__74017 > div > div > div.textArea__74017.textAreaSlate__74017.slateContainer_ec4baf,.textArea__74017.textAreaSlate__74017.slateContainer_ec4baf,div.textArea__74017.textAreaSlate__74017.slateContainer_ec4baf div.markup__75297.editor__1b31f.slateTextArea_ec4baf.fontSize16Padding__74017.textAreaWithoutAttachmentButton__74017.textAreaForPostCreation__74017, .markup__75297.editor__1b31f.slateTextArea_ec4baf.fontSize16Padding__74017.textAreaWithoutAttachmentButton__74017, div.bodyContainer_d9be46>div>div>div>div>div>div>div, .inputDefault__0f084.input__0ed4f.textArea__89a34.scrollbarDefault__506b3.scrollbar__506b3.title_d9be46) {
   background-color: hsla(0, 0%, 0%, 0.25) !important;
   -webkit-backdrop-filter: blur(4px);
   -o-backdrop-filter: blur(4px);
