@@ -24,6 +24,7 @@
 @import url("https://maendisease.github.io/BetterDiscordStuff/css/bearableInbox.css");
 @import url("https://nspc911.github.io/themes/vencord/BlurryBackdrop.theme.css");
 
+
 /* icons */
 @import url("https://anubisnekhet.github.io/discordCSS/notification-icons.css");
 
@@ -3381,7 +3382,6 @@ div[id='user-context-call'],
     overflow: hidden;
     border-width: 0;
     border-left-width: 5px;
-    /* background: black; */
 }
 
 /* ======================================== */
@@ -3540,6 +3540,7 @@ div[id='user-context-call'],
   margin-right: 10;
 }
 
+.emojiButtonHovered__04eed.emojiButton__04eed.emojiButton__74017.button__74017,
 div.attachWrapper__0923f > div,
 .emojiButtonNormal__04eed.emojiButton__04eed.emojiButton__74017.button__74017,
 .base_c48ade .channelTextArea__74017 .inner__74017 .button__201d5 {
@@ -3824,8 +3825,212 @@ div.content_c48ade > div.page_c48ade > div > div > div.content_f75fb0 > main > f
 }
 
 /* -------------------------------------------------------- */
+/* 🎨 Make category header background transparent */
+.categoryHeader_d1405b {
+    background: transparent !important;
+}
 
-.autocomplete__13533.outerWrapper_d1405b,
+/* 🎨 Transparent hover effect for category header */
+.categoryHeader_d1405b:hover {
+    background: transparent !important;
+}
+
+/* ✨ Main container sizing adjustments */
+.autocomplete__13533.outerWrapper_d1405b {
+  max-height: 310px !important;
+  width: 1150px !important;
+  border-radius: 13px;
+  left: 70px;
+}
+
+/* 🖱️ Scrollable area positioning */
+.scroller_affa7e.list_d1405b {
+  top: 4px;
+  right: 3px;
+}
+
+/* 🌀 Animated item wrapper with cool effects */
+.itemWrapper_d1405b {
+  position: relative;
+  border-radius: 1px;
+  overflow: hidden;
+  -webkit-clip-path: inset(0 round 10px);
+  clip-path: inset(0 round 10px);
+  transform: translateZ(0);
+  transition: 
+    border-radius 0.4s cubic-bezier(0.33, 1, 0.68, 1),
+    background 0.4s cubic-bezier(0.33, 1, 0.68, 1),
+    transform 0.4s cubic-bezier(0.33, 1, 0.68, 1),
+    box-shadow 0.4s cubic-bezier(0.33, 1, 0.68, 1);
+}
+
+/* ✨ Pseudo-element for gradient effect */
+.itemWrapper_d1405b::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  -webkit-clip-path: inset(0 round 1px);
+  clip-path: inset(0 round 1px);
+  transition: 
+    clip-path 0.4s cubic-bezier(0.33, 1, 0.68, 1),
+    background 0.4s cubic-bezier(0.33, 1, 0.68, 1);
+  z-index: -1;
+  background: transparent;
+  pointer-events: none;
+}
+
+/* 🌈 Hover effects for item wrapper */
+.itemWrapper_d1405b:hover {
+  border-radius: 10px;
+  transform: scale(0.98) translateZ(0);
+  box-shadow: 
+    inset 0 0 12px rgba(255, 255, 255, 0.25),
+    0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* 🌟 Gradient effect on hover */
+.itemWrapper_d1405b:hover::before {
+  -webkit-clip-path: inset(1px round 10px);
+  clip-path: inset(1px round 10px);
+  background: linear-gradient(
+    to right,
+    rgba(87, 45, 133, 0.8) 0%,
+    rgba(45, 52, 139, 1) 50%,
+    rgba(87, 45, 133, 0.8) 100%
+  );
+}
+
+/* ⚪ White text on hover */
+.itemWrapper_d1405b:hover .title__920ab,
+.itemWrapper_d1405b:hover .description__920ab,
+.itemWrapper_d1405b:hover .source__920ab {
+  color: white !important;
+}
+
+/* 🚫 Fix overflow issues */
+.autocompleteRowVertical__13533,
+.base__13533 {
+  overflow: visible !important;
+
+}
+
+/* 🌈 Dark semi-transparent background for stacked bars */
+.stackedBars__74017 {
+    background-color: rgba(9, 13, 15, 0.345) !important;
+    left: 50px;
+}
+
+/* 🎨 Same background for option pills */
+.optionPillKey__1464f {
+    background-color: rgba(9, 13, 15, 0.345) !important;
+}
+
+/* 🏷️ Semi-transparent header background with compact styling */
+.contentTitle__13533 {
+    background: rgba(11, 6, 29, 0.334) !important;
+    padding: 4px 8px !important;
+    border-radius: 7px !important;
+    display: inline-block !important; /* Prevents full-width background */
+    margin-left: 8px !important; /* ↔️ Adds left spacing */
+}
+
+/* ✨ Force white text for default color classes (improves readability) */
+.defaultColor__4bd52, .defaultColor__5345c {
+    color: rgba(255, 255, 255, 0.885) !important;
+}
+
+/* 🎪 Autocomplete Container */
+.autocomplete__13533.autocomplete__6b0e0 {
+  max-height: 310px !important;
+  width: 1220px !important;
+  border-radius: 13px;
+  left: 60px;
+}
+
+/* 🖱️ Clickable Row (Base) */
+.clickable__13533.autocompleteRowVertical__13533 {
+  position: relative;
+  border-radius: 6px;
+  overflow: hidden;
+  -webkit-clip-path: inset(0 7px 0 7px round 9px);
+  clip-path: inset(0 7px 0 7px round 9px);
+  transform: translateZ(0);
+  transition: 
+    border-radius 0.4s cubic-bezier(0.33, 1, 0.68, 1),
+    background 0.4s cubic-bezier(0.33, 1, 0.68, 1),
+    transform 0.4s cubic-bezier(0.33, 1, 0.68, 1),
+    box-shadow 0.4s cubic-bezier(0.33, 1, 0.68, 1),
+    clip-path 0.4s cubic-bezier(0.33, 1, 0.68, 1);
+}
+
+/* 📦 Inner Wrapper */
+.wrapper__920ab {
+  padding: 1px 8px !important;
+}
+
+/* ✨ Gradient Overlay (Pseudo-element) */
+.clickable__13533.autocompleteRowVertical__13533::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  clip-path: inset(0 round 1px);
+  transition: 
+    clip-path 0.4s cubic-bezier(0.33, 1, 0.68, 1),
+    background 0.4s cubic-bezier(0.33, 1, 0.68, 1);
+  z-index: -1;
+  background: transparent;
+  pointer-events: none;
+}
+
+/* 🌈 Hover Effects */
+.clickable__13533.autocompleteRowVertical__13533:hover {
+  border-radius: 10px;
+  transform: scale(0.98) translateZ(0);
+  box-shadow: 
+    inset 0 0 12px rgba(255, 255, 255, 0.25),
+    0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* 🌟 Gradient on Hover */
+.clickable__13533.autocompleteRowVertical__13533:hover::before {
+  clip-path: inset(1px round 10px);
+  background: linear-gradient(
+    to right,
+    rgba(87, 45, 133, 0.8) 0%,
+    rgba(45, 52, 139, 1) 50%,
+    rgba(87, 45, 133, 0.8) 100%
+  );
+}
+
+/* ⚪ White Text on Hover/Selection */
+.clickable__13533.autocompleteRowVertical__13533:hover .title__920ab,
+.clickable__13533.autocompleteRowVertical__13533:hover .description__920ab,
+.clickable__13533.autocompleteRowVertical__13533:hover .source__920ab,
+.clickable__13533.autocompleteRowVertical__13533[aria-selected="true"] .title__920ab,
+.clickable__13533.autocompleteRowVertical__13533[aria-selected="true"] .description__920ab,
+.clickable__13533.autocompleteRowVertical__13533[aria-selected="true"] .source__920ab {
+  color: white !important;
+}
+
+/* 🎯 Selected State */
+.clickable__13533.autocompleteRowVertical__13533[aria-selected="true"] {
+  border-radius: 10px;
+  transform: scale(0.98) translateZ(0);
+}
+
+.clickable__13533.autocompleteRowVertical__13533[aria-selected="true"]::before {
+  clip-path: inset(1px round 10px);
+  background: linear-gradient(
+    to right,
+    rgba(87, 45, 133, 0.8) 0%,
+    rgba(45, 52, 139, 1) 50%,
+    rgba(87, 45, 133, 0.8) 100%
+  );
+}
+/*.autocomplete__13533.outerWrapper_d1405b,
 .autocomplete__13533.autocomplete__6b0e0.autocompleteAttached__6b0e0:not(.scroller__6b0e0.thin__99f8c.scrollerBase__99f8c,
   .autocompleteInner__13533.autocompleteInner__6b0e0) {
   width: auto;
@@ -3845,7 +4050,7 @@ div.clipContainer__841c8 {
 
 .wrapper__14245.categoryHeader_d1405b {
   background-color: rgba(0, 0, 0, 0);
-}
+}*/
 
 /*.barButtonAlt__0f481.barButtonBase__0f481,
 .barButtonMain__0f481.barButtonBase__0f481 {
@@ -4169,9 +4374,9 @@ svg.spine__5b40b {
   background: var(--inversed-overlay, var(--background-primary))!important;
   transition: color .15s ease-out, background-color .15s ease-out;
   top: 65px;
-  right: 263px;
+  right: 229px;
   min-width: 55px;
-  margin: 4px;
+  margin: 3px;
 }
 
 .container__37e49 .avatarWrapper__37e49 {
