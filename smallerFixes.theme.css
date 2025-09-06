@@ -1997,12 +1997,13 @@ div.label_c1e9c4 {
   border-radius: 10px;
   background: hsla(0, 0%, 0%, 0.56);
   backdrop-filter: blur(5px);
-  margin-left: -240px!important
+   margin-left: auto!important;
 }
 
 ul.resultsGroup__56fec {
   background-color: hsl(var(--primary-700-hsl)/0.25) !important;
   backdrop-filter: blur(5px);
+  margin-left: auto;
 }
 
 #SEARCH_OPTIONS-header,
@@ -2891,7 +2892,7 @@ ul.resultsGroup__56fec {
 
 /* ------------------------------------------------------------------------- end of long ass area ------------------------------------------------------------------------- */
 
-[class^="subtitleContainer_"] {
+/*[class^="subtitleContainer_"] {
   margin-left: 0px;
   max-width: 1370px;
 
@@ -2903,7 +2904,7 @@ ul.resultsGroup__56fec {
   width: fit-content!important;
   height: calc(100% + 77px);
   border: none;
-}
+}*/
 
 /* ------------------------------------------------------------------------------------------------------------------------------------------------------------ */
 
@@ -4217,13 +4218,13 @@ ul > li > [class*="interactive_"] {
 }
 
 /* discord settings switch */
-.control__0d850>.checked__87bf1 {
+.container__6f89e.checked__6f89e {
   background-color: hsl(153, 46%, 49%)!important;
   path {
     fill: var(--redesign-input-control-selected) !important;
   }
 }
-.control__0d850>div {
+.container__6f89e {
   background-color: var(--BDswitch-color)!important;
   transition: background-color 0.1s ease;
 }
