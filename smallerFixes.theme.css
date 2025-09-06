@@ -13,7 +13,7 @@
 /* ======= < OTHER IMPORT > ======= */
 /* =============================== */
 @import url("https://discord-theme.pages.dev/assets/snippets/watermark.css");
-@import url("https://dablulite.github.io/css-snippets/AccountDetailsGrid/import.css");
+/*@import url("https://dablulite.github.io/css-snippets/AccountDetailsGrid/import.css");*/
 @import url("//dablulite.github.io/css-snippets/BetterFloatingEditor/import.css");
 @import url("//dablulite.github.io/css-snippets/BetterModals/import.css");
 @import url("https://minidiscordthemes.github.io/Snippets/ForumImprovements/main.css");
@@ -3481,30 +3481,6 @@ div[id='user-context-call'],
   pointer-events: none;
 }
 
-/*.role_dfa8b6.pill_dfa8b6 .twoColorGradient_e5de78::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(
-        90deg,
-        var(--custom-gradient-color-1),
-        var(--custom-gradient-color-2),
-        var(--custom-gradient-color-3)
-    );
-    background-size: 50% 100%;
-    transition: background-position 0s;
-}
-.role_dfa8b6.pill_dfa8b6:hover .twoColorGradient_e5de78::before {
-    animation: seamlessGradient 5s linear infinite;
-}
-@keyframes seamlessGradient {
-    0% {
-        background-position: 0% 0%;
-    }
-    100% {
-        background-position: 100% 0%;
-    }
-} */
 
 /* ===================================== */
 /* ======= < SEND MESSAGE BAR > ======= */
@@ -3939,9 +3915,9 @@ div.content_c48ade > div.page_c48ade > div > div > div.content_f75fb0 > main > f
 }
 
 /* ✨ Force white text for default color classes (improves readability) */
-.defaultColor__4bd52, .defaultColor__5345c {
+/*.defaultColor__4bd52, .defaultColor__5345c {
     color: rgba(255, 255, 255, 0.885) !important;
-}
+}*/
 
 /* 🎪 Autocomplete Container */
 .autocomplete__13533.autocomplete__6b0e0 {
@@ -4031,55 +4007,6 @@ div.content_c48ade > div.page_c48ade > div > div > div.content_f75fb0 > main > f
     rgba(87, 45, 133, 0.8) 100%
   );
 }
-/*.autocomplete__13533.outerWrapper_d1405b,
-.autocomplete__13533.autocomplete__6b0e0.autocompleteAttached__6b0e0:not(.scroller__6b0e0.thin__99f8c.scrollerBase__99f8c,
-  .autocompleteInner__13533.autocompleteInner__6b0e0) {
-  width: auto;
-  margin-right: 120px;
-  margin-left: 70px;
-}
-
-.stackedBars__74017 {
-    width: auto;
-  margin-right: 50px;
-  margin-left: 75px;
-}
-
-div.clipContainer__841c8 {
-  background-color: #313338!important
-}
-
-.wrapper__14245.categoryHeader_d1405b {
-  background-color: rgba(0, 0, 0, 0);
-}*/
-
-/*.barButtonAlt__0f481.barButtonBase__0f481,
-.barButtonMain__0f481.barButtonBase__0f481 {
-  margin-bottom: -6px;
-}
-
-.jumpToPresentBar__0f481.barBase__0f481 {
-  margin-left: 65px;
-  margin-right: 72px !important;
-  width: auto;
-  margin-bottom: 8px;
-}
-
-.chat_f75fb0 .replyBar__841c8,
-.chat_fb64c9 .replyBar__841c8 {
-  background: var(--background-secondary-alt);
-  border-radius: var(--radius-primary);
-  width: auto;
-  margin-left: 80px;
-  margin-right: 72px;
-  border-radius: 10px;
-}
-
-
-.bioTextArea__6a919.scrollableContainer__74017.themedBackground__74017 {
-  border-radius: 15px;
-  width: 300px;
-}*/
 
 /* bigger emoji picker */
 .drawerSizingWrapper__08434 {
@@ -4106,25 +4033,6 @@ div.clipContainer__841c8 {
   margin-left: 0px
 }
 
-/*.emojiPickerInExpressionPicker-2nOwH8 .emojiPicker_c0e32c {
-  background-color: hsla(0, 0%, 0%, 0);
-  border-bottom-right-radius: 0;
-  border-bottom-left-radius: 0;
-  box-shadow: none;
-  flex: 1 auto auto;
-  grid-template-rows: auto 1fr auto;
-  height: 100%;
-  width: auto
-}
-
-.positionContainer__08434 {
-  resize: vertical;
-  width: 100%;
-  height: 644px;
-  pointer-events: none;
-  max-width: 100%;
-  margin: 0px
-}*/
 
 /* ==================================================== */
 /* ======= < SHOW CREATE CHANNEL UNTIL HOVER > ======= */
