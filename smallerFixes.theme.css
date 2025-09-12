@@ -94,7 +94,7 @@
   --inner-primary: 8px;
   --inner-secondary: 12px;
   --inner-tertiary: 16px;
-  --panel-colour: hsl(225, 6%, 13%);
+  --panel-colour: 64,46,47; /*hsl(225, 6%, 13%)*/
 
   --window-colour: hsl(220, 7%, 26%);
 
@@ -3516,7 +3516,7 @@ div[id='user-context-call'],
 .base_c48ade .channelTextArea__74017 .inner__74017 .buttons__74017 {
   margin-right: 10;
 }
-
+.attachButton__0923f.attachButton__74017.button__24af7,
 .emojiButtonHovered__04eed.emojiButton__04eed.emojiButton__74017.button__74017,
 div.attachWrapper__0923f > div,
 .emojiButtonNormal__04eed.emojiButton__04eed.emojiButton__74017.button__74017,
@@ -4257,7 +4257,7 @@ svg.spine__5b40b {
   bottom: 5px!important;
   left: calc(15px + var(--custom-guild-list-width))!important;
   width: 290px;
-  background: var(--panel-colour)!important;
+  background: rgb(var(--panel-colour))!important;
   height: 250px;
 }
 
@@ -4278,7 +4278,7 @@ svg.spine__5b40b {
 .button__67645.enabled__67645.plated__67645.button__201d5.lookBlank__201d5 .olorBrand__201d5.grow__201d5.button__67645 {
   border-radius: var(--button-radius);
   --inversed-overlay: #36373E;
-  background: var(--inversed-overlay, var(--background-primary))!important;
+  background: rgb(53,38,39)!important;
   transition: color .15s ease-out, background-color .15s ease-out;
   top: 50px;
   right: 220px;
