@@ -4252,63 +4252,13 @@ svg.spine__5b40b {
 /* ========================================= */
 /* ======= < PROFILE PANEL THINGY > ======= */
 /* ======================================= */
-/*.wrapper_e131a9 {
-  background-color: var(--panel-colour)!important;
-  top: -55px;
-  border-radius: 10px
-}
-/* userpanel nameplathe thingy */
-/*.container__4bbc6.fadeIn__4bbc6,
-div.container__37e49 > div.container__4bbc6 {
-  border-radius: 10px;
-  width: 290px;
-  height: 120px;
-  left: 0px;
-  top: -60px!important;
-  background-color: var(--panel-colour)!important;
-}
-.visual-refresh .panels_c48ade {
+.panels_c48ade {
   border-radius: 10px!important;
-  bottom: 15px!important;
+  bottom: 5px!important;
   left: calc(15px + var(--custom-guild-list-width))!important;
   width: 290px;
-}
-
-.sidebar_c48ade {
-  background-color: var(--background-secondary);
-}
-
-/*.content__37e49,
-.container__37e49 {
-  border-radius: 10px!important;
-  display: grid;
-  grid-template-columns: auto 1fr;
-  grid-template-rows: 1fr 1fr;
-  height: calc(105px + var(--inner-primary) + var(--inner-primary));
-  padding: 0px;
-  margin: 0px;
-  background-color: var(--panel-colour)!important;
-}*/
-
-/*.button__67645.enabled__67645.plated__67645.button__201d5.lookBlank__201d5.colorBrand__201d5.grow__201d5.button__67645,
-.button__67645.enabled__67645.plated__67645.button__201d5.lookBlank__201d5 .olorBrand__201d5.grow__201d5.button__67645 {
-  border-radius: var(--button-radius);
-  --inversed-overlay: #36373E;
-  background: var(--inversed-overlay, var(--background-primary))!important;
-  transition: color .15s ease-out, background-color .15s ease-out;
-  top: 5px;
-  right: 229px;
-  min-width: 55px;
-  margin: 3px;
-}
-.container__4bbc6 {
-  top: 0px!important
-}
-.container__37e49 .avatarWrapper__37e49 {
-  background: var(--background-primary);
-  border-radius: var(--radius-secondary);
-  margin: -95px -4px -15px 5px!important;
-  padding: 1px 125px 11px 15px;
+  background: var(--panel-colour)!important;
+  height: 250px;
 }
 
 .container__37e49:not(.container__37e49) .withTagAsButton_b2ca13,
@@ -4322,35 +4272,6 @@ div.container__37e49 > div.container__4bbc6 {
 .theme-dark .newProfileActivityStyles .platformIcon__2ef49,
 .theme-light .newProfileActivityStyles .platformIcon__2ef49 {
   top: 40px;
-}
-
-/* User Area Icon Recolor where the mic etc is */
-/*.panels_c48ade .lottieIcon__5eb9b :not(defs *)[fill][fill-opacity] {
-  fill: hsl(215, 9%, 73%);
-}
-.lottieIcon__5eb9b>svg>g>g>g:nth-child(1)>g>g:nth-child(2)>g:nth-child(2)>path {
-  stroke: hsl(215, 9%, 73%);
-}
-.postEnrollmentBackground__636a2.postEnrollmentBackgroundCollapsed__636a2 {
-  background-color: var(--panel-colour) !important;
-}
-
-div.buttons__37e49 > div > div > button,
-div.buttons__37e49 > div > button {
-  background-color: #36373E!important;
-}
-
-/* quest bitch ass thing */
-/*div.mask__0d616 > div > div {
-  border-radius: 15px!important;
-}*/
-
-.panels_c48ade {
-  border-radius: 10px!important;
-  bottom: 5px!important;
-  left: calc(15px + var(--custom-guild-list-width))!important;
-  width: 290px;
-  background-color: var(--panel-colour)!important;
 }
 
 .button__67645.enabled__67645.plated__67645.button__201d5.lookBlank__201d5.colorBrand__201d5.grow__201d5.button__67645,
@@ -4359,23 +4280,28 @@ div.buttons__37e49 > div > button {
   --inversed-overlay: #36373E;
   background: var(--inversed-overlay, var(--background-primary))!important;
   transition: color .15s ease-out, background-color .15s ease-out;
-  top: 5px;
-  right: 0px;
-  min-width: 25px;
-  margin: -2px;
+  top: 50px;
+  right: 220px;
+  min-width: 45px;
+  margin: 3px;
+}
+.container__4bbc6.fadeIn__4bbc6,
+div.container__37e49 > div.container__4bbc6 {
+  border-radius: 10px;
+  width: 250px;
+  height: 45px;
+  left: 20px;
+  top: 5px!important;
 }
 
-.container__37e49:not(.container__37e49) .withTagAsButton_b2ca13,
-.container__37e49 .nameTag__37e49 {
-  border-radius: 15px var(--radius-secondary) var(--radius-secondary) 15px;
-  margin: 5px -15px 0px 5px;
-  grid-column: 2;
-  height: 38px;
+.container__4bbc6 {
+  top: 0px!important
 }
-
-.theme-dark .newProfileActivityStyles .platformIcon__2ef49,
-.theme-light .newProfileActivityStyles .platformIcon__2ef49 {
-  top: 40px;
+.container__37e49 .avatarWrapper__37e49 {
+  background: var(--background-primary);
+  border-radius: var(--radius-secondary);
+  margin: -15px 0px -12px 5px!important;
+  padding: 1px 125px 1px 15px;
 }
 
 /* User Area Icon Recolor where the mic etc is */
@@ -4398,8 +4324,6 @@ div.buttons__37e49 > div > button {
 div.mask__0d616 > div > div {
   border-radius: 15px!important;
 }
-
-/* userpanel nameplathe thingy */
 
 
 /* ========================================== */
