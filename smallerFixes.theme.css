@@ -75,7 +75,7 @@
   --blrbg-dimmness: 45;
 
   /* nicer categories */
-  --catagory-background: #3E3F45;
+  --catagory-background: rgb(113,78,78);
   --catagory-radius: 10px;
   --catagory-spacing: 10px;
   --capitalizeName: none; /* Change to 'none' to remove capitalization of channel names */
@@ -4230,7 +4230,7 @@ ul > li > [class*="interactive_"] {
 .sidebarList_c48ade /* channel list (includes dm list) */,
   .clickable_f37cb1,
   .container__2637a /* channel list inner */ {
-      background: #323339;
+      background: rgb(82,57,57);
   }
 }
 
