@@ -4254,11 +4254,18 @@ svg.spine__5b40b {
 /* ======================================= */
 .panels_c48ade {
   border-radius: 10px!important;
-  bottom: 5px!important;
+  bottom: 0px!important;
   left: calc(15px + var(--custom-guild-list-width))!important;
   width: 290px;
   background: rgb(var(--panel-colour))!important;
   height: 250px;
+}
+.panel__5dec7.activityPanel_c48ade {
+  margin: -28px;
+  bottom: 25px;
+  width: 265px;
+  left: 30px;
+  background-color: rgb(var(--panel-colour))!important;
 }
 
 .container__37e49:not(.container__37e49) .withTagAsButton_b2ca13,
