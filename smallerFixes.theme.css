@@ -3701,10 +3701,10 @@ button[class*=attachButton],
   display: none;
 }
 
-[class*=chatContent] [class*=scroller]:not([class*=typing]) {
+/*[class*=chatContent] [class*=scroller]:not([class*=typing]) {
   margin-bottom: -50px;
   padding-bottom: 50px;
-}
+}*/
 
 [class*=scrollableContainer]:not(.bioTextArea__6a919.scrollableContainer__74017.themedBackground__74017),
 [class*=channelTextArea]:not(div[class^="channelTextAreaContainer"]:first-child, ) {
@@ -4252,20 +4252,45 @@ svg.spine__5b40b {
 /* ========================================= */
 /* ======= < PROFILE PANEL THINGY > ======= */
 /* ======================================= */
+/*.panels_c48ade {
+  border-radius: 10px!important;
+  bottom: 5px!important;
+  left: calc(15px + var(--custom-guild-list-width))!important;
+  width: 290px;
+  background: rgb(var(--panel-colour))!important;
+  height: 100px;
+}*/
 .panels_c48ade {
   border-radius: 10px!important;
   bottom: 0px!important;
   left: calc(15px + var(--custom-guild-list-width))!important;
   width: 290px;
   background: rgb(var(--panel-colour))!important;
-  height: 250px;
+  height: auto;
+  padding-bottom: 10px;
 }
-.panel__5dec7.activityPanel_c48ade {
-  margin: -28px;
-  bottom: 25px;
-  width: 263px;
-  left: 29px;
-  background-color: rgb(var(--panel-colour))!important;
+.container_e131a9 {
+  background: rgb(var(--panel-colour))!important;
+  margin-top: -15px!important;
+  padding-bottom: 30px!important;
+}
+
+.container__4bbc6.fadeIn__4bbc6,
+div.container__37e49 > div.container__4bbc6 {
+  border-radius: 10px;
+  width: 250px;
+  height: 45px;
+  left: 20px;
+  top: -25px!important;
+}
+div.panel__5dec7.activityPanel_c48ade {
+background: rgb(var(--panel-colour))!important;
+}
+.container__37e49 .avatarWrapper__37e49 {
+  background: var(--background-primary);
+  border-radius: var(--radius-secondary);
+  margin: -70px 0px -12px 5px!important;
+  padding: 1px 125px 1px 15px;
 }
 
 .container__37e49:not(.container__37e49) .withTagAsButton_b2ca13,
@@ -4287,29 +4312,12 @@ svg.spine__5b40b {
   --inversed-overlay: #36373E;
   background: rgb(53,38,39)!important;
   transition: color .15s ease-out, background-color .15s ease-out;
-  top: 50px;
-  right: 220px;
+  top: 15px;
+  right: 218px;
   min-width: 45px;
   margin: 3px;
 }
-.container__4bbc6.fadeIn__4bbc6,
-div.container__37e49 > div.container__4bbc6 {
-  border-radius: 10px;
-  width: 250px;
-  height: 45px;
-  left: 20px;
-  top: 5px!important;
-}
 
-.container__4bbc6 {
-  top: 0px!important
-}
-.container__37e49 .avatarWrapper__37e49 {
-  background: var(--background-primary);
-  border-radius: var(--radius-secondary);
-  margin: -15px 0px -12px 5px!important;
-  padding: 1px 125px 1px 15px;
-}
 
 /* User Area Icon Recolor where the mic etc is */
 .panels_c48ade .lottieIcon__5eb9b :not(defs *)[fill][fill-opacity] {
