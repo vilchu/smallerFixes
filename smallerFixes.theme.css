@@ -4252,14 +4252,6 @@ svg.spine__5b40b {
 /* ========================================= */
 /* ======= < PROFILE PANEL THINGY > ======= */
 /* ======================================= */
-/*.panels_c48ade {
-  border-radius: 10px!important;
-  bottom: 5px!important;
-  left: calc(15px + var(--custom-guild-list-width))!important;
-  width: 290px;
-  background: rgb(var(--panel-colour))!important;
-  height: 100px;
-}*/
 .panels_c48ade {
   border-radius: 10px!important;
   bottom: 0px!important;
@@ -4267,12 +4259,12 @@ svg.spine__5b40b {
   width: 290px;
   background: rgb(var(--panel-colour))!important;
   height: auto;
-  padding-bottom: 50px;
+  padding-bottom: 60px;
 }
 .container_e131a9 {
   background: rgb(var(--panel-colour))!important;
   margin-top: -15px!important;
-  padding-bottom: 30px!important;
+  padding-bottom: 10px!important;
 }
 
 .container__4bbc6.fadeIn__4bbc6,
@@ -4281,7 +4273,7 @@ div.container__37e49 > div.container__4bbc6 {
   width: 250px;
   height: 45px;
   left: 20px;
-  top: 15px!important;
+  top: 25px!important;
 }
 div.panel__5dec7.activityPanel_c48ade {
 background: rgb(var(--panel-colour))!important;
@@ -4289,7 +4281,7 @@ background: rgb(var(--panel-colour))!important;
 .container__37e49 .avatarWrapper__37e49 {
   background: var(--background-primary);
   border-radius: var(--radius-secondary);
-  margin: 10px 0px -12px 5px!important;
+  margin: 25px 0px -12px 5px!important;
   padding: 1px 125px 1px 15px;
 }
 
@@ -4312,7 +4304,7 @@ background: rgb(var(--panel-colour))!important;
   --inversed-overlay: #36373E;
   background: rgb(53,38,39)!important;
   transition: color .15s ease-out, background-color .15s ease-out;
-  top: 55px;
+  top: 65px;
   right: 218px;
   min-width: 45px;
   margin: 3px;
