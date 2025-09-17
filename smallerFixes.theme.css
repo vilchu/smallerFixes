@@ -4273,7 +4273,7 @@ div.container__37e49 > div.container__4bbc6 {
   width: 250px;
   height: 45px;
   left: 20px;
-  top: 25px!important;
+  top: 20px!important;
 }
 div.panel__5dec7.activityPanel_c48ade {
 background: rgb(var(--panel-colour))!important;
@@ -4281,7 +4281,7 @@ background: rgb(var(--panel-colour))!important;
 .container__37e49 .avatarWrapper__37e49 {
   background: var(--background-primary);
   border-radius: var(--radius-secondary);
-  margin: 25px 0px -12px 5px!important;
+  margin: 18px 0px -12px 5px!important;
   padding: 1px 125px 1px 15px;
 }
 
