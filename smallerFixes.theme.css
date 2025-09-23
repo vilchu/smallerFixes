@@ -94,7 +94,7 @@
   --inner-primary: 8px;
   --inner-secondary: 12px;
   --inner-tertiary: 16px;
-  --panel-colour: 64,46,47; /*hsl(225, 6%, 13%)*/
+  --panel-colour: 87, 45, 45; /*hsl(225, 6%, 13%)*/
 
   --window-colour: hsl(220, 7%, 26%);
 
@@ -4230,7 +4230,7 @@ ul > li > [class*="interactive_"] {
 .sidebarList_c48ade /* channel list (includes dm list) */,
   .clickable_f37cb1,
   .container__2637a /* channel list inner */ {
-      background: rgb(82,57,57);
+      background: rgb(95,60,60);
   }
 }
 
@@ -4277,6 +4277,8 @@ div.container__37e49 > div.container__4bbc6 {
 }
 div.panel__5dec7.activityPanel_c48ade {
 background: rgb(var(--panel-colour))!important;
+left: -1px;
+bottom: 3px;
 }
 .container__37e49 .avatarWrapper__37e49 {
   background: var(--background-primary);
@@ -4302,7 +4304,7 @@ background: rgb(var(--panel-colour))!important;
 .button__67645.enabled__67645.plated__67645.button__201d5.lookBlank__201d5 .olorBrand__201d5.grow__201d5.button__67645 {
   border-radius: var(--button-radius);
   --inversed-overlay: #36373E;
-  background: rgb(53,38,39)!important;
+  background: rgb(121, 89, 91)!important;
   transition: color .15s ease-out, background-color .15s ease-out;
   top: 65px;
   right: 218px;
@@ -4606,4 +4608,39 @@ nav.guilds_c48ade {
 
 .voiceChannelsButton__29444 {
   display: none;
+}
+
+/* Custom dm/gc backgrounds (per person) */
+/* make sure chat has avatar wrapper to exclude server chats*/
+div[class^="chat_"]:has([class^="children_"] > div > div[class^="wrapper__"]) {
+
+	/* Try commenting this out if you have a theme*/
+	[class^="subtitleContainer"]>[class^="title_"],
+	main[class^="chatContent_"] {
+		background: transparent !important;
+	}
+
+	background-size: cover!important;
+
+	/*Uncomment to specify custom textbar colors. v border                  v background*/
+	/*.channelTextArea_f75fb0 {  background: #000000; div { background: #000000; } }*/
+
+	/*                             Duplicate this part per user. v ID HERE       v URL HERE          TINT HERE IF YOU WANT IT v */
+	&:has([class^="children__"] [class^="avatar__"][src*="103122656068395008"]) {
+		background: url("https://i.imgur.com/uUvlAYx.jpeg");
+
+
+		&::before {
+			background: rgba(0, 0, 0, 0.60);
+		}
+	}
+
+	/* Tint*/
+	position: relative;
+
+	&::before {
+		content: "";
+		position: absolute;
+		inset: 0;
+	}
 }
