@@ -3103,7 +3103,7 @@ div[id='user-context-call'],
 }
 
 :root {
-  --gift: none;
+  --gift:block;
   --gif: none;
   --sticker: none;
   --emoji: flex;
@@ -4308,9 +4308,9 @@ bottom: 3px;
   background: rgb(121, 89, 91)!important;
   transition: color .15s ease-out, background-color .15s ease-out;
   top: 65px;
-  right: 218px;
-  min-width: 45px;
-  margin: 3px;
+  right: 258px;
+  min-width: 40px;
+  margin: 2px;
 }
 
 
