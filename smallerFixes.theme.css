@@ -3102,8 +3102,9 @@ div[id='user-context-call'],
   display: none !important;
 }
 
+
 :root {
-  --gift:block;
+  --gift:none;
   --gif: none;
   --sticker: none;
   --emoji: flex;
@@ -3157,7 +3158,7 @@ div[id='user-context-call'],
 [class*=form-] [class*=attachButton_] {
   display: var(--upload);
 }
-[class*=form-] [class*=button_][aria-label="Send a gift"] {
+[class*=form-] [class*=button_][aria-label="Send a gift"]:not(.button_a22cb0.md_a22cb0.primary_a22cb0.fullWidth_a22cb0) {
   display: var(--gift);
 }
 [class*=form-] [class*=button_][aria-label="Open GIF picker"] {
