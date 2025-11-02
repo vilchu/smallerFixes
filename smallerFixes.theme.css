@@ -3542,10 +3542,9 @@ div.attachWrapper__0923f > div,
 .base_c48ade .channelTextArea__74017 .inner__74017 .button__201d5.emojiButton_d0696b {
   background-color: transparent;
 }
-
 .channelTextArea_f75fb0.channelTextArea__74017 {
-  background: transparent;
-    top: -3px!important;
+  background: transparent!important;
+  top: -3px!important;
 }
 
 [class*=chat] [class*=textArea]:not(div.channelTextArea__5126c.channelTextArea__74017 > div > div > div.textArea__74017.textAreaSlate__74017.slateContainer_ec4baf,.textArea__74017.textAreaSlate__74017.slateContainer_ec4baf,div.textArea__74017.textAreaSlate__74017.slateContainer_ec4baf div.markup__75297.editor__1b31f.slateTextArea_ec4baf.fontSize16Padding__74017.textAreaWithoutAttachmentButton__74017.textAreaForPostCreation__74017, .markup__75297.editor__1b31f.slateTextArea_ec4baf.fontSize16Padding__74017.textAreaWithoutAttachmentButton__74017, div.bodyContainer_d9be46>div>div>div>div>div>div>div, .inputDefault__0f084.input__0ed4f.textArea__89a34.scrollbarDefault__506b3.scrollbar__506b3.title_d9be46) {
@@ -4550,19 +4549,88 @@ nav.guilds_c48ade {
 /* ================================================ */
 /* ======= < USERNAME BACKGROUND COLOUR > ======= */
 /* ============================================ */
-/* Username */
-.cozy_c19a55 .header_c19a55 {
+:root {
+  --username-vertical-padding: 0;
+  --username-horizontal-padding: 6px;
+  --username-border-radius: 5px;
+  --username-plugin-suffix: "| @";
+}
+
+.vc-smyn-suffix {
+  color: currentColor;
+  opacity: 0.5;
+
+  &::before {
+    content: var(--username-plugin-suffix);
+  }
+  &::after {
+    content: "";
+  }
+}
+
+.header_c19a55 {
   margin-bottom: 4px;
 }
-/* chat */
-.headerText_c19a55 .username_c19a55,
-/* .name__91a9d,  memberlist */
-.repliedMessage_c19a55>.username_c19a55 /* replies */ {
-  background: color-mix(in srgb, currentColor 25%, rgba(0, 0, 0, 0.25));
-  text-shadow: 0 0 5px color-mix(in srgb, currentColor 25%, #000);
-  margin-right: 4px;
-  padding: 0 4px;
-  border-radius: 4px;
+
+.username_c19a55 {
+  display: inline-flex;
+  padding: var(--username-vertical-padding) var(--username-horizontal-padding);
+  border-radius: var(--username-border-radius);
+  text-decoration: none;
+}
+
+/* Normal Usernames */
+.username_c19a55:not(.convenienceGlowGradient_e5de78) {
+  background: color-mix(in srgb, currentColor 20%, transparent);
+
+  &:hover {
+    text-decoration: none;
+    background: color-mix(in srgb, currentColor 30%, transparent);
+  }
+}
+
+/* Gradient Usernames */
+.convenienceGlowGradient_e5de78 {
+  z-index: 0;
+  background-image: linear-gradient(90deg, var(--custom-gradient-color-1), var(--custom-gradient-color-2), var(--custom-gradient-color-3));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+
+  .vc-smyn-suffix {
+    background-image: linear-gradient(90deg, var(--custom-gradient-color-1), var(--custom-gradient-color-2), var(--custom-gradient-color-3));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  &:hover {
+    text-decoration: none !important;
+  }
+
+  &::before {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    transition: background 0.2s ease;
+    background: linear-gradient(
+      90deg,
+      color-mix(in srgb, var(--custom-gradient-color-1) 20%, transparent),
+      color-mix(in srgb, var(--custom-gradient-color-2) 20%, transparent),
+      color-mix(in srgb, var(--custom-gradient-color-3) 20%, transparent)
+    );
+  }
+
+  &:hover::before {
+    background: linear-gradient(
+      90deg,
+      color-mix(in srgb, var(--custom-gradient-color-1) 30%, transparent),
+      color-mix(in srgb, var(--custom-gradient-color-2) 30%, transparent),
+      color-mix(in srgb, var(--custom-gradient-color-3) 30%, transparent)
+    );
+  }
 }
 
 
