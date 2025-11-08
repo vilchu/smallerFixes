@@ -75,7 +75,7 @@
   --blrbg-dimmness: 45;
 
   /* nicer categories */
-  --catagory-background: rgb(113,78,78);
+  --catagory-background: rgb(83, 51, 114);
   --catagory-radius: 10px;
   --catagory-spacing: 10px;
   --capitalizeName: none; /* Change to 'none' to remove capitalization of channel names */
@@ -94,7 +94,7 @@
   --inner-primary: 8px;
   --inner-secondary: 12px;
   --inner-tertiary: 16px;
-  --panel-colour: 87, 45, 45; /*hsl(225, 6%, 13%)*/
+  --panel-colour: 57,45,95; /*hsl(225, 6%, 13%)*/
 
   --window-colour: hsl(220, 7%, 26%);
 
@@ -4231,7 +4231,7 @@ ul > li > [class*="interactive_"] {
 .sidebarList__5e434 /* channel list (includes dm list) */,
   .clickable_f37cb1,
   .container__2637a /* channel list inner */ {
-      background: rgb(95,60,60);
+      background: rgb(42,40,84);
   }
 }
 
@@ -4255,7 +4255,7 @@ svg.spine__5b40b {
 /* ======================================= */
 .panels__5e434 {
   border-radius: 10px!important;
-  bottom: 0px!important;
+  bottom: 3px!important;
   left: calc(15px + var(--custom-guild-list-width))!important;
   width: 290px;
   background: rgb(var(--panel-colour))!important;
@@ -4305,10 +4305,10 @@ bottom: 3px;
 .button__67645.enabled__67645.plated__67645.button__201d5.lookBlank__201d5 .olorBrand__201d5.grow__201d5.button__67645 {
   border-radius: var(--button-radius);
   --inversed-overlay: #36373E;
-  background: rgb(121, 89, 91)!important;
+  background: rgb(101, 89, 121)!important;
   transition: color .15s ease-out, background-color .15s ease-out;
   top: 65px;
-  right: 258px;
+  right: 252px;
   min-width: 40px;
   margin: 2px;
 }
