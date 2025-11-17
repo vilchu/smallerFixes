@@ -3734,14 +3734,18 @@ button[class*=attachButton],
   margin-left: -64px!important;
 }
 
+/*aboutme in settings*/
+.bioTextArea__6a919 {
+  height: max-content;
+  border-radius: 10px;
+}
 /* about me message box and emoji replacement */
 .bioTextArea__6a919.scrollableContainer__74017.themedBackground__74017 {
-  width: 364px !important;
+  width: max-content !important;
   background-color: var(--background-secondary-alt);
 }
-
-div.bioTextArea__6a919.scrollableContainer__74017.themedBackground__74017>div>div.buttons__74017>div>button>div>div {
-  margin-left: -7px;
+.characterCount__795fb {
+  right: -45px!important
 }
 
 /* profile customization text placement */
@@ -4368,6 +4372,7 @@ div.mask__0d616 > div > div {
     border-radius: 10px;
   }
 }
+
 
 /* link colour in bio*/
 .anchor_edefb8.anchorUnderlineOnHover_edefb8 {
