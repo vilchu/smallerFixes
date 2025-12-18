@@ -3159,10 +3159,10 @@ div[id='user-context-call'],
 [class*=form-] [class*=attachButton_] {
   display: var(--upload);
 }
-[class*=form-] [class*=button_][aria-label="Send a gift"]:not(.a22cb0c66246f5d3-button.a22cb0c66246f5d3-md.a22cb0c66246f5d3-primary.a22cb0c66246f5d3-fullWidth) {
+/*[class*=form-] [class*=button_][aria-label="Send a gift"]*/.c0c49a3e5c8626ac-container:not(.a22cb0c66246f5d3-button.a22cb0c66246f5d3-md.a22cb0c66246f5d3-primary.a22cb0c66246f5d3-fullWidth) {
   display: var(--gift);
 }
-[class*=form-] [class*=button_][aria-label="Open GIF picker"] {
+/*[class*=form-] [class*=button_][aria-label="Open GIF picker"]*/._740174f3d6a2c8fe-button._24af7f4d0326ba4f-button {
   display: var(--gif);
 }
 [class*=form-] [class*=button_][aria-label="Open sticker picker"] {
@@ -4103,6 +4103,7 @@ ul > li > [class*="interactive_"] {
 /* make the pill fill all of the memberlist */
 [class*="memberInner_"][class*="layout_"] {width: 100%}
 
+
 /* =================================== */
 /* ======= < BDRED SWITCHES > ======= */
 /* ================================= */
@@ -4397,7 +4398,7 @@ div._0d6162a4e6a4b802-mask > div > div {
   mask: unset!important;
 }
 
-[class^=avatar_] {
+.c19a557985eb7793-avatar.c19a557985eb7793-clickable {
   border-radius: 28%!important;
 }
 [class^=message_]:hover [class^=avatar_] {
