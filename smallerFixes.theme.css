@@ -3777,10 +3777,12 @@ div.d9be463a3c35b91e-formContainer>div.d9be463a3c35b91e-form>div.d9be463a3c35b91
   display: none !important;
 }
 
+
+
 /* Move typing indicators */
-div[class^=typing] {
+div.b8880176888cc928-typing.b8880176888cc928-base.b8880176888cc928-inTextChannel {
   top: 52px!important;
-  right: calc(var(--custom-index-scrollbar-margin) * 25 + var(--custom-index-scrollbar-width));
+  right: calc(var(--custom-index-scrollbar-margin) * 10 + var(--custom-index-scrollbar-width));
   margin-left: auto;
   width: fit-content;
   padding-left: 2px;
@@ -3820,7 +3822,7 @@ div._5e434347c823b592-content > div._5e434347c823b592-page > div > div > div.f75
 
 /* ✨ Main container sizing adjustments */
 ._13533e3c5791980f-autocomplete.d1405bf11dcfb07a-outerWrapper {
-  max-height: 420px !important;
+  max-height: 450px!important;
   width: 1150px !important;
   border-radius: 13px;
   left: 70px;
@@ -3828,7 +3830,7 @@ div._5e434347c823b592-content > div._5e434347c823b592-page > div > div > div.f75
 
 /* 🖱️ Scrollable area positioning */
 .affa7e120767dd82-scroller.d1405bf11dcfb07a-list {
-  top: 4px;
+  top: 0px;
   right: 3px;
 }
 
@@ -3947,11 +3949,6 @@ div._5e434347c823b592-content > div._5e434347c823b592-page > div > div > div.f75
     transform 0.4s cubic-bezier(0.33, 1, 0.68, 1),
     box-shadow 0.4s cubic-bezier(0.33, 1, 0.68, 1),
     clip-path 0.4s cubic-bezier(0.33, 1, 0.68, 1);
-}
-
-/* 📦 Inner Wrapper */
-._920abe02ba8772be-wrapper {
-  padding: 1px 8px !important;
 }
 
 /* ✨ Gradient Overlay (Pseudo-element) */
