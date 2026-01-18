@@ -417,7 +417,7 @@
 *
 */
 /* SEARCH RESULTS -> HEADER */
-.f3b986a284a18c78-searchHeader {
+.ae7890a1b8e75804-searchHeader {
   background-color: transparent;
   box-shadow: var(--popout-header-shadow);
 }
@@ -427,22 +427,22 @@
 }
 
 /* SEARCH RESULTS -> MESSAGES */
-._02a39cb2980ceaaf-searchResult:before,
-._02a39cb2980ceaaf-searchResult:after {
+._80bf8435713f6adb-searchResult:before,
+._80bf8435713f6adb-searchResult:after {
   display: none;
 }
 
-._02a39cb2980ceaaf-searchResult .c19a557985eb7793-wrapper {
+._80bf8435713f6adb-searchResult .c19a557985eb7793-wrapper {
   margin-left: 50px;
   margin-right: 0;
 }
 
-._02a39cb2980ceaaf-buttonsContainer {
+._80bf8435713f6adb-buttonsContainer {
   top: 16px;
   right: 8px;
 }
 
-._02a39cb2980ceaaf-buttonsContainer ._02a39cb2980ceaaf-button {
+._80bf8435713f6adb-buttonsContainer ._80bf8435713f6adb-button {
   background-color: var(--card-color);
   border-radius: var(--button-radius);
 }
@@ -647,7 +647,7 @@
 *  HEADER SEARCH BAR
 *
 */
-.visual-refresh ._974928fe84ca9647-searchBar {
+.visual-refresh .c322aadb96ff59c9-searchBar {
   border: none;
   background: rgb(62,62,66);
   border-radius: 12px;
@@ -1692,18 +1692,18 @@ button._1fed1dd06c7aabf7-fieldButton._1fed1dd06c7aabf7-removeButton._201d5e8a3c0
 *  ADD SERVER MODAL
 *
 */
-.container__23ba6 {
+.a244c3c87d2b1e13-container {
   --header-primary: #ddd;
   --header-secondary: #aaa;
   --text-normal: #fff;
   --interactive-normal: #aaa;
 }
 
-.container__23ba6 ._201d5e8a3c09670a-lookBlank {
+.a244c3c87d2b1e13-container ._201d5e8a3c09670a-lookBlank {
   color: hsl(var(--accent-hsl));
 }
 
-.container__23ba6 ._0ed4fc708cdbac0d-inputWrapper {
+.a244c3c87d2b1e13-container ._0ed4fc708cdbac0d-inputWrapper {
   background-color: transparent;
 }
 
@@ -2000,7 +2000,7 @@ div.c1e9c47c23f12ca3-label {
    margin-left: auto!important;
 }
 
-ul._56fec8e8b8048fe0-resultsGroup {
+ul._16eb0bfd5c5a90d1-resultsGroup {
   background-color: hsl(var(--primary-700-hsl)/0.25) !important;
   backdrop-filter: blur(5px);
   margin-left: auto;
@@ -2016,7 +2016,7 @@ ul._56fec8e8b8048fe0-resultsGroup {
   padding-top: 10px;
 }
 
-._56fec8e8b8048fe0-option {
+._16eb0bfd5c5a90d1-option {
   --search-popout-option-fade: linear-gradient(90deg, transparent, var(--popout-bg) 80%);
   --search-popout-option-fade-hover: linear-gradient(90deg, transparent, var(--item-hover-bg) 50%);
 }
@@ -2352,15 +2352,15 @@ ul._56fec8e8b8048fe0-resultsGroup {
   transform: none;
 }
 
-._56fec8e8b8048fe0-option {
+._16eb0bfd5c5a90d1-option {
   border-radius: var(--popout-radius);
 }
 
-._56fec8e8b8048fe0-option:after {
+._16eb0bfd5c5a90d1-option:after {
   display: none;
 }
 
-[aria-selected=true]._56fec8e8b8048fe0-option {
+[aria-selected=true]._16eb0bfd5c5a90d1-option {
   background-color: var(--background-modifier-hover);
 }
 
@@ -2373,7 +2373,7 @@ ul._56fec8e8b8048fe0-resultsGroup {
   box-shadow: var(--popout-header-shadow);
 }
 
-._56fec8e8b8048fe0-resultsGroup:before {
+._16eb0bfd5c5a90d1-resultsGroup:before {
   display: none;
 }
 
@@ -3203,7 +3203,7 @@ div[id='user-context-call'],
 
     ._9293f6b2fc12398a-upperContainer ._9293f6b2fc12398a-toolbar ._496769951eb140fe-search { /* Re-Iconify Search */
         order: -1;
-        ._974928fe84ca9647-searchBar { /* Make the default state only show an icon that can be clicked. */
+        .c322aadb96ff59c9-searchBar { /* Make the default state only show an icon that can be clicked. */
             transition: all ease 0.3s;
             width: 25px;
             box-sizing: unset;
@@ -3211,21 +3211,21 @@ div[id='user-context-call'],
             background: none;
             border: none;
             padding: 0;
-            ._974928fe84ca9647-icon {
+            .c322aadb96ff59c9-icon {
                 height: 32px;
                 width: 32px;
                 scale: 1.2;
                 cursor: pointer;
             }
         }
-        ._974928fe84ca9647-focused ._974928fe84ca9647-searchBar, ._974928fe84ca9647-open ._974928fe84ca9647-searchBar { /* Expand the search bar when focused, and keep it expanded when text is entered. These classes make it really easy, thanks discord! */
+        .c322aadb96ff59c9-focused .c322aadb96ff59c9-searchBar, .c322aadb96ff59c9-open .c322aadb96ff59c9-searchBar { /* Expand the search bar when focused, and keep it expanded when text is entered. These classes make it really easy, thanks discord! */
             width: 225px;
             box-sizing: border-box;
             cursor: text;
             background: var(--background-gradient-low, var(--input-background));
             border: 1px solid var(--input-border);
             padding: 2px 0;
-            ._974928fe84ca9647-icon {
+            .c322aadb96ff59c9-icon {
                 height: 24px;
                 width: 24px;
                 scale: 1;
@@ -3313,9 +3313,9 @@ div[id='user-context-call'],
   position: relative;
 }
 
-.b7e1cb0370c2dd0e-container> :not(#message-accessories-908755831758155796 > div._98ba899df138d534-embed,.d5f3cd116f175f35-wrapper,._5e20857677befdf4-container, ._23977d5b7cef7361-reactions, .a9e7064fdee8e9b0-searchResultsWrap *),
+.b7e1cb0370c2dd0e-container> :not(#message-accessories-908755831758155796 > div._98ba899df138d534-embed,.d5f3cd116f175f35-wrapper,._5e20857677befdf4-container, ._23977d5b7cef7361-reactions, .a98f3b020416ad54-searchResultsWrap *),
 ._5126c0cd07f243a0-groupStart._5126c0cd07f243a0-cozyMessage:not(._752971923a1e6683-codeContainer._5126c0cd07f243a0-systemMessage)  .c19a557985eb7793-contents>._752971923a1e6683-markup,
-._5126c0cd07f243a0-cozyMessage:not(._5126c0cd07f243a0-groupStart)>.c19a557985eb7793-contents>._752971923a1e6683-markup:not(:empty, .a9e7064fdee8e9b0-searchResultsWrap *) {
+._5126c0cd07f243a0-cozyMessage:not(._5126c0cd07f243a0-groupStart)>.c19a557985eb7793-contents>._752971923a1e6683-markup:not(:empty, .a98f3b020416ad54-searchResultsWrap *) {
   margin:  0;
   padding: 8px;
   border-radius: var(--chat-bubble-border-radius);
@@ -3330,14 +3330,14 @@ div[id='user-context-call'],
   width: fit-content!important;
 }
 
-.b7e1cb0370c2dd0e-container> :not(._5e20857677befdf4-container, ._23977d5b7cef7361-reactions, .a9e7064fdee8e9b0-searchResultsWrap *):hover,
+.b7e1cb0370c2dd0e-container> :not(._5e20857677befdf4-container, ._23977d5b7cef7361-reactions, .a98f3b020416ad54-searchResultsWrap *):hover,
 ._5126c0cd07f243a0-groupStart._5126c0cd07f243a0-cozyMessage:not(._5126c0cd07f243a0-systemMessage) .c19a557985eb7793-contents>._752971923a1e6683-markup:hover,
-._5126c0cd07f243a0-cozyMessage:not(._5126c0cd07f243a0-groupStart)>.c19a557985eb7793-contents:hover>._752971923a1e6683-markup:not(:empty, .a9e7064fdee8e9b0-searchResultsWrap *) {
+._5126c0cd07f243a0-cozyMessage:not(._5126c0cd07f243a0-groupStart)>.c19a557985eb7793-contents:hover>._752971923a1e6683-markup:not(:empty, .a98f3b020416ad54-searchResultsWrap *) {
   background: var(--chat-bubble-default-hover)
 }
 
-._5126c0cd07f243a0-cozyMessage._5126c0cd07f243a0-replying:not(._5126c0cd07f243a0-groupStart)>.c19a557985eb7793-contents>._752971923a1e6683-markup:not(:empty, .a9e7064fdee8e9b0-searchResultsWrap *),
-._5126c0cd07f243a0-replying .b7e1cb0370c2dd0e-container>:not(.f8896c4f6be18f59-reactions, .a9e7064fdee8e9b0-searchResultsWrap *) {
+._5126c0cd07f243a0-cozyMessage._5126c0cd07f243a0-replying:not(._5126c0cd07f243a0-groupStart)>.c19a557985eb7793-contents>._752971923a1e6683-markup:not(:empty, .a98f3b020416ad54-searchResultsWrap *),
+._5126c0cd07f243a0-replying .b7e1cb0370c2dd0e-container>:not(.f8896c4f6be18f59-reactions, .a98f3b020416ad54-searchResultsWrap *) {
   background: var(--chat-bubble-replying);
   border-radius: var(--chat-bubble-border-radius);
   max-width: max-content
@@ -3347,17 +3347,17 @@ div[id='user-context-call'],
   background: transparent
 }
 
-._5126c0cd07f243a0-cozyMessage._5126c0cd07f243a0-replying:not(._5126c0cd07f243a0-groupStart)>.c19a557985eb7793-contents>._752971923a1e6683-markup:not(:empty, .a9e7064fdee8e9b0-searchResultsWrap *):hover,
-._5126c0cd07f243a0-replying .b7e1cb0370c2dd0e-container>:not(.f8896c4f6be18f59-reactions, .a9e7064fdee8e9b0-searchResultsWrap *):hover {
+._5126c0cd07f243a0-cozyMessage._5126c0cd07f243a0-replying:not(._5126c0cd07f243a0-groupStart)>.c19a557985eb7793-contents>._752971923a1e6683-markup:not(:empty, .a98f3b020416ad54-searchResultsWrap *):hover,
+._5126c0cd07f243a0-replying .b7e1cb0370c2dd0e-container>:not(.f8896c4f6be18f59-reactions, .a98f3b020416ad54-searchResultsWrap *):hover {
   background: var(--chat-bubble-replying-hover)
 }
 
-._5126c0cd07f243a0-cozyMessage._5126c0cd07f243a0-mentioned:not(._5126c0cd07f243a0-groupStart)>.c19a557985eb7793-contents>._752971923a1e6683-markup:not(:empty, .a9e7064fdee8e9b0-searchResultsWrap *) {
+._5126c0cd07f243a0-cozyMessage._5126c0cd07f243a0-mentioned:not(._5126c0cd07f243a0-groupStart)>.c19a557985eb7793-contents>._752971923a1e6683-markup:not(:empty, .a98f3b020416ad54-searchResultsWrap *) {
   background: var(--chat-bubble-mentioned);
   border-radius: var(--chat-bubble-border-radius)
 }
 
-._5126c0cd07f243a0-cozyMessage._5126c0cd07f243a0-mentioned:not(._5126c0cd07f243a0-groupStart)>.c19a557985eb7793-contents>._752971923a1e6683-markup:not(:empty, .a9e7064fdee8e9b0-searchResultsWrap *):hover {
+._5126c0cd07f243a0-cozyMessage._5126c0cd07f243a0-mentioned:not(._5126c0cd07f243a0-groupStart)>.c19a557985eb7793-contents>._752971923a1e6683-markup:not(:empty, .a98f3b020416ad54-searchResultsWrap *):hover {
   background: var(--chat-bubble-mentioned-hover)
 }
 
