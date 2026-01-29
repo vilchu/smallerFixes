@@ -76,6 +76,7 @@
 
   /* nicer categories */
   --catagory-background: rgb(83, 51, 114);
+  --catagory-panel-background: rgb(42,40,84);
   --catagory-radius: 10px;
   --catagory-spacing: 10px;
   --capitalizeName: none; /* Change to 'none' to remove capitalization of channel names */
@@ -95,6 +96,7 @@
   --inner-secondary: 12px;
   --inner-tertiary: 16px;
   --panel-colour: 57,45,95; /*hsl(225, 6%, 13%)*/
+  --panel-button-colour: rgb(101, 89, 121);
 
   --window-colour: hsl(220, 7%, 26%);
 
@@ -3102,7 +3104,10 @@ div[id='user-context-call'],
 #channel-attach-SLASH_COMMAND {
   display: none !important;
 }
-
+/* Kill the back forward page navigation buttons */
+.backForwardButtons__63abb  {
+    display: none;
+}
 
 :root {
   --gift:none;
@@ -4285,7 +4290,7 @@ ul > li > [class*="interactive_"] {
 .sidebarList__5e434 /* channel list (includes dm list) */,
   .clickable_f37cb1,
   .container__2637a /* channel list inner */ {
-      background: rgb(42,40,84);
+      background: var(--catagory-panel-background);
   }
 }
 
@@ -4359,7 +4364,7 @@ bottom: 3px;
 .button__67645.enabled__67645.plated__67645.button__201d5.lookBlank__201d5 .olorBrand__201d5.grow__201d5.button__67645 {
   border-radius: var(--button-radius);
   --inversed-overlay: #36373E;
-  background: rgb(101, 89, 121)!important;
+  background: var(--panel-button-colour)!important;
   transition: color .15s ease-out, background-color .15s ease-out;
   top: 65px;
   right: 252px;
