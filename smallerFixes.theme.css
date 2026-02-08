@@ -4340,6 +4340,10 @@ background: rgb(var(--panel-colour))!important;
 left: -1px;
 bottom: 3px;
 }
+.wrapper__44b0c.avatar__37e49 {
+  top: 15px;
+  left: 15px;
+}
 .container__37e49 .avatarWrapper__37e49 {
   background: var(--background-primary);
   border-radius: var(--radius-secondary);
@@ -4350,7 +4354,7 @@ bottom: 3px;
 .container__37e49:not(.container__37e49) .withTagAsButton_b2ca13,
 .container__37e49 .nameTag__37e49 {
   border-radius: 15px var(--radius-secondary) var(--radius-secondary) 15px;
-  margin: 5px -15px 0px 5px;
+  margin: 35px -25px 0px 15px;
   grid-column: 2;
   height: 38px;
 }
@@ -4367,7 +4371,7 @@ bottom: 3px;
   background: var(--panel-button-colour)!important;
   transition: color .15s ease-out, background-color .15s ease-out;
   top: 65px;
-  right: 252px;
+  right: 115px;
   min-width: 40px;
   margin: 2px;
 }
