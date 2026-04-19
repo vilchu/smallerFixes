@@ -4159,16 +4159,11 @@ background: rgb(var(--panel-colour))!important;
 left: -1px;
 bottom: 3px;
 }
-.container__37e49 .avatarWrapper__37e49 {
+.container_df39b2.fitInAccount_df39b2 {
   background: var(--background-primary);
   border-radius: var(--radius-secondary);
-  margin: 18px 0px -12px 5px!important;
-  padding: 1px 125px 1px 15px;
-}
-
-.accountPopoutButtonWrapper__37e49.plated__37e49 {
-  margin-top: 30px;
-  left: 15px;
+  margin: 1px 0px 0px 5px!important;
+  width: 280px;
 }
 
 .theme-dark .newProfileActivityStyles .platformIcon__2ef49,
