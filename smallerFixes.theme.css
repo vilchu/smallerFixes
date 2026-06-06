@@ -2935,13 +2935,13 @@ body {
 
 .content__5e434>.sidebar__5e434,
 .chat_f75fb0 {
-  margin: 0px 7px 0px 0;
+  margin: 0px 5px 0px 0;
   border-radius: 15px!important;
 }
 
 body {
   /* sizes */
-  --gap: 7px; /* spacing between panels */
+  --gap: 6px; /* spacing between panels */
 }
 .visual-refresh {
   .sidebar__5e434 /* server list + channel list + user panel group */ {
@@ -2952,7 +2952,6 @@ body {
 .flex__7c0ba.flex_abf706.horizontalReverse__7c0ba.horizontalReverse_d76671.flex_abf706.directionRowReverse_f644aa.justifyStart_abf706.alignStretch_abf706.noWrap_abf706.footer-31IekZ.footerSeparator-VzAYwb {
   background-color: var(--background-floating);
 }
-
 
 
 /* ============================== */
@@ -3206,38 +3205,9 @@ div[id='user-context-call'],
   color: hsl(0, 64%, 57%);
 }
 
-    .upperContainer__9293f .toolbar__9293f .search__49676 { /* Re-Iconify Search */
-        order: -1;
-        .searchBar_c322aa { /* Make the default state only show an icon that can be clicked. */
-            transition: all ease 0.3s;
-            width: 25px;
-            box-sizing: unset;
-            cursor: pointer;
-            background: none;
-            border: none;
-            padding: 0;
-            .icon_c322aa {
-                height: 32px;
-                width: 32px;
-                scale: 1.2;
-                cursor: pointer;
-            }
-        }
-        .focused_c322aa .searchBar_c322aa, .open_c322aa .searchBar_c322aa { /* Expand the search bar when focused, and keep it expanded when text is entered. These classes make it really easy, thanks discord! */
-            width: 225px;
-            box-sizing: border-box;
-            cursor: text;
-            background: var(--background-gradient-low, var(--input-background));
-            border: 1px solid var(--input-border);
-            padding: 2px 0;
-            .icon_c322aa {
-                height: 24px;
-                width: 24px;
-                scale: 1;
-                cursor: pointer;
-            }
-        }
-    }
+.searchBar_c322aa {
+  background-color: rgb(53, 51, 107)!important;
+}
 
 /* =================================== */
 /* ======= < TIMESTAMP ICON > ======= */
@@ -4164,6 +4134,10 @@ bottom: 3px;
   border-radius: var(--radius-secondary);
   margin: 1px 0px 0px 5px!important;
   width: 280px;
+}
+.accountPopoutButtonWrapper__37e49.plated__37e49 {
+  left: 20px;
+  top: 15px;
 }
 
 .theme-dark .newProfileActivityStyles .platformIcon__2ef49,
