@@ -2919,7 +2919,7 @@ body {
 }
 
 :root .winButtons_c38106 {
-  background-color: var(--window-colour)!important;
+  background-color: var(--background-base-lower)!important; /* var(--window-colour) */
   height: 25px;
   border-radius:  0px 0px 0px  10px !important;
 }
@@ -2940,7 +2940,6 @@ body {
 }
 
 body {
-  /* sizes */
   --gap: 6px; /* spacing between panels */
 }
 .visual-refresh {
@@ -2980,6 +2979,11 @@ li:has([data-settings-sidebar-item="betterdiscord_settings_panel"]) {
 .chat_f75fb0:has(.content_f75fb0 .searchResultsWrap_a98f3b)
     .subtitleContainer_f75fb0 {
     width: calc(100% - 418px);
+}
+
+/* active now cards */
+.itemCard__7e549.wrapper__00943.outer_bf1984.interactive_bf1984.noBackground_bf1984:hover {
+  background-color: var(--background-modifier-hover) !important;
 }
 
 
@@ -3534,6 +3538,11 @@ div[id='user-context-call'],
   display: none; 
 }
 
+.channelTextArea_f75fb0.channelTextArea__74017 {
+  background: transparent!important;
+  top: -3px!important;
+}
+
 /* buttons */
 .attachButton__0923f.attachButton__74017.button__24af7,
 .emojiButtonHovered__04eed.emojiButton__04eed.emojiButton__74017.button__74017,
@@ -3569,12 +3578,20 @@ div.attachWrapper__0923f > div,
 
 /* message bar position when no attachment button */
 .form_f75fb0:has(.channelTextAreaDisabled__74017) {
-  max-width: 1291px;
+  max-width: 1287px;
+  bottom: 0px;
+  margin-right: 70px!important;
 }
-.scrollableContainer__74017:not(.rulesTextAreaInput_f7c056.scrollableContainer__74017.themedBackground__74017,.topic__0511a.scrollableContainer__74017, .fileInput__94439, .bioTextArea__6a919.scrollableContainer__74017.themedBackground__74017, :has(.attachWrapper__0923f)) .textArea__74017:not(:has(>div>div>[class^="applicationCommand_"])) {
-  margin-left: 64px;
+
+.scrollableContainer__74017:not(.inner__74017.innerDisabled__74017.inner__74017.sansAttachButton__74017,.rulesTextAreaInput_f7c056.scrollableContainer__74017.themedBackground__74017,.topic__0511a.scrollableContainer__74017, .fileInput__94439, .bioTextArea__6a919.scrollableContainer__74017.themedBackground__74017, :has(.attachWrapper__0923f)) .textArea__74017:not(:has(>div>div>[class^="applicationCommand_"])) {
+  margin-left: 74px;
   width: 1575px !important;
 }
+
+div.scrollableContainer__74017.themedBackground__74017 > div > div.textArea__74017.textAreaSlate__74017.textAreaDisabled__74017.textArea__74017.slateContainer_ec4baf {
+  margin-bottom: 13px!important;
+}
+
 
 
 /* forward to modal */
@@ -3591,20 +3608,32 @@ div.typing_b88801.base_b88801.inTextChannel_b88801 {
   padding-left: 2px;
   padding-right: 60px;
   border-radius: 8px 8px 0px 0px;
-
 }
 
 .form_f75fb0:not(:has(.typing_b88801))::before {
-        content: "no one is yapping :(";
-        font-size: 14px;
-        color: var(--text-strong);
-        height: 14px;
-        right: 136px;
-        bottom: 5px;
-        z-index: 10;
-        opacity: 0.5;
-        font-weight: 500;
+  content: "no one is typing :(";
+  font-size: 14px;
+  color: var(--text-strong);
+  height: 14px;
+  right: 120px;
+  bottom: 5px;
+  z-index: 10;
+  opacity: 0.5;
+  font-weight: 500;
 }
+
+.form_f75fb0:not(:has(.typing_b88801)):has(.channelTextAreaDisabled__74017)::before {
+  content: "no one is typing :(";
+  font-size: 14px;
+  color: var(--text-strong);
+  height: 14px;
+  right: 41px;
+  bottom: 5px;
+  z-index: 10;
+  opacity: 0.5;
+  font-weight: 500;
+}
+
 
 
 /* -------------------------------------------------------- */
@@ -3833,6 +3862,7 @@ div.typing_b88801.base_b88801.inTextChannel_b88801 {
   order: 3;
   margin-left: 0px
 }
+
 
 /* ==================================================== */
 /* ======= < SHOW CREATE CHANNEL UNTIL HOVER > ======= */
