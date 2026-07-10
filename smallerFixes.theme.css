@@ -3206,7 +3206,7 @@ div[id='user-context-call'],
 }
 
 .searchBar_c322aa {
-  background-color: rgb(53, 51, 107)!important;
+  background-color: var(--chat-background-default)!important; /* rgb(53, 51, 107) */
 }
 
 /* =================================== */
@@ -3536,6 +3536,10 @@ div[id='user-context-call'],
   backdrop-filter: blur(4px);
   filter: drop-shadow(0rem 0rem 0.5rem hsla(240, 100%, 4%, 0.2));
   order: 0;
+}
+.channelBottomBarArea_f75fb0,
+.chatGradient__36d07.chatGradientBase__36d07 {
+  background: none!important
 }
 
 .attachButton__0923f.attachButton__74017.button__24af7,
@@ -3994,7 +3998,7 @@ ul > li > [class*="interactive_"] {
 [aria-label="Channels"] .containerDefault__29444 ~ .containerDefault_c69b6d,
 [aria-label="Channels"] .containerDefault__29444, .voiceUserSummary__629e4,
 .container__5b40b {
-    background-color: var(--catagory-background)!important; /* set color */
+    background-color: var(--background-secondary)!important; /* set color var(--catagory-background)*/
     margin-left: 8px; padding-right: 8px; /* clean up formatting */
 }
 [aria-label="Channels"] .container__5b40b .containerDefault_c69b6d {
@@ -4040,7 +4044,7 @@ ul > li > [class*="interactive_"] {
 
 .voiceChannelsButton__29444{
 	border-radius: 0 0 var(--catagory-radius) var(--catagory-radius);
-	background-color: var(--catagory-background);
+	background-color: var(--background-secondary)!important; /* var(--catagory-background) */
 	margin: 0 0 0 8px
 }
 
@@ -4079,7 +4083,7 @@ ul > li > [class*="interactive_"] {
 .sidebarList__5e434 /* channel list (includes dm list) */,
   .clickable_f37cb1,
   .container__2637a /* channel list inner */ {
-      background: var(--catagory-panel-background);
+      background: var(--background-base-lower)!important ; /* var(--catagory-panel-background)*/ 
   }
 }
 
@@ -4090,7 +4094,7 @@ div.spineBorder__5b40b {
 svg.spine__5b40b {
   color: hsla(147, 50%, 52%, 0.993)!important;
 }
-/* channel cion colour */
+/* channel icon colour */
 .modeUnreadImportant__2ea32 .icon__2ea32,
 #app-mount .containerDefault_c69b6d.selected_c69b6d .wrapper__2ea32 .icon__2ea32,
 #app-mount .containerDefault_c69b6d:hover .wrapper__2ea32 .icon__2ea32 {
@@ -4106,7 +4110,7 @@ svg.spine__5b40b {
   bottom: 3px!important;
   left: calc(15px + var(--custom-guild-list-width))!important;
   width: 290px;
-  background: rgb(var(--panel-colour))!important;
+  background: var(--background-base-lowest)!important; /* rgb(var(--panel-colour)) */ 
   height: auto;
   padding-bottom: 60px;
 }
@@ -4149,7 +4153,7 @@ bottom: 3px;
 .button__67645.enabled__67645.plated__67645.button__201d5.lookBlank__201d5 .olorBrand__201d5.grow__201d5.button__67645 {
   border-radius: var(--button-radius);
   --inversed-overlay: #36373E;
-  background: var(--panel-button-colour)!important;
+  background: var(--chat-background-default)!important; /* var(--panel-button-colour) */ 
   transition: color .15s ease-out, background-color .15s ease-out;
   top: 65px;
   right: 115px;
@@ -4290,6 +4294,7 @@ div.mask__0d616 > div > div {
   font-family: Discord;
 }
 
+
 /* ======================================================================================================================================= */
 /* ============================================================== < CRAP > ============================================================== */
 /* ===================================================================================================================================== */
@@ -4298,7 +4303,6 @@ div.mask__0d616 > div > div {
 [class*='gifFavoriteButton_'] {
   background-color: transparent;
 }
-
 /* Pin page switcher to bottom of search results */
 [class^=searchResultsWrap_] [class^=container_]:has([class^=pageControlContainer_]){
   position: sticky;
