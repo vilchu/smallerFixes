@@ -3534,6 +3534,7 @@ div[id='user-context-call'],
   display: none; 
 }
 
+/* buttons */
 .attachButton__0923f.attachButton__74017.button__24af7,
 .emojiButtonHovered__04eed.emojiButton__04eed.emojiButton__74017.button__74017,
 div.attachWrapper__0923f > div,
@@ -3554,6 +3555,7 @@ div.attachWrapper__0923f > div,
   filter: drop-shadow(0rem 0rem 0.5rem hsla(240, 100%, 4%, 0.2));
 }
 
+/* fuck ass lines around chatbox */
 .visual-refresh .channelTextArea__74017,
 .visual-refresh .channelTextArea__74017:focus-within {
   border-width: 0px;
@@ -3569,10 +3571,11 @@ div.attachWrapper__0923f > div,
 .form_f75fb0:has(.channelTextAreaDisabled__74017) {
   max-width: 1291px;
 }
-.scrollableContainer__74017:not(.topic__0511a.scrollableContainer__74017, .fileInput__94439, .bioTextArea__6a919.scrollableContainer__74017.themedBackground__74017, :has(.attachWrapper__0923f)) .textArea__74017:not(:has(>div>div>[class^="applicationCommand_"])) {
+.scrollableContainer__74017:not(.rulesTextAreaInput_f7c056.scrollableContainer__74017.themedBackground__74017,.topic__0511a.scrollableContainer__74017, .fileInput__94439, .bioTextArea__6a919.scrollableContainer__74017.themedBackground__74017, :has(.attachWrapper__0923f)) .textArea__74017:not(:has(>div>div>[class^="applicationCommand_"])) {
   margin-left: 64px;
   width: 1575px !important;
 }
+
 
 /* forward to modal */
 .inner__74017.sansAttachButtonCreatePost__74017 {
@@ -3592,7 +3595,7 @@ div.typing_b88801.base_b88801.inTextChannel_b88801 {
 }
 
 .form_f75fb0:not(:has(.typing_b88801))::before {
-        content: "no one is typing :(";
+        content: "no one is yapping :(";
         font-size: 14px;
         color: var(--text-strong);
         height: 14px;
