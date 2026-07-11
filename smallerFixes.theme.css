@@ -108,12 +108,12 @@
   --scrollbar-thin-track: transparent;
 
   /* bubble thingys */
-  --chat-bubble-default: hsla(0, 0%, 0%, 0.25);
-  --chat-bubble-default-hover: hsla(0, 0%, 0%, 0.50);
+  --chat-bubble-default: hsla(0, 0%, 0%, 0.30);
+  --chat-bubble-default-hover: hsla(0, 0%, 0%, 0.40);
   --chat-bubble-replying: hsla(0, 0%, 0%, 0.25);
-  --chat-bubble-replying-hover: hsla(0, 0%, 0%, 0.50);
+  --chat-bubble-replying-hover: hsla(0, 0%, 0%, 0.35);
   --chat-bubble-mentioned: hsla(0, 0%, 0%, 0.25);
-  --chat-bubble-mentioned-hover: hsla(0, 0%, 0%, 0.50);
+  --chat-bubble-mentioned-hover: hsla(0, 0%, 0%, 0.35);
   --chat-bubble-border-radius: 10px;
 
   /* switch colours */
@@ -3526,21 +3526,16 @@ div[id='user-context-call'],
     position: absolute;
     width: 100%;
     height: 100% !important;
-    padding-bottom: 87px;
+    padding-bottom: 70px;
     box-sizing: border-box;
 
     .scroller__36d07 {
-        padding-bottom: 50px;
+        padding-bottom: 70px;
     }
 }
 
 .chatTypingGradientAtBottom__36d07 ,.chatTypingGradientNotAtBottom__36d07,.chatGradient__36d07 { 
   display: none; 
-}
-
-.channelTextArea_f75fb0.channelTextArea__74017 {
-  background: transparent!important;
-  top: -3px!important;
 }
 
 /* buttons */
@@ -3592,8 +3587,6 @@ div.scrollableContainer__74017.themedBackground__74017 > div > div.textArea__740
   margin-bottom: 13px!important;
 }
 
-
-
 /* forward to modal */
 .inner__74017.sansAttachButtonCreatePost__74017 {
   margin-left: -84px!important;
@@ -3611,7 +3604,7 @@ div.typing_b88801.base_b88801.inTextChannel_b88801 {
 }
 
 .form_f75fb0:not(:has(.typing_b88801))::before {
-  content: "no one is typing :(";
+  content: "no one is yapping :(";
   font-size: 14px;
   color: var(--text-strong);
   height: 14px;
@@ -3623,7 +3616,7 @@ div.typing_b88801.base_b88801.inTextChannel_b88801 {
 }
 
 .form_f75fb0:not(:has(.typing_b88801)):has(.channelTextAreaDisabled__74017)::before {
-  content: "no one is typing :(";
+  content: "no one is yapping :(";
   font-size: 14px;
   color: var(--text-strong);
   height: 14px;
@@ -3633,7 +3626,6 @@ div.typing_b88801.base_b88801.inTextChannel_b88801 {
   opacity: 0.5;
   font-weight: 500;
 }
-
 
 
 /* -------------------------------------------------------- */
@@ -4103,7 +4095,7 @@ div.container__37e49 > div.container_df39b2 {
   border-radius: 10px;
   width: 250px;
   height: 45px;
-  left: 20px;
+  left: 14px;
   top: 20px!important;
 }
 div.panel__5dec7.activityPanel__5e434 {
@@ -4118,7 +4110,7 @@ bottom: 3px;
   width: 280px;
 }
 .accountPopoutButtonWrapper__37e49.plated__37e49 {
-  left: 20px;
+  left: 14px;
   top: 15px;
 }
 
