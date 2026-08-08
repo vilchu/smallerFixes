@@ -2952,9 +2952,6 @@ body {
   background-color: var(--background-floating);
 }
 
-li:has([data-settings-sidebar-item="betterdiscord_settings_panel"]) {
-    order: 1!important;
-}
 
 /* members and search bar place */
 .subtitleContainer_f75fb0 {
@@ -3328,14 +3325,23 @@ div[id='user-context-call'],
   padding: 8px;
   border-radius: var(--chat-bubble-border-radius);
   background: var(--chat-bubble-default);
-  max-width: max-content;
+  max-width: fit-content;
   box-sizing: border-box;
 }
 
 .codeContainer__75297,
 .scrollbarGhostHairline__506b3.scrollbar__506b3.hljs.css,
 .scrollbarGhostHairline__506b3.scrollbar__506b3.hljs {
-  width: fit-content!important;
+  width: max-content;
+  max-width: min(900px, 75vw);
+  min-width: 0;
+  box-sizing: border-box;
+
+  align-self: flex-start;
+
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  word-break: break-word!important;
 }
 
 .container_b7e1cb> :not(.container__5e208, .reactions__23977, .searchResultsWrap_a98f3b *):hover,
@@ -4092,7 +4098,7 @@ svg.spine__5b40b {
 }
 .container_e131a9 {
   background: var(--background-base-lowest)!important; /* */
-  margin-top: -15px!important;
+  margin-top: -5px!important;
   padding-bottom: 10px!important;
 }
 
@@ -4125,8 +4131,9 @@ bottom: 3px;
   top: 40px;
 }
 
-.button__67645.enabled__67645.plated__67645.button__201d5.lookBlank__201d5.colorBrand__201d5.grow__201d5.button__67645,
-.button__67645.enabled__67645.plated__67645.button__201d5.lookBlank__201d5 .olorBrand__201d5.grow__201d5.button__67645 {
+.buttons__37e49 > button,
+.button__67645.buttonChevron__5e764,
+.button__67645.audioButtonWithMenu__5e764 {
   border-radius: var(--button-radius);
   --inversed-overlay: #36373E;
   background: var(--chat-background-default)!important; /* var(--panel-button-colour) */ 
@@ -4493,7 +4500,33 @@ nav.guilds__5e434 {
   display: none;
 }
 
+/* ====================================== */
+/* ======= < BD SETTINGS BELOW > ======= */
+/* ==================================== */
 
+.sublist__409aa { 
+  .section__409aa:has(path[d*="M12 10a4 4 0 1 0 0-8 4 4 0 0 0 0 8ZM11"]) { /* User Profile*/
+    order: 1; 
+  } 
+  .section__409aa:has(path[d*="M16.23 12c0 1.29-.95 2.25-2.22 2.25A2."]) { /* Billing Settings */
+    order: 2;
+  }
+  .section__409aa:has(path[d*="M6 10a1 1 0 0 0-2 0 8 8 0 0 0 7 7.94V2"]) { /* Experience Settings */
+    order: 3;
+  }
+  .section__409aa:has(path[d*="M20.97 4.06c0 .18.08.35.24.43.55.28.9"]) { /* Games and Apps Settinngs */
+    order: 4;
+  }
+  .section__409aa:has(path[d*="M1402.2,631.7c-9.7-353.4-286.2-496-642"]) { /* BetterDiscord Settings */
+    order: 5;
+  }
+  .section__409aa:has(path[d*="M16 10.49V4a1 1 0 1 0 0-2H8a1 1 0 0 0 "]) { /* Staff Only Settings */
+    order: 6;
+  }
+  .section__409aa:has(path[d*="M9 12a1 1 0 0 1 1 1v2a1 1 0 1 1-2 0v-2a1 1 0 0 1 1-1Z"]) { /* Log Out Button */
+    order: 7;
+  }
+}
 
 /* ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
 
