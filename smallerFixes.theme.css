@@ -2051,7 +2051,7 @@ ul.resultsGroup__16eb0 {
 .header_fed6d3,
 .header__8ef02,
 .header_c0e32c {
-  background-color: transparent;
+  /*background-color: transparent;*/
   box-shadow: var(--popout-header-shadow) !important;
 }
 
@@ -3536,8 +3536,12 @@ div[id='user-context-call'],
     box-sizing: border-box;
 
     .scroller__36d07 {
-        padding-bottom: 70px;
+        padding-bottom: 80px;
     }
+}
+
+.channelBottomBarArea_f75fb0 {
+    padding-bottom: 10px!important;
 }
 
 .chatTypingGradientAtBottom__36d07 ,.chatTypingGradientNotAtBottom__36d07,.chatGradient__36d07 { 
@@ -3605,7 +3609,7 @@ div.scrollableContainer__74017.themedBackground__74017 > div > div.textArea__740
 
 /* Move typing indicators */
 div.typing_b88801.base_b88801.inTextChannel_b88801 {
-  top: 52px!important;
+  top: 58px!important;
   right: calc(var(--custom-index-scrollbar-margin) * 10 + var(--custom-index-scrollbar-width));
   margin-left: auto;
   width: fit-content;
@@ -3620,7 +3624,7 @@ div.typing_b88801.base_b88801.inTextChannel_b88801 {
   color: var(--text-strong);
   height: 14px;
   right: 120px;
-  bottom: 5px;
+  bottom: 10px;
   z-index: 10;
   opacity: 0.5;
   font-weight: 500;
@@ -3632,7 +3636,7 @@ div.typing_b88801.base_b88801.inTextChannel_b88801 {
   color: var(--text-strong);
   height: 14px;
   right: 41px;
-  bottom: 5px;
+  bottom: 10px;
   z-index: 10;
   opacity: 0.5;
   font-weight: 500;
@@ -3865,7 +3869,6 @@ div.typing_b88801.base_b88801.inTextChannel_b88801 {
   order: 3;
   margin-left: 0px
 }
-
 
 
 /* ==================================================== */
@@ -4241,6 +4244,7 @@ div.mask__0d616 > div > div {
   mask: none;
 }
 
+
 /* ================================================================ */
 /* =================== < MAKE PRONOUNS STAND OUT MORE > ========== */
 /* ============================================================== */
@@ -4337,7 +4341,7 @@ nav.guilds__5e434 {
 }
 
 /* Customizable is typing... message */
-.typingDots_b88801 > .ellipsis_b88801+.text_b88801 {
+/*.typingDots_b88801 > .ellipsis_b88801+.text_b88801 {
   font-size: 0;
   height: 16px;
   >strong {
@@ -4363,7 +4367,7 @@ nav.guilds__5e434 {
   font-size: 12px;
   content: "Several people are yapping…";
   }
-}
+}*/
 
 
 /* ================================================ */
