@@ -3536,7 +3536,7 @@ div[id='user-context-call'],
     box-sizing: border-box;
 
     .scroller__36d07 {
-        padding-bottom: 80px;
+        padding-bottom: inherit;
     }
 }
 
